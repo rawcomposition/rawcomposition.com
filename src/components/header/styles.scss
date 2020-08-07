@@ -1,0 +1,26 @@
+.main-header {
+	background: #363636;
+	color: #eee;
+	padding: 1.3rem 0;
+	margin-bottom: 3rem;
+
+	h1 {
+		margin: 0;
+		font-size: 2.1rem;
+		line-height: 1;
+
+		img {
+			vertical-align: middle;
+			margin-right: .5rem;
+		}
+		
+		span {
+			vertical-align: middle;
+		}
+	}
+
+	a {
+		color: #eee;
+		text-decoration: none;
+	}
+}
