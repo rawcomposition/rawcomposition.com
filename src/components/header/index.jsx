@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.scss';
 
 function Header() {
@@ -6,11 +7,16 @@ function Header() {
 		<header className='main-header'>
 			<div className='container'>
 				<h1>
-					<a href='/'>
+					<Link to='/' className='logo'>
 						<img src='/logo.png' alt='' width='40'/>
 						<span>RawComposition</span>
-					</a>
+					</Link>
 				</h1>
+				<nav>
+					<Link to='/'>Home</Link>
+					<Link to='/about'>About</Link>
+					<Link to='/about'>Contact</Link>
+				</nav>
 			</div>
 		</header>
 	)

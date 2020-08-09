@@ -3,24 +3,41 @@
 	color: #eee;
 	padding: 1.3rem 0;
 	margin-bottom: 3rem;
+	
+	.container {
+		display: flex;
+	}
 
 	h1 {
 		margin: 0;
 		font-size: 2.1rem;
 		line-height: 1;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
 
 		img {
-			vertical-align: middle;
 			margin-right: .5rem;
 		}
-		
-		span {
-			vertical-align: middle;
+	}
+
+	nav {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+
+		a {
+			margin-left: 2rem;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: .7rem;
 		}
 	}
 
 	a {
-		color: #eee;
+		color: #eee !important;
 		text-decoration: none;
 	}
 }

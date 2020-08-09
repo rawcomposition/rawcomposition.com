@@ -2,12 +2,14 @@ import React, { useEffect, useState, useCallback } from 'react';
 import Masonry from 'react-masonry-css'
 import fetchJsonp from 'fetch-jsonp';
 import FlickrItem from '../flickr-item';
+import FlickrSkeleton from '../flickr-skeleton';
 import './styles.scss';
 
 function FlickrStream() {
 	const [page, setPage] = useState(1);
 	const [photos, setPhotos] = useState([]);
 	const [loading, setLoading] = useState(false);
+	const [showSkeleton, setShowSkeleton] = useState(true);
 	const [pages, setPages] = useState(0);
 
 	const fetchPhotos = useCallback((newPage = 1) => {
@@ -22,14 +24,13 @@ function FlickrStream() {
 		.then(data => {
 			setPhotos(photos => ([...photos, ...data.photos.photo]));
 			setPage(page =>(page + 1));
-			setLoading(false);
 			if(newPage === 1) {
 				setPages(data.photos.pages);
 			}
 		})
-		.catch((error) => {
-			console.error('Error:', error);
+		.then(() => {
 			setLoading(false);
+			setShowSkeleton(false);
 		});
 	}, []);
 
@@ -46,6 +47,8 @@ function FlickrStream() {
 		fetchPhotos(page + 1);
 	}
 	
+	if (showSkeleton) return <FlickrSkeleton/>;
+
 	return (
 		<React.Fragment>
 			<Masonry breakpointCols={masonryBreakpoints} className='flickr-list' columnClassName='flickr-list-column'>
