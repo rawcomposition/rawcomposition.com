@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './components/header';
 import Home from './pages/home';
 import About from './pages/about';
-import './App.scss';
+import './app.scss';
 import './normalize.css';
 
 function App() {
