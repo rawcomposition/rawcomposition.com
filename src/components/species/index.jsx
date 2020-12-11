@@ -17,7 +17,7 @@ function Species({index, item, setLightboxData}) {
 				{item.images.map((image) => (
 					<a key={image} href={`https://macaulaylibrary.org/asset/${image}`} target='_blank'>
 						<LazyLoad debounce={50} offset={400}>
-							<img src={`https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${image}/320`} onClick={(e) => handleImageClick(e, image, item.name)}/>
+							<img src={`https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${image}/640`} onClick={(e) => handleImageClick(e, image, item.name)}/>
 						</LazyLoad>	
 					</a>
 				))}

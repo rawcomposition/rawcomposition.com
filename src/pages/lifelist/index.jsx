@@ -87,7 +87,6 @@ function Lifelist() {
 					<Species key={item.name.replace(/\W+/g, " ")} index={index} item={item} setLightboxData={setLightboxData}/>
 				))}
 			</div>
-			<Sidebar/>
 			<Lightbox data={lightboxData} handleClose={handleCloseLightbox} />
 		</div>
 	)
