@@ -15,11 +15,12 @@ fs.createReadStream('./ml.csv')
 );
 
 function processResults(results) {
-	let filteredResults = results.map( (row) => {
+	let restructuredResults = results.map( (row) => {
 		return {
 			id: parseInt(row.ml_catalog_number),
 			name: row.common_name,
 			species_code: row.report_as,
+			date: new Date(row.date),
 			category: row.taxon_category,
 			country: row.country,
 			state: row.state,
@@ -27,11 +28,11 @@ function processResults(results) {
 			rating: Number(row.average_community_rating).toFixed(2),
 			checklist_id: row.ebird_checklist_id,
 		}
-	})
-	.sort((a, b) => (a.tax_sort > b.tax_sort) ? 1 : -1);
+	});
+
 	
 	let species = {}
-	filteredResults.forEach((row) => {
+	restructuredResults.forEach((row) => {
 		if(!['Species', 'Group'].includes(row.category)) {
 			return;
 		}
@@ -42,16 +43,37 @@ function processResults(results) {
 	});
 
 	species = Object.values(species).map((group) => {
-		const sorted_group =  group.sort((a, b) => (a.rating < b.rating) ? 1 : -1).slice(0,3);
+		const rating_sorted_group = group.slice().sort((a, b) => (a.rating < b.rating) ? 1 : -1).slice(0,3);
+		const date_sorted_group = group.slice().sort(function(a,b) {
+			return a.date - b.date;
+		});
+		const first_date = date_sorted_group[0].date;
 		return {
-			name: sorted_group[0].name.replace(/ *\([^)]*\) */g, ''),
-			images: sorted_group.map(({id, name}) => {
+			name: rating_sorted_group[0].name.replace(/ *\([^)]*\) */g, ''),
+			date: first_date,
+			tax_sort: rating_sorted_group[0].tax_sort,
+			images: rating_sorted_group.map(({id, name}) => {
 				return id;
 			})
 		}
 	});
 	
-	const data = JSON.stringify(species);
-	fs.writeFileSync('../public/lifelist.json', data);
+	const date_sorted_species = species.slice().sort((a, b) => b.date - a.date);
+	fs.writeFileSync('../public/lifelist_date_sorted.json', finalizeSortedData(date_sorted_species));
+
+	const taxon_sorted_species = species.slice().sort((a, b) => a.tax_sort - b.tax_sort);
+	fs.writeFileSync('../public/lifelist_taxon_sorted.json', finalizeSortedData(taxon_sorted_species));
+
 	console.log('Done');
+}
+
+function finalizeSortedData(species) {
+	const cleaned = species.map(({name, images}) => {
+		return {
+			name,
+			images
+		}
+	});
+
+	return JSON.stringify(cleaned);
 }

@@ -8,14 +8,12 @@
 		display: flex;
 	}
 
-	h1 {
-		margin: 0;
-		font-size: 2.1rem;
-		line-height: 1;
-	}
-
 	.logo {
 		display: flex;
+		font-size: 2.1rem;
+		font-weight: bold;
+		font-family: "Roboto Slab", sans-serif;
+		line-height: 1.5rem;
 		align-items: center;
 
 		img {
