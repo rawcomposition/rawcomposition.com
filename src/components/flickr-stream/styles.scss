@@ -1,11 +1,9 @@
 .flickr-list {
 	display: flex;
-	margin-left: -1rem; /* gutter size offset */
 	width: auto;
 }
 
 .flickr-list-column {
-	padding-left: 2rem; /* gutter size */
 	background-clip: padding-box;
 
 	.flickr-photo {
@@ -21,4 +19,13 @@
 .box {
 	width: 200px;
 	height: 200px;
+}
+
+@media (min-width: 992px) {
+	.flickr-list {
+		margin-left: -1rem; /* gutter size offset */
+	}
+	.flickr-list-column {
+		padding-left: 2rem; /* gutter size */
+	}
 }

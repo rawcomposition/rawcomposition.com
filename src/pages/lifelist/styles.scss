@@ -41,8 +41,15 @@
 	}
 }
 
-@media (max-width: 440px) {
+@media (max-width: 450px) {
 	.lifelist-species .images {
 		display: block;
+	}
+
+	.actions {
+		display: block;
+		line-height: 2.5;
+		margin-top: 1rem;
+		text-align: center;
 	}
 }

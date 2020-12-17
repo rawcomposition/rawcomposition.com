@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import Sidebar from '../../components/sidebar';
 import Lightbox from '../../components/lightbox';
 import Species from '../../components/species';
 import { forceCheck } from 'react-lazyload';
@@ -76,7 +75,7 @@ function Lifelist() {
 				<h1>World Life List</h1>
 				<div className='actions'>
 					<span className='species-total'>Total species: {species.length}</span>
-					<div class='sort-buttons'>
+					<div className='sort-buttons'>
 						<button className={!sortByDate ? 'active' : ''} onClick={(e) => handleSetSortBy(e, false)}>Taxonomic</button>
 						<button className={sortByDate ? 'active' : ''} onClick={(e) => handleSetSortBy(e, true)}>Latest</button>
 					</div>

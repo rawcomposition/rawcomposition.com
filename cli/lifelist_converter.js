@@ -20,7 +20,7 @@ function processResults(results) {
 			id: parseInt(row.ml_catalog_number),
 			name: row.common_name,
 			species_code: row.report_as,
-			date: new Date(row.date),
+			date: row.date ? new Date(row.date) : new Date('1/1/2000'),
 			category: row.taxon_category,
 			country: row.country,
 			state: row.state,
