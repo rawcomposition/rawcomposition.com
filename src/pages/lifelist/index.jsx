@@ -5,8 +5,8 @@ import { forceCheck } from 'react-lazyload';
 import './styles.scss';
 
 function Lifelist() {
+	const [allSpecies, setAllSpecies] = useState([]);
 	const [species, setSpecies] = useState([]);
-	const [filteredSpecies, setFilteredSpecies] = useState([]);
 	const [sortByDate, setSortByDate] = useState(true);
 	const [lightboxData, setLightboxData] = useState({
 		imageId: '',
@@ -21,6 +21,7 @@ function Lifelist() {
 			.then(response => response.json())
 			.then(data => {
 				setSpecies(data);
+				setAllSpecies(data);
 				forceCheck();
 			});
 	}, [sortByDate]);
@@ -77,17 +78,15 @@ function Lifelist() {
 
 	const filterResults = (e) => {
 		if (e.target.value.length > 2) {
-			setFilteredSpecies(species.filter((item) => {
+			setSpecies(allSpecies.filter((item) => {
 				return item.name.toLowerCase().includes(e.target.value.toLowerCase());
 			}));
 			
 			setTimeout(function(){ forceCheck(); }, 500);
 		} else {
-			setFilteredSpecies([]);
+			setSpecies(allSpecies);
 		}
 	}
-
-	const results = filteredSpecies.length > 0 ? filteredSpecies : species;
 
 	return (
 		<div className='container page-wrapper'>
@@ -106,7 +105,7 @@ function Lifelist() {
 				<input type='text' onChange={filterResults} className='lifelist-search' placeholder='Search...'></input>
 				<br/>
 
-				{results.map((item, index) => (
+				{species.map((item, index) => (
 					<Species key={item.name.replace(/\W+/g, " ")} index={index} item={item} setLightboxData={setLightboxData}/>
 				))}
 			</div>
