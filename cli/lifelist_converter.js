@@ -29,11 +29,11 @@ function processResults(results) {
 			checklist_id: row.ebird_checklist_id,
 		}
 	});
-
 	
 	let species = {}
 	restructuredResults.forEach((row) => {
-		if(!['Species', 'Group'].includes(row.category)) {
+		const countableDomestics = ['rocpig'];
+		if(!['Species', 'Group', 'Form'].includes(row.category) && !countableDomestics.includes(row.species_code)) {
 			return;
 		}
 		if(!species[row.species_code]) {

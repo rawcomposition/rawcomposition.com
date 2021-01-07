@@ -93,7 +93,7 @@ function Lifelist() {
 			<div className="page content lifelist">
 				<h1>World Life List</h1>
 				<div className='actions'>
-					<span className='species-total'>Total species: {species.length}</span>
+					<span className='species-total'>Total species: {allSpecies.length}</span>
 					<div>
 						<button className={!sortByDate ? 'active' : ''} onClick={(e) => handleSetSortBy(e, false)}>Taxonomic</button>
 						<button className={sortByDate ? 'active' : ''} onClick={(e) => handleSetSortBy(e, true)}>Latest</button>
