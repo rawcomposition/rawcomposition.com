@@ -8,7 +8,7 @@ function Sidebar() {
 				<img className='avatar' src='/avatar.jpg' alt=''/>
 				<div>
 					<h4>Adam Jackson</h4>
-					<p>I'm a web developer and biostatistics graduate student, but what really gives me a thrill is chasing rare birds around world. I developed an interest in bird photography at the age of 12 while living in Tasmania and started getting more serious about birding in 2016.</p>
+					<p>I'm a web developer that loves chasing rare birds around world. I developed an interest in bird photography at the age of 12 while living in Tasmania and started getting more serious about birding in 2016.</p>
 				</div>
 			</div>
 			<h4>Elsewhere</h4>
