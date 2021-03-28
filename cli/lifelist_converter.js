@@ -27,6 +27,7 @@ function processResults(results) {
 			tax_sort: Number(row.taxonomic_sort),
 			rating: Number(row.average_community_rating).toFixed(2),
 			checklist_id: row.ebird_checklist_id,
+			format: row.format,
 		}
 	});
 	
@@ -34,6 +35,9 @@ function processResults(results) {
 	restructuredResults.forEach((row) => {
 		const countableDomestics = ['rocpig'];
 		if(!['Species', 'Group', 'Form'].includes(row.category) && !countableDomestics.includes(row.species_code)) {
+			return;
+		}
+		if(row.format !== "Photo") {
 			return;
 		}
 		if(!species[row.species_code]) {
