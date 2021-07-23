@@ -19,7 +19,7 @@ function processResults(results) {
 		return {
 			id: parseInt(row.ml_catalog_number),
 			name: row.common_name,
-			species_code: row.report_as,
+			parent: row.parent_species,
 			date: row.date ? new Date(row.date) : new Date('1/1/2000'),
 			category: row.taxon_category,
 			country: row.country,
@@ -33,17 +33,17 @@ function processResults(results) {
 	
 	let species = {}
 	restructuredResults.forEach((row) => {
-		const countableDomestics = ['rocpig'];
-		if(!['Species', 'Group', 'Form'].includes(row.category) && !countableDomestics.includes(row.species_code)) {
+		const countableDomestics = ['Columba livia'];
+		if(!['Species', 'Group', 'Form'].includes(row.category) && !countableDomestics.includes(row.parent)) {
 			return;
 		}
 		if(row.format !== "Photo") {
 			return;
 		}
-		if(!species[row.species_code]) {
-			species[row.species_code] = [];
+		if(!species[row.parent]) {
+			species[row.parent] = [];
 		}
-		species[row.species_code].push(row);
+		species[row.parent].push(row);
 	});
 
 	species = Object.values(species).map((group) => {
