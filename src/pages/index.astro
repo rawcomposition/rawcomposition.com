@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/base.astro";
+import FlickrStream from "../components/flickr-stream/index.jsx";
+import Sidebar from "../components/sidebar";
+---
+<BaseLayout>
+	<div class='container page-wrapper'>
+		<div class="content">
+			<FlickrStream client:idle/>
+		</div>
+		<Sidebar/>
+	</div>
+</BaseLayout>

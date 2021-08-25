@@ -1,19 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './styles.scss';
 
 function Header() {
 	return (
 		<header className='main-header'>
 			<div className='container'>
-				<Link to='/' className='logo'>
+				<a href='/' className='logo'>
 					<img src='/logo.png' alt='' width='40'/>
 					<span>RawComposition</span>
-				</Link>
+				</a>
 				<nav>
-					<Link to='/'>Home</Link>
-					<Link to='/about'>About</Link>
-					<Link to='/lifelist'>Life list</Link>
+					<a href='/'>Home</a>
+					<a href='/about'>About</a>
+					<a href='/lifelist'>Life list</a>
 				</nav>
 			</div>
 		</header>

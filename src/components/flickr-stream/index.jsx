@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import Masonry from 'react-masonry-css'
-import fetchJsonp from 'fetch-jsonp';
 import FlickrItem from '../flickr-item';
 import FlickrSkeleton from '../flickr-skeleton';
 import './styles.scss';
@@ -13,13 +12,11 @@ function FlickrStream() {
 	const [pages, setPages] = useState(0);
 
 	const fetchPhotos = useCallback((newPage = 1) => {
-		const api_key = process.env.REACT_APP_FLICKR_KEY;
+		const api_key = "1b2aec40a216a6268e877cb1cede33da";
 		const per_page = 15;
-		const url = `https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=${api_key}&user_id=rawcomposition&per_page=${per_page}&page=${newPage}&format=json&extras=description`;
+		const url = `https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=${api_key}&user_id=rawcomposition&per_page=${per_page}&page=${newPage}&format=json&extras=description&nojsoncallback=1`;
 		setLoading(true);
-		fetchJsonp(url, {
-			jsonpCallbackFunction: 'jsonFlickrApi',
-		  })
+		fetch(url)
 		.then(response => response.json())
 		.then(data => {
 			setPhotos(photos => ([...photos, ...data.photos.photo]));
