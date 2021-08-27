@@ -5,7 +5,7 @@ function Header() {
 		<header className='main-header'>
 			<div className='container'>
 				<a href='/' className='logo'>
-					<img src='/logo.png' alt='' width='40'/>
+					<img src='/logo.png' alt='' width="40" height="40"/>
 					<span>RawComposition</span>
 				</a>
 				<nav>
