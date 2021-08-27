@@ -1,12 +1,30 @@
 ---
 import BaseLayout from "../layouts/base.astro";
-import FlickrStream from "../components/flickr-stream/index.jsx";
-import Sidebar from "../components/sidebar";
+import FlickrItem from "../components/flickr-item.jsx";
+import FlickrMore from "../components/flickr-more.jsx";
+import Sidebar from "../components/sidebar.jsx";
+import { getPhotos } from "../helpers/flickr.js";
+
+const data = await getPhotos();
+const photos = data.photo;
 ---
-<BaseLayout>
-	<div class='container page-wrapper'>
+<style>
+	.container {
+		max-width: 1050px;
+	}
+
+	.page-content {
+		background: unset;
+		padding: 0;
+	}
+</style>
+<BaseLayout class="">
+	<div class="container page-wrapper">
 		<div class="content">
-			<FlickrStream client:idle/>
+			{photos.map(photo => {
+				return <FlickrItem key={photo.id} item={photo}/>
+			})}
+			<FlickrMore client:visible/>
 		</div>
 		<Sidebar/>
 	</div>

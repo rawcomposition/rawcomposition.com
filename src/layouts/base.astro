@@ -1,19 +1,28 @@
 ---
-import Header from "../components/header";
-const { title } = Astro.props;
+import Header from "../components/header.jsx";
+import Sidebar from "../components/sidebar.jsx";
+const { title, content } = Astro.props;
 ---
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>{title || "RawComposition | Photography by Adam Jackson"}</title>
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>{(title || content?.title) || "RawComposition | Photography by Adam Jackson"}</title>
+	<link rel="icon" href="/favicon.png"/>
     <link rel="stylesheet" href="/style/normalize.css">
 	<link rel="stylesheet" href="/style/global.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<Header/>
-	<slot/>
+	{ content ?
+		<div class="container page-wrapper">
+			<div class="content page">
+				<slot/>
+			</div>
+			<Sidebar/>
+		</div>
+	: <slot/>}
 </body>
 </html>
