@@ -9,7 +9,7 @@ import speciesPhotos from "../../public/lifelist_date_sorted.json";
 <BaseLayout class="">
 	<div class="container page-wrapper">
 		<div class="content">
-			<Lifelist total={speciesPhotos.length} initialItems={speciesPhotos.slice(0,20)}/>
+			<Lifelist total={speciesPhotos.length} initialItems={speciesPhotos.slice(0,20)} client:load/>
 		</div>
 	</div>
 </BaseLayout>
