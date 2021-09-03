@@ -9,7 +9,7 @@ function FlickrItem({item}) {
 	return (
 		<article className='flickr-photo'>
 			<a href={'https://www.flickr.com/photos/rawcomposition/' + id} target='_blank'>
-				<img src={url1x} srcset={`${url1x} 640w, ${url2x} 1024w`} width={o_width} height={o_height} alt='' loading='lazy'/>
+				<img src={url1x} srcSet={`${url1x} 640w, ${url2x} 1024w`} width={o_width} height={o_height} alt='' loading='lazy'/>
 			</a>
 			<div className='content'>
 				<h2>{title}</h2>

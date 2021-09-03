@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import FlickrItem from './flickr-item';
-import { getPhotos } from "../helpers/flickr.js";
+import { getFlickrPhotos } from "../helpers.js";
 
 function FlickrMore() {
 	const [state, setState] = useState({
@@ -14,7 +14,7 @@ function FlickrMore() {
 
 	const handleLoadMore = async (fetchPage) => {
 		setState(state => ({...state, loading: true}));
-		const data = await getPhotos(fetchPage);
+		const data = await getFlickrPhotos(fetchPage);
 		setState(state => ({
 			page: state.page + 1,
 			loading: false,

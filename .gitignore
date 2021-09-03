@@ -16,3 +16,5 @@ yarn-error.log*
 
 # macOS-specific files
 .DS_Store
+public/lifelist_taxon_sorted.json
+public/lifelist_date_sorted.json
