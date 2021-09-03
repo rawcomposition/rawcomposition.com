@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "node ebird-pull.mjs && astro build",
     "ebird": "node ebird-pull.mjs"
   },
   "devDependencies": {
