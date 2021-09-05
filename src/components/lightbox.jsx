@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Spinner from '../../components/spinner';
-import './styles.scss';
+import { useEffect, useState } from "preact/hooks";
+import Spinner from "./spinner.jsx";
 
 function Lightbox({data: {imageId, caption}, handleClose}) {
 	const [isLoading, setIsLoading] = useState(true);
@@ -29,18 +28,18 @@ function Lightbox({data: {imageId, caption}, handleClose}) {
 	}, [imageId]);
 	
 	if(!imageId) {
-		return '';
+		return "";
 	}
 
 	return (
-		<div className='lightbox'>
+		<div className="lightbox">
 			{(imageId && !isLoading) ?
 				<figure>
 					<img src={`https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${imageId}/2400`}/>
 					<figcaption>{caption}</figcaption>
 				</figure>
 			: <Spinner/>}
-			<button className='close' onClick={handleClose}>&times;</button>
+			<button className="close" onClick={handleClose}>&times;</button>
 		</div>
 	)
 }
