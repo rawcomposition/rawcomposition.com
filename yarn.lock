@@ -37,7 +37,7 @@
   resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-0.2.2.tgz#6f23c3922df2ca0bce0362ee48d13b0820b09bb3"
   integrity sha512-STrtNBw7MSaf9RfSdQDqW38p3GrIfNZEZvLgEyWqlEeafUxtF783L2PDLW3nBUyIsY6GZvQd5jq19NpGrhSWLw==
 
-"@astrojs/renderer-preact@0.2.1":
+"@astrojs/renderer-preact@0.2.1", "@astrojs/renderer-preact@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@astrojs/renderer-preact/-/renderer-preact-0.2.1.tgz#65780b286bbdb5b49108ec06243330a3a0a6fde1"
   integrity sha512-6OSU0uvChdr5Ecd2330g/7gT4+Sfrvro274fETnWXy41YbbmETibG4GcI142nIhlQXUOw0jpMLv0KPl6Y5sfhw==
@@ -46,7 +46,7 @@
     preact "^10.5.13"
     preact-render-to-string "^5.1.18"
 
-"@astrojs/renderer-react@0.2.0", "@astrojs/renderer-react@^0.2.0":
+"@astrojs/renderer-react@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@astrojs/renderer-react/-/renderer-react-0.2.0.tgz#1a033744186562559c17406e943d07323d71e9e9"
   integrity sha512-xMF991MMCzMQkIGu/lazO9nwz5SWGZ93h/guC84DV/oIeiPAEIfCnO8cTCqFAgzv9Gti9TovR4RX+jReYRqpGA==

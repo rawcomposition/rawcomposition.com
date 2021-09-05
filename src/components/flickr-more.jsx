@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import FlickrItem from './flickr-item';
-import { getFlickrPhotos } from "../helpers.js";
+import { useState } from "preact/hooks";
+import FlickrItem from "./flickr-item";
+import { getPhotos } from "../helpers/flickr.js";
 
 function FlickrMore() {
 	const [state, setState] = useState({
@@ -14,7 +14,7 @@ function FlickrMore() {
 
 	const handleLoadMore = async (fetchPage) => {
 		setState(state => ({...state, loading: true}));
-		const data = await getFlickrPhotos(fetchPage);
+		const data = await getPhotos(fetchPage);
 		setState(state => ({
 			page: state.page + 1,
 			loading: false,
@@ -24,16 +24,16 @@ function FlickrMore() {
 	}
 	
 	return (
-		<React.Fragment>
+		<>
 			<div className="flickr-list">
 				{photos.map(photo => {
 					return <FlickrItem key={photo.id} item={photo}/>
 				})}
 			</div>
 			{(pages !== page) &&
-				<button className={`${loading ? 'disabled' : ''} button load-more`} onClick={() => handleLoadMore(page + 1)}>{ loading ? 'loading...' : 'Load More' }</button>
+				<button className={`${loading ? "disabled" : ""} button load-more`} onClick={() => handleLoadMore(page + 1)}>{ loading ? "loading..." : "Load More" }</button>
 			}
-		</React.Fragment>
+		</>
 	)
 }
 

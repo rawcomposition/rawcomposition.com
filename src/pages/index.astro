@@ -2,9 +2,9 @@
 import BaseLayout from "../layouts/base.astro";
 import FlickrItem from "../components/flickr-item.jsx";
 import FlickrMore from "../components/flickr-more.jsx";
-import Sidebar from "../components/sidebar.jsx";
-import { getFlickrPhotos } from "../helpers.js";
-const data = await getFlickrPhotos();
+import Sidebar from "../components/sidebar.astro";
+import { getPhotos } from "../helpers/flickr.js";
+const data = await getPhotos();
 const photos = data.photo;
 ---
 <style>
@@ -17,7 +17,7 @@ const photos = data.photo;
 		padding: 0;
 	}
 </style>
-<BaseLayout class="">
+<BaseLayout>
 	<div class="container page-wrapper">
 		<div class="content">
 			{photos.map(photo => {

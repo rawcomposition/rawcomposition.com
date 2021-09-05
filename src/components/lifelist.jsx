@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useCallback, useRef } from "preact/hooks";
 import Lightbox from "./lightbox.jsx";
 import Species from "./lifelist-species.jsx";
 import { forceCheck } from "react-lazyload";

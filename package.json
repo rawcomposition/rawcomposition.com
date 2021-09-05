@@ -9,7 +9,7 @@
     "ebird": "node ebird-pull.mjs"
   },
   "devDependencies": {
-    "@astrojs/renderer-react": "^0.2.0",
+    "@astrojs/renderer-preact": "^0.2.1",
     "@snowpack/plugin-dotenv": "^2.2.0",
     "astro": "^0.19.1",
     "dotenv": "^10.0.0",

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "preact/hooks";
 import Spinner from "./spinner.jsx";
 
 function Lightbox({data: {imageId, caption}, handleClose}) {
