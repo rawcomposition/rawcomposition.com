@@ -511,7 +511,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 450px) {
 	.lifelist-species .images {
-		display: block;
+		grid-template-columns: 1fr;
+		grid-gap: 15px;
 	}
 
 	.actions {
