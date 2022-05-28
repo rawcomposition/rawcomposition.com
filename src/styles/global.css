@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-[#eee];
+		@apply antialiased;
+		overflow-anchor: none;
+	}
+
+	.text-orange {
+		@apply text-[#f4793d];
+	}
+
+	.bg-zebra li:nth-child(odd) {
+		@apply bg-[#f9f9f9];
+	}
+
+	.marker-none::marker {
+		display: none;
+		content: "";
+	}
+
+	details[open] .hide-on-open {
+		@apply hidden;
+	}
+}

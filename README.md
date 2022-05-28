@@ -1,18 +1,54 @@
-# Welcome!
+# Astro Starter Kit: Blog
 
-This repository houses the [Astro](https://astro.build) project that powers my personal website: [RawComposition.com](https://rawcomposition.com).
+```
+npm init astro -- --template blog
+```
 
-The [Home page](https://rawcomposition.com) pulls images from my [Flickr photostream](https://www.flickr.com/photos/rawcomposition/) through their API. The [Life List page](https://rawcomposition.com/lifelist/) pulls images from [eBird](https://ebird.org/media/catalog?sort=upload_date_desc&regionCode=&userId=USER730325) where I upload all my bird pictures. I then group the images by species and sort them by eBird's star rating and choose the top 3.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
 
-The site is hosted on [Netlify](https://www.netlify.com/) which builds the project into static pages for really fast load times. I don't have to wait for the Flickr and eBird APIs to return their results, since it's already done at build time. Whenever I update my Flickr photostream or add new species on eBird, I just go into my Netlify dashboard and rebuild.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-**[Go to RawComposition.com](https://rawcomposition.com)**
+Features:
 
-## Commands
+- ✅ SEO-friendly setup with canonical URLs and OpenGraph data
+- ✅ Full Markdown support
+- ✅ RSS 2.0 generation
+- ✅ Sitemap.xml generation
 
-| Command         | Action                                              |
-|:----------------|:----------------------------------------------------|
-| `yarn install`  | Installs dependencies                               |
-| `yarn dev`      | Starts local dev server at `localhost:3000`         |
-| `yarn ebird`    | Pull photos from eBird and store in `public/*.json` |
-| `yarn build`    | Build production site to `./dist/`                  |
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```
+/
+├── public/
+│   ├── robots.txt
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   └── Tour.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command           | Action                                       |
+|:----------------  |:-------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:3000`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).

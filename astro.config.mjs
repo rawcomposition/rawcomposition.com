@@ -1,11 +1,11 @@
-export default {
-  buildOptions: {
-	site: "https://rawcomposition.com",
-    sitemap: true,
-  },
-  devOptions: {
-  	hostname: "localhost",
-    	port: 3000,
-  },
-  renderers: ["@astrojs/renderer-preact"],
-};
+import { defineConfig } from 'astro/config';
+import preact from '@astrojs/preact';
+
+import tailwind from "@astrojs/tailwind";
+
+// https://astro.build/config
+export default defineConfig({
+  integrations: [preact(), tailwind({
+    config: { applyBaseStyles: false },
+  })]
+});
