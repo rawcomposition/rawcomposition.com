@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'],
@@ -19,5 +19,5 @@ module.exports = {
 		},
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 }

@@ -7,14 +7,17 @@ import { getPhotos } from "../helpers/flickr.js";
 const data = await getPhotos();
 const photos = data.photo;
 ---
+
 <BaseLayout>
-	<div class="container flex gap-8 max-w-[1050px]">
+	<div class="container flex flex-col md:flex-row gap-8 max-w-[1050px]">
 		<div class="flex-1">
-			{photos.map(photo => {
-				return <FlickrItem item={photo}/>
-			})}
-			<FlickrMore client:visible/>
+			{
+				photos.map((photo) => {
+					return <FlickrItem item={photo} />;
+				})
+			}
+			<FlickrMore client:visible />
 		</div>
-		<Sidebar/>
+		<Sidebar />
 	</div>
 </BaseLayout>

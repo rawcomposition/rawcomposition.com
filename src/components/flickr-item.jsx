@@ -5,13 +5,13 @@ function FlickrItem({item}) {
 	const url2x = `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_b.jpg`;
 
 	return (
-		<article className="flickr-photo">
+		<article className="mb-8">
 			<a href={"https://www.flickr.com/photos/rawcomposition/" + id} target="_blank">
 				<img src={url1x} srcSet={`${url1x} 640w, ${url2x} 1024w`} width={o_width} height={o_height} alt="" loading="lazy"/>
 			</a>
-			<div className="content">
-				<h2>{title}</h2>
-				<p>{item.description._content}</p>
+			<div className="bg-white px-10 py-8">
+				<h2 className="font-bold mb-4 font-heading text-gray-700">{title}</h2>
+				<p className="text-sm text-neutral-500">{item.description._content}</p>
 			</div>
 		</article>
 	)
