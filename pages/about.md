@@ -2,9 +2,10 @@
 layout: ../layouts/base.astro
 title: About | RawComposition.com
 ---
+
 # G'day, mates 👋
 
-<img src="/me.jpg" alt="Photo of Adam Jackson and his wife" class="bio-image"/>
+<img src="/me.jpg" alt="Photo of Adam Jackson and his wife" width="200" style="float: right; padding: 5px; border: solid 1px #eee; margin: 0 0 1rem 1rem;" />
 
 I'm a web developer that loves chasing rare birds around world. I developed an interest in bird photography at the age of 12 while living in Tasmania and started getting more serious about birding in 2016.
 
@@ -16,4 +17,5 @@ My goal is to photograph 5,000 species of birds in my lifetime, while keeping my
 <a href="https://ebird.org/profile/NzMwMzI1/world" target="_blank">View my eBird profile</a>
 
 ---
+
 Want to get in touch? Contact me via email: [adam@rawcomposition.com](mailto:adam@rawcomposition.com)

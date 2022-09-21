@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const getEbirdPhotos = async (cursor, results = []) => {
-	const response = await fetch(`https://search.macaulaylibrary.org/api/v1/search?count=100&includeUnconfirmed=T&sort=upload_date_desc&mediaType=p&regionCode=&userId=${process.env.EBIRD_USER_ID}&taxaLocale=en&initialCursorMark=${cursor}`);
+	const response = await fetch(`https://search.macaulaylibrary.org/api/v1/search?count=100&includeUnconfirmed=T&sort=upload_date_desc&mediaType=p&regionCode=&userId=${process.env.NEXT_PUBLIC_EBIRD_USER_ID}&taxaLocale=en&initialCursorMark=${cursor}`);
 	const json = await response.json();
 	if (!json.results) {
 		throw "Error fetching eBird photos";
