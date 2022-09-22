@@ -23,3 +23,9 @@ export type Country = {
   code: string;
   count: number;
 };
+
+export type Trip = {
+  content: string;
+  slug: string;
+  title: string;
+};
