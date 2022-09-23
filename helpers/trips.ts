@@ -22,8 +22,7 @@ export const getTrips = async (page: number) => {
 
 export const getTrip = async (slug: string) => {
   const fileContent = fs.readFileSync(path.join(process.cwd(), "trips", `${slug}.mdx`), "utf-8");
-  const { data, content } = matter(fileContent);
-  return { content, slug, ...(data as any) };
+  return matter(fileContent);
 };
 
 export const getPaths = async () => {

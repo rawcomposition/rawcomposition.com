@@ -2,10 +2,20 @@ import { GetStaticProps } from "next";
 import Header from "components/Header";
 import Head from "next/head";
 import { getTrip, getPaths } from "helpers/trips";
+import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
+import EbirdImage from "components/EbirdImage";
 
-type Props = {};
+type Props = {
+  source: any;
+  matter: any;
+};
 
-export default function Trip({}: Props) {
+const components = {
+  EbirdImage: EbirdImage,
+};
+
+export default function Trip({ source, matter }: Props) {
   return (
     <>
       <Head>
@@ -15,6 +25,7 @@ export default function Trip({}: Props) {
       <div className="container flex flex-col md:flex-row gap-8 max-w-[1200px]">
         <div className="flex-1 p-12 bg-white mb-4 prose prose-headings:font-heading prose-headings:text-neutral-600 prose-a:text-orange prose-img:mt-0 prose-hr:my-8 max-w-full">
           <h1 className="font-heading text-neutral-600 text-4xl mb-8">Fun Trip</h1>
+          <MDXRemote {...source} components={components} />
         </div>
       </div>
     </>
@@ -23,16 +34,23 @@ export default function Trip({}: Props) {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slug = params?.slug as string;
-  const trip = await getTrip(slug);
-  if (!trip) return { notFound: true };
+  const { content, data } = await getTrip(slug);
+  if (!content) return { notFound: true };
+
+  const mdxSource = await serialize(content, {
+    scope: data,
+  });
+
   return {
-    props: {},
+    props: {
+      source: mdxSource,
+      matter: data,
+    },
   };
 };
 
 export const getStaticPaths = async () => {
   const paths = await getPaths();
-  console.log("Paths", paths);
   return {
     paths,
     fallback: false,
