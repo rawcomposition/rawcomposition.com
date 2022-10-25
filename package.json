@@ -28,7 +28,8 @@
   },
   "overrides": {
     "react-lazyload": {
-      "react": "$react"
+      "react": "$react",
+      "react-dom": "$react-dom"
     }
   }
 }
