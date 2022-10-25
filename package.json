@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "node ebird-pull.mjs && next start",
+    "build": "node ebird-pull.mjs && next build",
+    "start": "next start",
     "ebird": "node ebird-pull.mjs"
   },
   "dependencies": {
