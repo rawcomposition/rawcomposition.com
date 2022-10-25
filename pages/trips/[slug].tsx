@@ -15,6 +15,8 @@ const components = {
   EbirdImage: EbirdImage,
 };
 
+//Design ideas: https://wanderic.ancorathemes.com/enjoying-late-autumn-nature/
+
 export default function Trip({ source, matter }: Props) {
   return (
     <>
