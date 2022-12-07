@@ -28,6 +28,11 @@ export type Trip = {
   content: string;
   slug: string;
   title: string;
+  length: string;
+  month: string;
+  species: number;
+  lifers: number;
+  isUS?: boolean;
   createdAt: string;
   featuredImg: string;
 };
