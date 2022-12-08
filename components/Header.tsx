@@ -1,6 +1,10 @@
-export default function Header() {
+type Props = {
+  noMargin?: boolean;
+};
+
+export default function Header({ noMargin }: Props) {
   return (
-    <header className="bg-neutral-800/95 text-gray-200 py-4 mb-12">
+    <header className={`bg-neutral-800/95 text-gray-200 py-4 ${noMargin ? "" : "mb-12"}`}>
       <div className="container sm:flex">
         <a href="/" className="flex text-[33px] font-bold items-center font-heading">
           <img src="/logo.png" alt="" width="40" height="40" className="mr-2" />

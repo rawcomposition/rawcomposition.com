@@ -35,6 +35,7 @@ export type Trip = {
   isUS?: boolean;
   createdAt: string;
   featuredImg: string;
+  ebirdLink?: string;
 };
 
 export type KeyValue = {

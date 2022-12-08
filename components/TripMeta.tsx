@@ -7,9 +7,10 @@ type Props = {
   species?: number;
   lifers?: number;
   isUS?: boolean;
+  ebirdLink?: string;
 };
 
-function TripItem({ length, species, lifers, isUS }: Props) {
+function TripItem({ length, species, lifers, isUS, ebirdLink }: Props) {
   return (
     <>
       {length && (
@@ -26,6 +27,16 @@ function TripItem({ length, species, lifers, isUS }: Props) {
         <span className="flex items-center gap-2 text-sm text-gray-600 whitespace-nowrap">
           <CheckCircle className="text-sm text-gray-500" /> {lifers} {isUS ? "US lifers" : "lifers"}
         </span>
+      )}
+      {ebirdLink && (
+        <a
+          href={ebirdLink}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center !text-gray-600 whitespace-nowrap no-underline bg-gray-100 text-[13px] leading-3 px-2.5 py-[2px] rounded"
+        >
+          View on <img src="/ebird.png" className="h-[18px] -mt-[1px] -mr-1.5 inline-block mb-0" alt="eBird" />
+        </a>
       )}
     </>
   );

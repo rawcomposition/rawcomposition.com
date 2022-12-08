@@ -6,6 +6,7 @@
   body {
     overflow-anchor: none;
     @apply antialiased;
+    @apply mb-12;
   }
 
   svg.icon {
