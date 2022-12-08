@@ -38,8 +38,8 @@ export default function Trips({ trips: initialTrips, countryData }: Props) {
         <title>RawComposition.com | Photography by Adam Jackson</title>
       </Head>
       <Header />
-      <div className="container flex flex-col md:flex-row gap-8 max-w-[1050px] items-start">
-        <div className="flex-1">
+      <div className="container flex flex-col sm:flex-row gap-8 max-w-[1050px]">
+        <div className="flex-1 sm:min-w-[380px]">
           {trips.map((data) => (
             <TripItem key={data.slug} {...data} />
           ))}

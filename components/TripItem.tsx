@@ -3,20 +3,19 @@ import Link from "next/link";
 import { getEbirdImgUrl } from "helpers/ebird";
 import TripMeta from "components/TripMeta";
 
-function TripItem({ title, slug, length, month, species, lifers, isUS, featuredImg }: Trip) {
-  const url1x = getEbirdImgUrl(featuredImg, 320);
-  const url2x = getEbirdImgUrl(featuredImg, 480);
-
+function TripItem({ title, slug, length, month, species, lifers, isUS, featuredImg: img }: Trip) {
   return (
-    <article className="mb-8 flex">
+    <article className="mb-8 flex-col lg:flex-row flex">
       <Link href={`/trips/${slug}`}>
-        <img
-          className="w-[220px] h-[220px] object-cover"
-          src={url1x}
-          srcSet={`${url1x} 640w, ${url2x} 1024w`}
-          alt=""
-          loading="lazy"
-        />
+        <picture>
+          <source media="(max-width: 1024px)" srcSet={getEbirdImgUrl(img, 900)} />
+          <img
+            className="w-full lg:w-[220px] aspect-[1.6] lg:aspect-auto lg:h-[220px] object-cover"
+            src={getEbirdImgUrl(img, 480)}
+            alt=""
+            loading="lazy"
+          />
+        </picture>
       </Link>
       <div className="bg-white px-10 pb-8 pt-6 flex-1">
         {month && (
