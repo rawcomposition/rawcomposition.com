@@ -26,10 +26,10 @@ export default function Trip({ source, matter }: Props) {
   return (
     <>
       <Head>
-        <title>RawComposition.com | Photography by Adam Jackson</title>
+        <title>{title} | RawComposition.com</title>
       </Head>
       <Header />
-      {featuredImg && <img src={img} alt="" className="w-full object-cover aspect-video -mt-12" />}
+      {featuredImg && <img src={img} alt="" className="w-full object-cover aspect-[2] -mt-12" />}
       <div className={`container flex flex-col md:flex-row gap-8 max-w-4xl ${featuredImg ? "-mt-16" : ""}`}>
         <div className="flex-1 p-4 sm:p-12 pt-3 sm:pt-10 bg-white mb-4 prose prose-headings:font-heading prose-headings:text-neutral-600 prose-a:text-orange prose-img:mt-0 prose-hr:my-8 max-w-full">
           <span className="text-xs font-medium px-1.5 py-[3px] rounded bg-blue-100 text-blue-800 opacity-70">
