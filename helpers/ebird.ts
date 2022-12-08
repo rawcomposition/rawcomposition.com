@@ -1,7 +1,8 @@
 import { Country, KeyValue } from "lib/types";
 
 export const getEbirdImgUrl = (id: string | number, size: 160 | 320 | 480 | 640 | 900 | 1200 | 1800 | 2400) => {
-  return `https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${id}/${size}`;
+  if (!id) return "";
+  return `https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${id.toString().replace("ML", "")}/${size}`;
 };
 
 const countryNames: KeyValue = {

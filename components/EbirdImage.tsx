@@ -1,7 +1,43 @@
+import { getEbirdImgUrl } from "helpers/ebird";
+import ArrowRight from "icons/ArrowRight";
+import CheckCircle from "icons/CheckCircle";
+
 type Props = {
   id: string;
+  text?: any;
+  species: string;
+  lifer?: boolean;
 };
 
-export default function Image({ id }: Props) {
-  return <div className="bg-gray-200 rounded p-4">You passed ID: {id}</div>;
+export default function Image({ id, text, species, lifer }: Props) {
+  const url = getEbirdImgUrl(id, 1200);
+  return (
+    <figure className="bg-gray-200">
+      <img src={url} alt="" loading="lazy" className="w-full object-contain max-h-[600px]" />
+      <figcaption className="text-sm text-gray-900 mt-0 px-4 py-3 relative">
+        <strong>{species}</strong>{" "}
+        {lifer && (
+          <span className="text-[12px] font-medium rounded bg-lime-700/10 px-1 text-lime-700 inline-flex items-center gap-1 align-bottom ml-2">
+            <CheckCircle />
+            Lifer
+          </span>
+        )}
+        <a
+          href={`https://macaulaylibrary.org/asset/${id}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-3 right-4 no-underline !text-slate-600 inline-flex gap-1 items-center"
+        >
+          View on eBird
+          <ArrowRight />
+        </a>
+        {text && (
+          <>
+            <br />
+            {text}
+          </>
+        )}
+      </figcaption>
+    </figure>
+  );
 }

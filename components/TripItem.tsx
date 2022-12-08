@@ -1,9 +1,7 @@
 import { Trip } from "lib/types";
 import Link from "next/link";
 import { getEbirdImgUrl } from "helpers/ebird";
-import Feather from "icons/Feather";
-import Clock from "icons/Clock";
-import CheckCircle from "icons/CheckCircle";
+import TripMeta from "components/TripMeta";
 
 function TripItem({ title, slug, length, month, species, lifers, isUS, featuredImg }: Trip) {
   const url1x = getEbirdImgUrl(featuredImg, 320);
@@ -26,24 +24,12 @@ function TripItem({ title, slug, length, month, species, lifers, isUS, featuredI
             {month}
           </span>
         )}
-        <h2 className="text-2xl font-bold mb-4 mt-2.5 font-heading text-gray-700">{title}</h2>
-        <div className="flex gap-6 flex-wrap">
-          {length && (
-            <span className="flex items-center gap-2 text-sm text-gray-600 whitespace-nowrap">
-              <Clock className="text-sm text-gray-500" /> {length}
-            </span>
-          )}
-          {species && (
-            <span className="flex items-center gap-2 text-sm text-gray-600 whitespace-nowrap">
-              <Feather className="text-sm text-gray-500" /> {species} species
-            </span>
-          )}
-          {lifers && (
-            <span className="flex items-center gap-2 text-sm text-gray-600 whitespace-nowrap">
-              <CheckCircle className="text-sm text-gray-500" /> {lifers} lifers
-            </span>
-          )}
-        </div>
+        <Link href={`/trips/${slug}`}>
+          <h2 className="text-2xl font-bold mb-4 mt-2.5 font-heading text-gray-700">{title}</h2>
+        </Link>
+        <Link href={`/trips/${slug}`} className="flex gap-6 flex-wrap">
+          <TripMeta {...{ length, species, lifers, isUS }} />
+        </Link>
         <p className="text-sm text-neutral-500"></p>
       </div>
     </article>
