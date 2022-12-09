@@ -34,7 +34,7 @@ export default function Image({ id, text, species, lifer }: Props) {
         {text && (
           <>
             <br />
-            {text}
+            <span className="inline-block mt-1">{text}</span>
           </>
         )}
       </figcaption>
