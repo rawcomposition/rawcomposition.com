@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { Trip } from "lib/types";
 
-const perPage = 2;
+const perPage = 20;
 
 export const getTrips = async (page: number) => {
   const dirFiles = fs.readdirSync(path.join(process.cwd(), "trips"), {
@@ -26,6 +26,14 @@ export const getTrips = async (page: number) => {
 export const getTrip = async (slug: string) => {
   const fileContent = fs.readFileSync(path.join(process.cwd(), "trips", `${slug}.mdx`), "utf-8");
   return matter(fileContent);
+};
+
+export const countTrips = async () => {
+  const dirFiles = fs.readdirSync(path.join(process.cwd(), "trips"), {
+    withFileTypes: true,
+  });
+
+  return dirFiles.length || 0;
 };
 
 export const getPaths = async () => {

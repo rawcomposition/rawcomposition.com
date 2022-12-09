@@ -4,17 +4,17 @@ import { Trip, Country } from "lib/types";
 import { getCountryData } from "helpers/ebird";
 import Header from "components/Header";
 import Sidebar from "components/Sidebar";
-import { getTrips } from "helpers/trips";
+import { getTrips, countTrips } from "helpers/trips";
 import Head from "next/head";
-import Link from "next/link";
 import TripItem from "components/TripItem";
 
 type Props = {
   trips: Trip[];
+  total: number;
   countryData: Country[];
 };
 
-export default function Trips({ trips: initialTrips, countryData }: Props) {
+export default function Trips({ trips: initialTrips, countryData, total }: Props) {
   const [trips, setTrips] = React.useState(initialTrips);
   const [page, setPage] = React.useState(1);
   const [loading, setLoading] = React.useState(false);
@@ -43,13 +43,15 @@ export default function Trips({ trips: initialTrips, countryData }: Props) {
           {trips.map((data) => (
             <TripItem key={data.slug} {...data} />
           ))}
-          <button
-            disabled={loading}
-            className="bg-[#f4793d] text-white py-2 px-8 mb-8 mx-auto block"
-            onClick={loadMore}
-          >
-            {loading ? "loading..." : "Load More"}
-          </button>
+          {trips.length < total && (
+            <button
+              disabled={loading}
+              className="bg-[#f4793d] text-white py-2 px-8 mb-8 mx-auto block"
+              onClick={loadMore}
+            >
+              {loading ? "loading..." : "Load More"}
+            </button>
+          )}
         </div>
         <Sidebar countryData={countryData} />
       </div>
@@ -59,8 +61,9 @@ export default function Trips({ trips: initialTrips, countryData }: Props) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const trips = await getTrips(1);
+  const total = await countTrips();
   const countryData = await getCountryData();
   return {
-    props: { trips, countryData },
+    props: { trips, total, countryData },
   };
 };
