@@ -24,10 +24,6 @@ export default function Trip({ source, matter }: Props) {
   const { title, month, length, species, lifers, isUS, featuredImg, ebirdLink, subtitle } = matter;
   const img = getEbirdImgUrl(featuredImg, 2400);
 
-  //---------------
-  //TODO: Update /trips urls
-  //---------------
-
   return (
     <>
       <Head>
@@ -36,7 +32,7 @@ export default function Trip({ source, matter }: Props) {
       <Header noMargin />
       <div className="bg-neutral-800/90 p-2">
         <div className="container text-gray-400 text-xs sm:text-sm">
-          <Link href="/trips" className="text-gray-200">
+          <Link href="/" className="text-gray-200">
             Trip Reports
           </Link>
           <CaretRight className="mx-2" />
@@ -55,7 +51,7 @@ export default function Trip({ source, matter }: Props) {
           </div>
           <MDXRemote {...source} components={components} />
         </div>
-        <Link href="/trips" className="text-lg text-gray-600 inline-flex items-center gap-1">
+        <Link href="/" className="text-lg text-gray-600 inline-flex items-center gap-1">
           <ArrowLeft /> Back to trips
         </Link>
       </div>
