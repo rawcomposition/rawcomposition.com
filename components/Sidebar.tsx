@@ -12,7 +12,7 @@ export default function Sidebar({ countryData }: Props) {
   if (!countryData) return null;
 
   return (
-    <div className="bg-white p-10 w-full md:w-[33%] text-sm mb-4">
+    <div className="bg-white p-10 w-full md:w-[33%] text-sm mb-8">
       <div className="text-center mb-12">
         <img className="w-[150px] rounded-full inline-block" src="/avatar.jpg" alt="" />
         <div>

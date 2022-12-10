@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getEbirdImgUrl } from "helpers/ebird";
 import TripMeta from "components/TripMeta";
 
-function TripItem({ title, slug, length, month, species, lifers, isUS, featuredImg: img }: Trip) {
+function TripItem({ title, slug, length, month, species, lifers, isUS, subtitle, featuredImg: img }: Trip) {
   return (
     <article className="mb-8 flex-col lg:flex-row flex">
       <Link href={`/trips/${slug}`}>
@@ -27,7 +27,7 @@ function TripItem({ title, slug, length, month, species, lifers, isUS, featuredI
           <h2 className="text-2xl font-bold mb-4 mt-2.5 font-heading text-gray-700">{title}</h2>
         </Link>
         <Link href={`/trips/${slug}`} className="flex gap-6 gap-y-3 flex-wrap">
-          <TripMeta {...{ length, species, lifers, isUS }} />
+          <TripMeta {...{ length, species, lifers, isUS, subtitle }} />
         </Link>
         <p className="text-sm text-neutral-500"></p>
       </div>

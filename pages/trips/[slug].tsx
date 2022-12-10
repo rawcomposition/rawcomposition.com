@@ -21,7 +21,7 @@ const components = {
 };
 
 export default function Trip({ source, matter }: Props) {
-  const { title, month, length, species, lifers, isUS, featuredImg, ebirdLink } = matter;
+  const { title, month, length, species, lifers, isUS, featuredImg, ebirdLink, subtitle } = matter;
   const img = getEbirdImgUrl(featuredImg, 2400);
 
   //---------------
@@ -51,7 +51,7 @@ export default function Trip({ source, matter }: Props) {
           </span>
           <h1 className="font-heading text-neutral-600 text-4xl mb-4 mt-1">{title}</h1>
           <div className="flex gap-6 flex-wrap gap-y-3 mb-10">
-            <TripMeta {...{ length, species, lifers, isUS, ebirdLink }} />
+            <TripMeta {...{ length, species, lifers, isUS, ebirdLink, subtitle }} />
           </div>
           <MDXRemote {...source} components={components} />
         </div>

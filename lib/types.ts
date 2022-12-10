@@ -28,6 +28,7 @@ export type Trip = {
   content: string;
   slug: string;
   title: string;
+  subtitle?: string;
   length: string;
   month: string;
   species: number;
