@@ -30,7 +30,7 @@ export default function Sidebar({ countryData }: Props) {
           <ol className="bg-zebra">
             <CountryRow country="World" count={totalCount} link="/lifelist" />
             {countryData.slice(0, 5).map(({ code, count }) => (
-              <CountryRow country={getCountryName(code)} count={count} />
+              <CountryRow key={code} country={getCountryName(code)} count={count} />
             ))}
           </ol>
           <div className="text-center text-orange cursor-pointer absolute left-0 right-0 bottom-0 p-2 bg-gradient-to-t from-white to-transparent hide-on-open">
@@ -39,7 +39,7 @@ export default function Sidebar({ countryData }: Props) {
         </summary>
         <ol className="bg-zebra">
           {countryData.slice(5).map(({ code, count }) => (
-            <CountryRow country={getCountryName(code)} count={count} />
+            <CountryRow key={code} country={getCountryName(code)} count={count} />
           ))}
         </ol>
       </details>
