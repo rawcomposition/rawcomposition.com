@@ -1,4 +1,4 @@
-import speciesPhotos from "public/lifelist_date_sorted.json";
+import overview from "lifelist/overview.json";
 import { getCountryName } from "helpers/ebird";
 import CountryRow from "components/CountryRow";
 import { Country } from "lib/types";
@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default function Sidebar({ countryData }: Props) {
-  const totalCount = speciesPhotos.length;
+  const totalCount = overview.total;
   if (!countryData) return null;
 
   return (
