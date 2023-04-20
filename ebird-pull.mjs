@@ -7,7 +7,7 @@ import dayjs from "dayjs";
 const sensitiveDates = [
   { code: "lepchi", date: new Date("4/7/2023") },
   { code: "gusgro", date: new Date("4/8/2023") },
-  { code: "yenpar1", date: new Date("4/9/2023") },
+  { code: "yenpar1", date: new Date("2/5/2023") },
   { code: "fepowl", date: new Date("6/21/2017") },
   { code: "licpar", date: new Date("13/5/2018") },
   { code: "purpar1", date: new Date("23/9/2021") },
