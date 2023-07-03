@@ -2,6 +2,7 @@ import overview from "lifelist/overview.json";
 import { getCountryName } from "helpers/ebird";
 import CountryRow from "components/CountryRow";
 import { Country } from "lib/types";
+import Link from "next/link";
 
 type Props = {
   countryData: Country[];
@@ -43,6 +44,15 @@ export default function Sidebar({ countryData }: Props) {
           ))}
         </ol>
       </details>
+
+      <h4 className="text-[#636467] uppercase font-bold font-heading mb-4 mt-12">Stuff I've Built</h4>
+      <p className="text-zinc-600">
+        Use{" "}
+        <Link href="https://birdplan.app" className="text-orange font-bold" target="_blank">
+          BirdPlan.app
+        </Link>{" "}
+        to plan your next birding adventure!
+      </p>
     </div>
   );
 }
