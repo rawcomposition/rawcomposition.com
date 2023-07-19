@@ -42,9 +42,11 @@ photos.forEach((row) => {
   if (row.commonName.includes("/") || row.commonName.includes("hybrid") || row.commonName.includes("sp.")) {
     return;
   }
+
   if (!species[row.reportAs]) {
     species[row.reportAs] = [];
   }
+
   species[row.reportAs].push({
     id: parseInt(row.catalogId),
     width: row.width,
