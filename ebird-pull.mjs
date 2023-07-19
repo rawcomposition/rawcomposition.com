@@ -16,6 +16,7 @@ const sensitiveDates = [
   { code: "loeowl", date: new Date("17/9/2017") },
   { code: "grgmac", date: new Date("3/3/2020") },
   { code: "grgowl", date: new Date("2/9/2018") },
+  { code: "yelpar1", date: new Date("13/5/2023") },
 ];
 
 const getEbirdPhotos = async (cursor, results = []) => {
@@ -53,7 +54,7 @@ photos.forEach((row) => {
     date:
       row.obsDttm !== "Unknown"
         ? new Date(row.obsDttm)
-        : sensitiveDates.find((it) => it.code === row.reportAs).date || new Date("1/1/2000"),
+        : sensitiveDates.find((it) => it.code === row.reportAs)?.date || new Date("1/1/2000"),
     rating: Number(row.rating).toFixed(2),
     checklist_id: row.eBirdChecklistId,
   });
@@ -85,7 +86,7 @@ function finalizeSortedData(species) {
 }
 
 console.log("Writing eBird photos to JSON file...");
-const years = [...new Set(species.map((s) => s.year))].sort((a, b) => b - a);
+const years = [...new Set(species.map((s) => s.year))].filter((year) => year !== "Invalid Date").sort((a, b) => b - a);
 years.forEach((year) => {
   const year_sorted_species = species.filter((s) => s.year === year).sort((a, b) => b.date - a.date);
   fs.writeFileSync(`./lifelist/${year}.json`, finalizeSortedData(year_sorted_species));
