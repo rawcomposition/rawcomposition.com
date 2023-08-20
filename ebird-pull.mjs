@@ -16,9 +16,9 @@ const sensitiveDates = [
   { code: "loeowl", date: new Date("17/9/2017") },
   { code: "grgmac", date: new Date("3/3/2020") },
   { code: "grgowl", date: new Date("2/9/2018") },
-  { code: "yelpar1", date: new Date("13/5/2023") },
-  { code: "mexpar1", date: new Date("10/8/2023") },
-  { code: "milmac", date: new Date("6/8/2023") },
+  { code: "yelpar1", date: new Date("5/13/2023") },
+  { code: "mexpar1", date: new Date("8/10/2023") },
+  { code: "milmac", date: new Date("8/6/2023") },
 ];
 
 const getEbirdPhotos = async (cursor, results = []) => {
