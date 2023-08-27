@@ -23,7 +23,7 @@ const sensitiveDates = [
 
 const getEbirdPhotos = async (cursor, results = []) => {
   const response = await fetch(
-    `https://search.macaulaylibrary.org/api/v1/search?count=100&includeUnconfirmed=T&sort=upload_date_desc&mediaType=p&regionCode=&userId=${process.env.NEXT_PUBLIC_EBIRD_USER_ID}&taxaLocale=en&initialCursorMark=${cursor}`
+    `https://search.macaulaylibrary.org/api/v1/search?count=100&includeUnconfirmed=T&sort=rating_rank_desc&mediaType=p&regionCode=&userId=${process.env.NEXT_PUBLIC_EBIRD_USER_ID}&taxaLocale=en&initialCursorMark=${cursor}`
   );
   const json = await response.json();
   if (!json.results) {
@@ -59,16 +59,12 @@ photos.forEach((row) => {
       row.obsDttm !== "Unknown"
         ? new Date(row.obsDttm)
         : sensitiveDates.find((it) => it.code === row.reportAs)?.date || new Date("1/1/2000"),
-    rating: Number(row.rating).toFixed(2),
     checklist_id: row.eBirdChecklistId,
   });
 });
 
 species = Object.values(species).map((group) => {
-  const rating_sorted_group = group
-    .slice()
-    .sort((a, b) => (a.rating < b.rating ? 1 : -1))
-    .slice(0, 3);
+  const rating_sorted_group = group.slice(0, 3);
   const date_sorted_group = group.slice().sort((a, b) => a.date - b.date);
   const first_date = date_sorted_group[0].date;
   return {
