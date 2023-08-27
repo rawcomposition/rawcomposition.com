@@ -4,6 +4,7 @@ import Sidebar from "components/Sidebar";
 import Head from "next/head";
 import { getCountryData } from "helpers/ebird";
 import { Country } from "lib/types";
+import Link from "next/link";
 
 type Props = {
   countryData: Country[];
@@ -38,10 +39,13 @@ export default function About({ countryData }: Props) {
             My goal is to photograph 5,000 species of birds in my lifetime, while keeping my birding adventures to a
             reasonable budget.
           </p>
+
           <p>
-            <a href="https://www.flickr.com/photos/rawcomposition/" target="_blank">
-              Follow me on Flickr
-            </a>
+            <strong className="text-neutral-600">View my progress</strong>
+            <br />
+            <Link href="/lifelist">World Life List</Link>
+            <br />
+            <Link href="/hummingbirds">Hummingbird Life List</Link>
             <br />
             <a href="https://ebird.org/profile/NzMwMzI1/world" target="_blank">
               View my eBird profile

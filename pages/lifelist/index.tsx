@@ -27,7 +27,7 @@ export default function LifelistPage({ species, year }: Props) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async () => {
   const year = overview.years[0];
 
   const speciesData = fs.readFileSync(`lifelist/${year}.json`, "utf8");

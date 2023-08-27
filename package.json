@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "ebird": "node ebird-pull.mjs"
+    "ebird": "node ebird-pull.mjs",
+    "ebird-taxonomy": "node ebird-get-taxonomy.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.7",

@@ -95,6 +95,7 @@ years.forEach((year) => {
   const year_sorted_species = species.filter((s) => s.year === year).sort((a, b) => b.date - a.date);
   fs.writeFileSync(`./lifelist/${year}.json`, finalizeSortedData(year_sorted_species));
 });
+fs.writeFileSync(`./lifelist/all.json`, finalizeSortedData(species));
 fs.writeFileSync(
   `./lifelist/overview.json`,
   JSON.stringify({
