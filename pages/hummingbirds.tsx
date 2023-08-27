@@ -35,7 +35,11 @@ export default function LifelistPage({ items }: Props) {
             {items.map(({ code, name, img }) => (
               <a
                 key={code}
-                href={`https://ebird.org/species/${code}`}
+                href={
+                  img
+                    ? `https://media.ebird.org/catalog?taxonCode=${code}&sort=rating_rank_desc&mediaType=photo&userId=${process.env.NEXT_PUBLIC_EBIRD_USER_ID}`
+                    : `https://ebird.org/species/${code}`
+                }
                 target="_blank"
                 rel="noreferrer"
                 className="flex flex-col items-center justify-center rounded-md p-4"
