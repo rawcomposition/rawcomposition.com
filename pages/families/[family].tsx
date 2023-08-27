@@ -5,6 +5,7 @@ import Taxonomy from "../../taxonomy.json";
 import Photos from "lifelist/all.json";
 import Families from "lifelist/families.json";
 import Hummingbird from "icons/Hummingbird";
+import Dove from "icons/Dove";
 import Link from "next/link";
 import CaretRight from "icons/CaretRight";
 
@@ -66,9 +67,12 @@ export default function LifelistPage({ family, items }: Props) {
                     width={img.w}
                     height={img.h}
                   />
+                ) : family === "Hummingbirds" ? (
+                  <Hummingbird className="w-full h-[160px] rounded-lg mb-2 bg-gray-200 p-4 text-gray-300" />
                 ) : (
-                  <Hummingbird className="w-full h-[160px] rounded-lg mb-2 bg-gray-200 p-3 text-gray-300" />
+                  <Dove className="w-full h-[160px] rounded-lg mb-2 bg-gray-200 p-8 text-gray-300" />
                 )}
+
                 <span className="text-sm text-gray-500">{name}</span>
               </a>
             ))}
