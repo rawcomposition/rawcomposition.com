@@ -39,13 +39,10 @@ export default function About({ countryData }: Props) {
             My goal is to photograph 5,000 species of birds in my lifetime, while keeping my birding adventures to a
             reasonable budget.
           </p>
-
           <p>
             <strong className="text-neutral-600">View my progress</strong>
             <br />
             <Link href="/lifelist">World Life List</Link>
-            <br />
-            <Link href="/hummingbirds">Hummingbird Life List</Link>
             <br />
             <a href="https://ebird.org/profile/NzMwMzI1/world" target="_blank">
               View my eBird profile

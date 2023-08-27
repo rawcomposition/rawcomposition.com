@@ -13,6 +13,7 @@ export default function Header({ noMargin }: Props) {
         <nav className="ml-3 mt-2 sm:mt-0 sm:ml-auto flex items-center gap-8 uppercase font-bold text-[0.7rem]">
           <a href="/">Home</a>
           <a href="/about/">About</a>
+          <a href="/families/">Families</a>
           <a href="/lifelist/">Life list</a>
         </nav>
       </div>

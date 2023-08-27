@@ -1,11 +1,15 @@
 import Head from "next/head";
 import Header from "components/Header";
-import { GetStaticProps } from "next";
-import Taxonomy from "../taxonomy.json";
+import { GetStaticProps, GetStaticPaths } from "next";
+import Taxonomy from "../../taxonomy.json";
 import Photos from "lifelist/all.json";
+import Families from "lifelist/families.json";
 import Hummingbird from "icons/Hummingbird";
+import Link from "next/link";
+import CaretRight from "icons/CaretRight";
 
 type Props = {
+  family: string;
   items: {
     code: string;
     name: string;
@@ -17,17 +21,26 @@ type Props = {
   }[];
 };
 
-export default function LifelistPage({ items }: Props) {
+export default function LifelistPage({ family, items }: Props) {
   const withPhotos = items.filter((item) => !!item.img);
   return (
     <>
       <Head>
-        <title>Hummingbirds | RawComposition.com</title>
+        <title>{`${family} | RawComposition.com`}</title>
       </Head>
-      <Header />
+      <Header noMargin />
+      <div className="bg-neutral-800/90 p-2 mb-12">
+        <div className="container text-gray-400 text-xs sm:text-sm">
+          <Link href="/families" className="text-gray-200">
+            Families
+          </Link>
+          <CaretRight className="mx-2" />
+          {family}
+        </div>
+      </div>
       <div className="container max-w-[1200px]">
         <div className="p-12 bg-white mb-4">
-          <h1 className="text-4xl font-bold mb-4">Hummingbirds</h1>
+          <h1 className="text-4xl font-bold mb-4">{family}</h1>
           <p className="text-lg text-gray-500 mb-8">
             Photographed {withPhotos.length} of {items.length} species
           </p>
@@ -66,8 +79,17 @@ export default function LifelistPage({ items }: Props) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const filtered = Taxonomy.filter((item) => item.family === "Hummingbirds");
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = Families.map(({ slug }) => ({
+    params: { family: slug },
+  }));
+  return { paths, fallback: "blocking" };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = params?.family as string;
+  const family = Families.find((item) => item.slug === slug)?.name || "";
+  const filtered = Taxonomy.filter((item) => item.family === family);
   const formatted = filtered.map(({ code, name }) => {
     const lifelistEntry = Photos.find((it) => it.name === name);
     return {
@@ -77,5 +99,5 @@ export const getStaticProps: GetStaticProps = async () => {
     };
   });
 
-  return { props: { items: formatted } };
+  return { props: { items: formatted, family } };
 };
