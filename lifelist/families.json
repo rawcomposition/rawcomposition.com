@@ -14,5 +14,13 @@
   {
     "name": "New World Sparrows",
     "slug": "new-world-sparrows"
+  },
+  {
+    "name": "Woodpeckers",
+    "slug": "woodpeckers"
+  },
+  {
+    "name": "New World Warblers",
+    "slug": "new-world-warblers"
   }
 ]
