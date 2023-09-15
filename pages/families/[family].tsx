@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Header from "components/Header";
 import { GetStaticProps, GetStaticPaths } from "next";
-import Taxonomy from "../../taxonomy.json";
-import Photos from "lifelist/all.json";
-import Families from "lifelist/families.json";
+import families from "families.json";
+import familySpecies from "lifelist/by-family.json";
+import taxonomy from "taxonomy.json";
 import Hummingbird from "icons/Hummingbird";
 import Dove from "icons/Dove";
 import Link from "next/link";
@@ -60,12 +60,10 @@ export default function LifelistPage({ family, items }: Props) {
               >
                 {img ? (
                   <img
-                    src={`https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${img.id}/640`}
+                    src={`https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${img}/640`}
                     loading="lazy"
                     alt={name}
                     className="object-cover w-full h-[160px] rounded-lg mb-2"
-                    width={img.w}
-                    height={img.h}
                   />
                 ) : family === "Hummingbirds" ? (
                   <Hummingbird className="w-full h-[160px] rounded-lg mb-2 bg-gray-200 p-4 text-gray-300" />
@@ -84,7 +82,7 @@ export default function LifelistPage({ family, items }: Props) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = Families.map(({ slug }) => ({
+  const paths = families.map(({ slug }) => ({
     params: { family: slug },
   }));
   return { paths, fallback: "blocking" };
@@ -92,14 +90,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slug = params?.family as string;
-  const family = Families.find((item) => item.slug === slug)?.name || "";
-  const filtered = Taxonomy.filter((item) => item.family === family);
+  const family = families.find((item) => item.slug === slug)?.name || "";
+  const familySpeciesItems = familySpecies.find((item) => item.family === family)?.species || [];
+  const filtered = taxonomy.filter((item) => item.family === family);
   const formatted = filtered.map(({ code, name }) => {
-    const lifelistEntry = Photos.find((it) => it.name === name);
+    const lifelistEntry = familySpeciesItems.find((it) => it.name === name);
     return {
       code,
       name,
-      img: lifelistEntry?.images?.[0] || null,
+      img: lifelistEntry?.img || null,
     };
   });
 

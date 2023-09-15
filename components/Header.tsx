@@ -1,3 +1,5 @@
+import overview from "lifelist/overview.json";
+
 type Props = {
   noMargin?: boolean;
 };
@@ -14,7 +16,7 @@ export default function Header({ noMargin }: Props) {
           <a href="/">Home</a>
           <a href="/about/">About</a>
           <a href="/families/">Families</a>
-          <a href="/lifelist/">Life list</a>
+          <a href={`/lifelist/${overview.years[0]}`}>Life list</a>
         </nav>
       </div>
     </header>

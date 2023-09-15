@@ -4,8 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "ebird": "node ebird-pull.mjs",
-    "ebird-taxonomy": "node ebird-get-taxonomy.mjs"
+    "ebird": "tsx ./scripts/ebird-pull.ts",
+    "ebird-taxonomy": "tsx ./scripts/ebird-get-taxonomy.ts"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.7",
@@ -20,7 +20,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-lazyload": "^3.2.0"
+    "tsx": "^3.12.10"
   },
   "devDependencies": {
     "@types/node": "17.0.35",

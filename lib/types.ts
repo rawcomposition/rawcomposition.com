@@ -18,11 +18,11 @@ export type Trip = {
   ebirdLink?: string;
 };
 
-export type Species = {
-  name: string;
+export type SpeciesDate = {
   date: string;
-  images: {
-    id: string;
+  species: {
+    name: string;
+    img: number;
     w: number;
     h: number;
   }[];

@@ -1,0 +1,998 @@
+[
+  {
+    "name": "Ostriches",
+    "slug": "ostriches"
+  },
+  {
+    "name": "Rheas",
+    "slug": "rheas"
+  },
+  {
+    "name": "Tinamous",
+    "slug": "tinamous"
+  },
+  {
+    "name": "Cassowaries and Emu",
+    "slug": "cassowaries-and-emu"
+  },
+  {
+    "name": "Kiwis",
+    "slug": "kiwis"
+  },
+  {
+    "name": "Screamers",
+    "slug": "screamers"
+  },
+  {
+    "name": "Magpie Goose",
+    "slug": "magpie-goose"
+  },
+  {
+    "name": "Ducks, Geese, and Waterfowl",
+    "slug": "ducks-geese-and-waterfowl"
+  },
+  {
+    "name": "Megapodes",
+    "slug": "megapodes"
+  },
+  {
+    "name": "Guans, Chachalacas, and Curassows",
+    "slug": "guans-chachalacas-and-curassows"
+  },
+  {
+    "name": "Guineafowl",
+    "slug": "guineafowl"
+  },
+  {
+    "name": "New World Quail",
+    "slug": "new-world-quail"
+  },
+  {
+    "name": "Pheasants, Grouse, and Allies",
+    "slug": "pheasants-grouse-and-allies"
+  },
+  {
+    "name": "Flamingos",
+    "slug": "flamingos"
+  },
+  {
+    "name": "Grebes",
+    "slug": "grebes"
+  },
+  {
+    "name": "Pigeons and Doves",
+    "slug": "pigeons-and-doves"
+  },
+  {
+    "name": "Mesites",
+    "slug": "mesites"
+  },
+  {
+    "name": "Sandgrouse",
+    "slug": "sandgrouse"
+  },
+  {
+    "name": "Bustards",
+    "slug": "bustards"
+  },
+  {
+    "name": "Turacos",
+    "slug": "turacos"
+  },
+  {
+    "name": "Cuckoos",
+    "slug": "cuckoos"
+  },
+  {
+    "name": "Frogmouths",
+    "slug": "frogmouths"
+  },
+  {
+    "name": "Nightjars and Allies",
+    "slug": "nightjars-and-allies"
+  },
+  {
+    "name": "Potoos",
+    "slug": "potoos"
+  },
+  {
+    "name": "Oilbird",
+    "slug": "oilbird"
+  },
+  {
+    "name": "Owlet-nightjars",
+    "slug": "owlet-nightjars"
+  },
+  {
+    "name": "Swifts",
+    "slug": "swifts"
+  },
+  {
+    "name": "Treeswifts",
+    "slug": "treeswifts"
+  },
+  {
+    "name": "Hummingbirds",
+    "slug": "hummingbirds"
+  },
+  {
+    "name": "Hoatzin",
+    "slug": "hoatzin"
+  },
+  {
+    "name": "Flufftails",
+    "slug": "flufftails"
+  },
+  {
+    "name": "Rails, Gallinules, and Coots",
+    "slug": "rails-gallinules-and-coots"
+  },
+  {
+    "name": "Finfoots",
+    "slug": "finfoots"
+  },
+  {
+    "name": "Limpkin",
+    "slug": "limpkin"
+  },
+  {
+    "name": "Trumpeters",
+    "slug": "trumpeters"
+  },
+  {
+    "name": "Cranes",
+    "slug": "cranes"
+  },
+  {
+    "name": "Sheathbills",
+    "slug": "sheathbills"
+  },
+  {
+    "name": "Magellanic Plover",
+    "slug": "magellanic-plover"
+  },
+  {
+    "name": "Thick-knees",
+    "slug": "thick-knees"
+  },
+  {
+    "name": "Egyptian Plover",
+    "slug": "egyptian-plover"
+  },
+  {
+    "name": "Stilts and Avocets",
+    "slug": "stilts-and-avocets"
+  },
+  {
+    "name": "Ibisbill",
+    "slug": "ibisbill"
+  },
+  {
+    "name": "Oystercatchers",
+    "slug": "oystercatchers"
+  },
+  {
+    "name": "Plovers and Lapwings",
+    "slug": "plovers-and-lapwings"
+  },
+  {
+    "name": "Plains-wanderer",
+    "slug": "plains-wanderer"
+  },
+  {
+    "name": "Seedsnipes",
+    "slug": "seedsnipes"
+  },
+  {
+    "name": "Painted-Snipes",
+    "slug": "painted-snipes"
+  },
+  {
+    "name": "Jacanas",
+    "slug": "jacanas"
+  },
+  {
+    "name": "Sandpipers and Allies",
+    "slug": "sandpipers-and-allies"
+  },
+  {
+    "name": "Buttonquail",
+    "slug": "buttonquail"
+  },
+  {
+    "name": "Crab-Plover",
+    "slug": "crab-plover"
+  },
+  {
+    "name": "Pratincoles and Coursers",
+    "slug": "pratincoles-and-coursers"
+  },
+  {
+    "name": "Skuas and Jaegers",
+    "slug": "skuas-and-jaegers"
+  },
+  {
+    "name": "Auks, Murres, and Puffins",
+    "slug": "auks-murres-and-puffins"
+  },
+  {
+    "name": "Gulls, Terns, and Skimmers",
+    "slug": "gulls-terns-and-skimmers"
+  },
+  {
+    "name": "Kagu",
+    "slug": "kagu"
+  },
+  {
+    "name": "Sunbittern",
+    "slug": "sunbittern"
+  },
+  {
+    "name": "Tropicbirds",
+    "slug": "tropicbirds"
+  },
+  {
+    "name": "Loons",
+    "slug": "loons"
+  },
+  {
+    "name": "Penguins",
+    "slug": "penguins"
+  },
+  {
+    "name": "Albatrosses",
+    "slug": "albatrosses"
+  },
+  {
+    "name": "Southern Storm-Petrels",
+    "slug": "southern-storm-petrels"
+  },
+  {
+    "name": "Northern Storm-Petrels",
+    "slug": "northern-storm-petrels"
+  },
+  {
+    "name": "Shearwaters and Petrels",
+    "slug": "shearwaters-and-petrels"
+  },
+  {
+    "name": "Storks",
+    "slug": "storks"
+  },
+  {
+    "name": "Frigatebirds",
+    "slug": "frigatebirds"
+  },
+  {
+    "name": "Boobies and Gannets",
+    "slug": "boobies-and-gannets"
+  },
+  {
+    "name": "Anhingas",
+    "slug": "anhingas"
+  },
+  {
+    "name": "Cormorants and Shags",
+    "slug": "cormorants-and-shags"
+  },
+  {
+    "name": "Pelicans",
+    "slug": "pelicans"
+  },
+  {
+    "name": "Shoebill",
+    "slug": "shoebill"
+  },
+  {
+    "name": "Hamerkop",
+    "slug": "hamerkop"
+  },
+  {
+    "name": "Herons, Egrets, and Bitterns",
+    "slug": "herons-egrets-and-bitterns"
+  },
+  {
+    "name": "Ibises and Spoonbills",
+    "slug": "ibises-and-spoonbills"
+  },
+  {
+    "name": "New World Vultures",
+    "slug": "new-world-vultures"
+  },
+  {
+    "name": "Secretarybird",
+    "slug": "secretarybird"
+  },
+  {
+    "name": "Osprey",
+    "slug": "osprey"
+  },
+  {
+    "name": "Hawks, Eagles, and Kites",
+    "slug": "hawks-eagles-and-kites"
+  },
+  {
+    "name": "Barn-Owls",
+    "slug": "barn-owls"
+  },
+  {
+    "name": "Owls",
+    "slug": "owls"
+  },
+  {
+    "name": "Mousebirds",
+    "slug": "mousebirds"
+  },
+  {
+    "name": "Cuckoo-roller",
+    "slug": "cuckoo-roller"
+  },
+  {
+    "name": "Trogons",
+    "slug": "trogons"
+  },
+  {
+    "name": "Hoopoes",
+    "slug": "hoopoes"
+  },
+  {
+    "name": "Woodhoopoes and Scimitarbills",
+    "slug": "woodhoopoes-and-scimitarbills"
+  },
+  {
+    "name": "Ground-Hornbills",
+    "slug": "ground-hornbills"
+  },
+  {
+    "name": "Hornbills",
+    "slug": "hornbills"
+  },
+  {
+    "name": "Todies",
+    "slug": "todies"
+  },
+  {
+    "name": "Motmots",
+    "slug": "motmots"
+  },
+  {
+    "name": "Kingfishers",
+    "slug": "kingfishers"
+  },
+  {
+    "name": "Bee-eaters",
+    "slug": "bee-eaters"
+  },
+  {
+    "name": "Rollers",
+    "slug": "rollers"
+  },
+  {
+    "name": "Ground-Rollers",
+    "slug": "ground-rollers"
+  },
+  {
+    "name": "Puffbirds",
+    "slug": "puffbirds"
+  },
+  {
+    "name": "Jacamars",
+    "slug": "jacamars"
+  },
+  {
+    "name": "African Barbets",
+    "slug": "african-barbets"
+  },
+  {
+    "name": "Asian Barbets",
+    "slug": "asian-barbets"
+  },
+  {
+    "name": "New World Barbets",
+    "slug": "new-world-barbets"
+  },
+  {
+    "name": "Toucan-Barbets",
+    "slug": "toucan-barbets"
+  },
+  {
+    "name": "Toucans",
+    "slug": "toucans"
+  },
+  {
+    "name": "Honeyguides",
+    "slug": "honeyguides"
+  },
+  {
+    "name": "Woodpeckers",
+    "slug": "woodpeckers"
+  },
+  {
+    "name": "Seriemas",
+    "slug": "seriemas"
+  },
+  {
+    "name": "Falcons and Caracaras",
+    "slug": "falcons-and-caracaras"
+  },
+  {
+    "name": "New Zealand Parrots",
+    "slug": "new-zealand-parrots"
+  },
+  {
+    "name": "Cockatoos",
+    "slug": "cockatoos"
+  },
+  {
+    "name": "Old World Parrots",
+    "slug": "old-world-parrots"
+  },
+  {
+    "name": "New World and African Parrots",
+    "slug": "new-world-and-african-parrots"
+  },
+  {
+    "name": "New Zealand Wrens",
+    "slug": "new-zealand-wrens"
+  },
+  {
+    "name": "African and Green Broadbills",
+    "slug": "african-and-green-broadbills"
+  },
+  {
+    "name": "Asian and Grauer's Broadbills",
+    "slug": "asian-and-grauers-broadbills"
+  },
+  {
+    "name": "Sapayoa",
+    "slug": "sapayoa"
+  },
+  {
+    "name": "Asities",
+    "slug": "asities"
+  },
+  {
+    "name": "Pittas",
+    "slug": "pittas"
+  },
+  {
+    "name": "Typical Antbirds",
+    "slug": "typical-antbirds"
+  },
+  {
+    "name": "Crescentchests",
+    "slug": "crescentchests"
+  },
+  {
+    "name": "Gnateaters",
+    "slug": "gnateaters"
+  },
+  {
+    "name": "Antpittas",
+    "slug": "antpittas"
+  },
+  {
+    "name": "Tapaculos",
+    "slug": "tapaculos"
+  },
+  {
+    "name": "Antthrushes",
+    "slug": "antthrushes"
+  },
+  {
+    "name": "Ovenbirds and Woodcreepers",
+    "slug": "ovenbirds-and-woodcreepers"
+  },
+  {
+    "name": "Manakins",
+    "slug": "manakins"
+  },
+  {
+    "name": "Cotingas",
+    "slug": "cotingas"
+  },
+  {
+    "name": "Tityras and Allies",
+    "slug": "tityras-and-allies"
+  },
+  {
+    "name": "Sharpbill, Royal Flycatcher, and Allies",
+    "slug": "sharpbill-royal-flycatcher-and-allies"
+  },
+  {
+    "name": "Tyrant Flycatchers",
+    "slug": "tyrant-flycatchers"
+  },
+  {
+    "name": "Lyrebirds",
+    "slug": "lyrebirds"
+  },
+  {
+    "name": "Scrub-birds",
+    "slug": "scrub-birds"
+  },
+  {
+    "name": "Bowerbirds",
+    "slug": "bowerbirds"
+  },
+  {
+    "name": "Australasian Treecreepers",
+    "slug": "australasian-treecreepers"
+  },
+  {
+    "name": "Fairywrens",
+    "slug": "fairywrens"
+  },
+  {
+    "name": "Honeyeaters",
+    "slug": "honeyeaters"
+  },
+  {
+    "name": "Bristlebirds",
+    "slug": "bristlebirds"
+  },
+  {
+    "name": "Pardalotes",
+    "slug": "pardalotes"
+  },
+  {
+    "name": "Thornbills and Allies",
+    "slug": "thornbills-and-allies"
+  },
+  {
+    "name": "Pseudo-Babblers",
+    "slug": "pseudo-babblers"
+  },
+  {
+    "name": "Logrunners",
+    "slug": "logrunners"
+  },
+  {
+    "name": "Quail-thrushes and Jewel-babblers",
+    "slug": "quail-thrushes-and-jewel-babblers"
+  },
+  {
+    "name": "Cuckooshrikes",
+    "slug": "cuckooshrikes"
+  },
+  {
+    "name": "Whiteheads",
+    "slug": "whiteheads"
+  },
+  {
+    "name": "Sittellas",
+    "slug": "sittellas"
+  },
+  {
+    "name": "Whipbirds and Wedgebills",
+    "slug": "whipbirds-and-wedgebills"
+  },
+  {
+    "name": "Ploughbill",
+    "slug": "ploughbill"
+  },
+  {
+    "name": "Australo-Papuan Bellbirds",
+    "slug": "australo-papuan-bellbirds"
+  },
+  {
+    "name": "Shrike-tits",
+    "slug": "shrike-tits"
+  },
+  {
+    "name": "Tit Berrypecker and Crested Berrypecker",
+    "slug": "tit-berrypecker-and-crested-berrypecker"
+  },
+  {
+    "name": "Vireos, Shrike-Babblers, and Erpornis",
+    "slug": "vireos-shrike-babblers-and-erpornis"
+  },
+  {
+    "name": "Whistlers and Allies",
+    "slug": "whistlers-and-allies"
+  },
+  {
+    "name": "Old World Orioles",
+    "slug": "old-world-orioles"
+  },
+  {
+    "name": "Boatbills",
+    "slug": "boatbills"
+  },
+  {
+    "name": "Woodswallows, Bellmagpies, and Allies",
+    "slug": "woodswallows-bellmagpies-and-allies"
+  },
+  {
+    "name": "Mottled Berryhunter",
+    "slug": "mottled-berryhunter"
+  },
+  {
+    "name": "Wattle-eyes and Batises",
+    "slug": "wattle-eyes-and-batises"
+  },
+  {
+    "name": "Vangas, Helmetshrikes, and Allies",
+    "slug": "vangas-helmetshrikes-and-allies"
+  },
+  {
+    "name": "Bristlehead",
+    "slug": "bristlehead"
+  },
+  {
+    "name": "Ioras",
+    "slug": "ioras"
+  },
+  {
+    "name": "Bushshrikes and Allies",
+    "slug": "bushshrikes-and-allies"
+  },
+  {
+    "name": "Fantails",
+    "slug": "fantails"
+  },
+  {
+    "name": "Drongos",
+    "slug": "drongos"
+  },
+  {
+    "name": "Birds-of-Paradise",
+    "slug": "birds-of-paradise"
+  },
+  {
+    "name": "Ifrita",
+    "slug": "ifrita"
+  },
+  {
+    "name": "Monarch Flycatchers",
+    "slug": "monarch-flycatchers"
+  },
+  {
+    "name": "White-winged Chough and Apostlebird",
+    "slug": "white-winged-chough-and-apostlebird"
+  },
+  {
+    "name": "Melampittas",
+    "slug": "melampittas"
+  },
+  {
+    "name": "Crested Shrikejay",
+    "slug": "crested-shrikejay"
+  },
+  {
+    "name": "Shrikes",
+    "slug": "shrikes"
+  },
+  {
+    "name": "Crows, Jays, and Magpies",
+    "slug": "crows-jays-and-magpies"
+  },
+  {
+    "name": "Satinbirds",
+    "slug": "satinbirds"
+  },
+  {
+    "name": "Berrypeckers and Longbills",
+    "slug": "berrypeckers-and-longbills"
+  },
+  {
+    "name": "Wattlebirds",
+    "slug": "wattlebirds"
+  },
+  {
+    "name": "Stitchbird",
+    "slug": "stitchbird"
+  },
+  {
+    "name": "Australasian Robins",
+    "slug": "australasian-robins"
+  },
+  {
+    "name": "Rockfowl",
+    "slug": "rockfowl"
+  },
+  {
+    "name": "Rockjumpers",
+    "slug": "rockjumpers"
+  },
+  {
+    "name": "Rail-babbler",
+    "slug": "rail-babbler"
+  },
+  {
+    "name": "Hyliotas",
+    "slug": "hyliotas"
+  },
+  {
+    "name": "Fairy Flycatchers",
+    "slug": "fairy-flycatchers"
+  },
+  {
+    "name": "Tits, Chickadees, and Titmice",
+    "slug": "tits-chickadees-and-titmice"
+  },
+  {
+    "name": "Penduline-Tits",
+    "slug": "penduline-tits"
+  },
+  {
+    "name": "Larks",
+    "slug": "larks"
+  },
+  {
+    "name": "Bearded Reedling",
+    "slug": "bearded-reedling"
+  },
+  {
+    "name": "Nicators",
+    "slug": "nicators"
+  },
+  {
+    "name": "African Warblers",
+    "slug": "african-warblers"
+  },
+  {
+    "name": "Cisticolas and Allies",
+    "slug": "cisticolas-and-allies"
+  },
+  {
+    "name": "Reed Warblers and Allies",
+    "slug": "reed-warblers-and-allies"
+  },
+  {
+    "name": "Grassbirds and Allies",
+    "slug": "grassbirds-and-allies"
+  },
+  {
+    "name": "Donacobius",
+    "slug": "donacobius"
+  },
+  {
+    "name": "Malagasy Warblers",
+    "slug": "malagasy-warblers"
+  },
+  {
+    "name": "Cupwings",
+    "slug": "cupwings"
+  },
+  {
+    "name": "Swallows",
+    "slug": "swallows"
+  },
+  {
+    "name": "Bulbuls",
+    "slug": "bulbuls"
+  },
+  {
+    "name": "Leaf Warblers",
+    "slug": "leaf-warblers"
+  },
+  {
+    "name": "Bush Warblers and Allies",
+    "slug": "bush-warblers-and-allies"
+  },
+  {
+    "name": "Long-tailed Tits",
+    "slug": "long-tailed-tits"
+  },
+  {
+    "name": "Sylviid Warblers, Parrotbills, and Allies",
+    "slug": "sylviid-warblers-parrotbills-and-allies"
+  },
+  {
+    "name": "White-eyes, Yuhinas, and Allies",
+    "slug": "white-eyes-yuhinas-and-allies"
+  },
+  {
+    "name": "Tree-Babblers, Scimitar-Babblers, and Allies",
+    "slug": "tree-babblers-scimitar-babblers-and-allies"
+  },
+  {
+    "name": "Ground Babblers and Allies",
+    "slug": "ground-babblers-and-allies"
+  },
+  {
+    "name": "Laughingthrushes and Allies",
+    "slug": "laughingthrushes-and-allies"
+  },
+  {
+    "name": "Kinglets",
+    "slug": "kinglets"
+  },
+  {
+    "name": "Wallcreeper",
+    "slug": "wallcreeper"
+  },
+  {
+    "name": "Nuthatches",
+    "slug": "nuthatches"
+  },
+  {
+    "name": "Treecreepers",
+    "slug": "treecreepers"
+  },
+  {
+    "name": "Gnatcatchers",
+    "slug": "gnatcatchers"
+  },
+  {
+    "name": "Wrens",
+    "slug": "wrens"
+  },
+  {
+    "name": "Spotted Elachura",
+    "slug": "spotted-elachura"
+  },
+  {
+    "name": "Dippers",
+    "slug": "dippers"
+  },
+  {
+    "name": "Oxpeckers",
+    "slug": "oxpeckers"
+  },
+  {
+    "name": "Starlings",
+    "slug": "starlings"
+  },
+  {
+    "name": "Mockingbirds and Thrashers",
+    "slug": "mockingbirds-and-thrashers"
+  },
+  {
+    "name": "Thrushes and Allies",
+    "slug": "thrushes-and-allies"
+  },
+  {
+    "name": "Old World Flycatchers",
+    "slug": "old-world-flycatchers"
+  },
+  {
+    "name": "Waxwings",
+    "slug": "waxwings"
+  },
+  {
+    "name": "Hawaiian Honeyeaters",
+    "slug": "hawaiian-honeyeaters"
+  },
+  {
+    "name": "Silky-flycatchers",
+    "slug": "silky-flycatchers"
+  },
+  {
+    "name": "Palmchat",
+    "slug": "palmchat"
+  },
+  {
+    "name": "Hylocitrea",
+    "slug": "hylocitrea"
+  },
+  {
+    "name": "Hypocolius",
+    "slug": "hypocolius"
+  },
+  {
+    "name": "Sugarbirds",
+    "slug": "sugarbirds"
+  },
+  {
+    "name": "Dapple-throat and Allies",
+    "slug": "dapple-throat-and-allies"
+  },
+  {
+    "name": "Flowerpeckers",
+    "slug": "flowerpeckers"
+  },
+  {
+    "name": "Sunbirds and Spiderhunters",
+    "slug": "sunbirds-and-spiderhunters"
+  },
+  {
+    "name": "Fairy-bluebirds",
+    "slug": "fairy-bluebirds"
+  },
+  {
+    "name": "Leafbirds",
+    "slug": "leafbirds"
+  },
+  {
+    "name": "Olive Warbler",
+    "slug": "olive-warbler"
+  },
+  {
+    "name": "Przevalski's Pinktail",
+    "slug": "przevalskis-pinktail"
+  },
+  {
+    "name": "Weavers and Allies",
+    "slug": "weavers-and-allies"
+  },
+  {
+    "name": "Waxbills and Allies",
+    "slug": "waxbills-and-allies"
+  },
+  {
+    "name": "Indigobirds",
+    "slug": "indigobirds"
+  },
+  {
+    "name": "Accentors",
+    "slug": "accentors"
+  },
+  {
+    "name": "Old World Sparrows",
+    "slug": "old-world-sparrows"
+  },
+  {
+    "name": "Wagtails and Pipits",
+    "slug": "wagtails-and-pipits"
+  },
+  {
+    "name": "Finches, Euphonias, and Allies",
+    "slug": "finches-euphonias-and-allies"
+  },
+  {
+    "name": "Longspurs and Snow Buntings",
+    "slug": "longspurs-and-snow-buntings"
+  },
+  {
+    "name": "Thrush-Tanager",
+    "slug": "thrush-tanager"
+  },
+  {
+    "name": "Old World Buntings",
+    "slug": "old-world-buntings"
+  },
+  {
+    "name": "New World Sparrows",
+    "slug": "new-world-sparrows"
+  },
+  {
+    "name": "Chat-Tanagers",
+    "slug": "chat-tanagers"
+  },
+  {
+    "name": "Hispaniolan Tanagers",
+    "slug": "hispaniolan-tanagers"
+  },
+  {
+    "name": "Puerto Rican Tanager",
+    "slug": "puerto-rican-tanager"
+  },
+  {
+    "name": "Spindalises",
+    "slug": "spindalises"
+  },
+  {
+    "name": "Wrenthrush",
+    "slug": "wrenthrush"
+  },
+  {
+    "name": "Cuban Warblers",
+    "slug": "cuban-warblers"
+  },
+  {
+    "name": "Yellow-breasted Chat",
+    "slug": "yellow-breasted-chat"
+  },
+  {
+    "name": "Troupials and Allies",
+    "slug": "troupials-and-allies"
+  },
+  {
+    "name": "New World Warblers",
+    "slug": "new-world-warblers"
+  },
+  {
+    "name": "Mitrospingid Tanagers",
+    "slug": "mitrospingid-tanagers"
+  },
+  {
+    "name": "Cardinals and Allies",
+    "slug": "cardinals-and-allies"
+  },
+  {
+    "name": "Tanagers and Allies",
+    "slug": "tanagers-and-allies"
+  }
+]

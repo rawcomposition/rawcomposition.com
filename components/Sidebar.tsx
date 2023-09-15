@@ -29,7 +29,7 @@ export default function Sidebar({ countryData }: Props) {
       <details className="text-zinc-600">
         <summary className="relative marker-none">
           <ol className="bg-zebra">
-            <CountryRow country="World" count={totalCount} link="/lifelist" />
+            <CountryRow country="World" count={totalCount} link={`/lifelist/${overview.years[0]}`} />
             {countryData.slice(0, 5).map(({ code, count }) => (
               <CountryRow key={code} country={getCountryName(code)} count={count} />
             ))}

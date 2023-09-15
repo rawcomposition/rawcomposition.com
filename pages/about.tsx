@@ -5,6 +5,7 @@ import Head from "next/head";
 import { getCountryData } from "helpers/ebird";
 import { Country } from "lib/types";
 import Link from "next/link";
+import overview from "lifelist/overview.json";
 
 type Props = {
   countryData: Country[];
@@ -42,7 +43,7 @@ export default function About({ countryData }: Props) {
           <p>
             <strong className="text-neutral-600">View my progress</strong>
             <br />
-            <Link href="/lifelist">World Life List</Link>
+            <Link href={`/lifelist/${overview.years[0]}`}>World Life List</Link>
             <br />
             <a href="https://ebird.org/profile/NzMwMzI1/world" target="_blank">
               View my eBird profile
