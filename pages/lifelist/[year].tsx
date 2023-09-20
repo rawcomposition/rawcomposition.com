@@ -19,7 +19,6 @@ export default function LifelistPage({ data, year }: Props) {
   const prevYear = overview.years[yearIndex + 1];
 
   const total = data.reduce((acc, item) => acc + item.species.length, 0);
-  console.log(data);
 
   return (
     <>
@@ -29,7 +28,7 @@ export default function LifelistPage({ data, year }: Props) {
       <Header />
       <div className="container max-w-[1200px]">
         <h1 className="font-heading text-neutral-600 text-4xl mb-1">World Life List</h1>
-        <div className="flex gap-4 text-sm">
+        <div className="flex gap-x-4 gap-y-1 text-sm flex-wrap my-2">
           {overview.years.map((y) =>
             y === year ? (
               <span key={y} className="text-neutral-500">
@@ -42,7 +41,7 @@ export default function LifelistPage({ data, year }: Props) {
             )
           )}
         </div>
-        <p className="text-sm text-neutral-400 font-bold mt-1">
+        <p className="text-neutral-600 mt-1">
           Showing {total} lifers from {year}
         </p>
         <br />
