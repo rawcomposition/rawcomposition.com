@@ -3,6 +3,7 @@ import Header from "components/Header";
 import Link from "next/link";
 import families from "families.json";
 import familySpecies from "lifelist/by-family.json";
+import taxonomy from "taxonomy.json";
 import { GetStaticProps } from "next";
 
 type Props = {
@@ -10,6 +11,7 @@ type Props = {
     name: string;
     slug: string;
     total: number;
+    percent?: number;
   }[];
 };
 
@@ -24,15 +26,35 @@ export default function BirdFamilies({ familyTotals }: Props) {
         <div className="p-12 bg-white mb-4">
           <h1 className="text-4xl font-bold mb-8">Families</h1>
           <p className="text-lg text-gray-600 mb-4">View life list by family</p>
-          <ul className="mb-4 list-disc list-inside space-y-1 text-gray-500">
-            {familyTotals.map(({ slug, name, total }) => (
-              <li key={slug}>
-                <Link href={`/families/${slug}`} className="text-lg text-orange mb-8">
-                  {name} <span className="text-gray-400">({total})</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+
+          <table className="w-full divide-y divide-gray-200 max-w-xl">
+            <thead>
+              <tr>
+                <th scope="col" className="bg-gray-50 px-6 py-3 text-left text-xs font-semibold text-gray-600">
+                  Name
+                </th>
+                <th scope="col" className="bg-gray-50 px-6 py-3 text-right text-xs font-semibold text-gray-600">
+                  Total
+                </th>
+                <th scope="col" className="bg-gray-50 px-6 py-3 text-right text-xs font-semibold text-gray-600">
+                  Percent
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 bg-white">
+              {familyTotals.map(({ slug, name, total, percent }) => (
+                <tr>
+                  <td className="px-6 py-3">
+                    <Link href={`/families/${slug}`} className="text-lg text-orange mb-8">
+                      {name}
+                    </Link>
+                  </td>
+                  <td className="px-6 py-3 text-right">{total}</td>
+                  <td className="px-6 py-3 text-right">{percent}%</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </>
@@ -42,10 +64,12 @@ export default function BirdFamilies({ familyTotals }: Props) {
 export const getStaticProps: GetStaticProps = async () => {
   const familyTotals = families.map(({ name, slug }) => {
     const photos = familySpecies.find((it) => it.family === name);
+    const total = taxonomy.filter((it) => it.family === name).length;
     return {
       name,
       slug,
       total: photos?.species?.length ?? 0,
+      percent: Math.round(((photos?.species?.length ?? 0) / total) * 100),
     };
   });
 
