@@ -19,8 +19,8 @@ export default function Sidebar({ countryData }: Props) {
         <div>
           <h4 className="text-[#636467] uppercase font-bold font-heading mb-2 mt-6">Adam Jackson</h4>
           <p className="text-[0.85rem] text-zinc-500/80">
-            I'm a web developer that loves chasing rare birds around world. I developed an interest in bird photography
-            at the age of 12 while living in Tasmania and started getting more serious about birding in 2016.
+            I'm a software developer that loves chasing rare birds around world. I'm on a quest to photograph{" "}
+            <strong>5,000 species</strong> in my lifetime, about 1/2 of the world's species.
           </p>
         </div>
       </div>
@@ -44,6 +44,20 @@ export default function Sidebar({ countryData }: Props) {
           ))}
         </ol>
       </details>
+
+      <h4 className="text-[#636467] uppercase font-bold font-heading mb-4 mt-12">Lists</h4>
+      <ul className="space-y-2">
+        <li>
+          <Link href={`/lifelist/${overview.years[0]}`} className="text-orange">
+            World Life List
+          </Link>
+        </li>
+        <li>
+          <Link href="/families" className="text-orange">
+            Taxonomic Families
+          </Link>
+        </li>
+      </ul>
 
       <h4 className="text-[#636467] uppercase font-bold font-heading mb-4 mt-12">Stuff I've Built</h4>
       <p className="text-zinc-600">

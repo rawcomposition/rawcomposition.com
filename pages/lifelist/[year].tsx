@@ -27,29 +27,41 @@ export default function LifelistPage({ data, year }: Props) {
       </Head>
       <Header />
       <div className="container max-w-[1200px]">
-        <h1 className="font-heading text-neutral-600 text-4xl mb-1">World Life List</h1>
-        <div className="flex gap-x-4 gap-y-1 text-sm flex-wrap my-2">
-          {overview.years.map((y) =>
-            y === year ? (
-              <span key={y} className="text-neutral-500">
-                {y}
-              </span>
-            ) : (
-              <Link key={y} href={`/lifelist/${y}`} className="text-[#f4793d] font-bold">
-                {y}
-              </Link>
-            )
-          )}
+        <div className="bg-white p-10 mt-6 mb-5">
+          <div className="flex gap-2 items-center">
+            <h1 className="font-heading text-neutral-600 text-4xl mb-1">World Life List</h1>
+            <span className="rounded-full bg-neutral-200 text-2xl px-4 py-1 text-neutral-500">{overview.total}</span>
+          </div>
+
+          <div className="flex gap-x-4 gap-y-1 text-md flex-wrap mb-2 mt-6">
+            {overview.years.map((y) =>
+              y === year ? (
+                <span key={y} className="text-neutral-500">
+                  {y}
+                </span>
+              ) : (
+                <Link key={y} href={`/lifelist/${y}`} className="text-[#f4793d] font-bold">
+                  {y}
+                </Link>
+              )
+            )}
+          </div>
+          <p className="mt-2">
+            <span className="font-bold text-sm text-neutral-500">
+              {total} lifers in {year}
+            </span>
+          </p>
         </div>
-        <p className="text-neutral-600 mt-1">
-          Showing {total} lifers from {year}
-        </p>
         <br />
         {data.map((item) => (
           <div className="mb-10" key={item.date}>
-            <h2 className="font-bold text-sm font-heading mb-5 bg-sky-600 rounded-full px-4 py-1.5 text-white w-auto inline-block">
-              {item.date}
-            </h2>
+            <div className="flex gap-3 items-center mb-10">
+              <hr className="border-neutral-300 w-4" />
+              <h2 className="font-bold text-sm font-heading bg-sky-600 rounded-full px-4 py-1.5 text-white w-auto inline-block">
+                {item.date}
+              </h2>
+              <hr className="border-neutral-300 flex-grow" />
+            </div>
             <div className="grid sm:grid-cols-3 gap-10 items-start">
               {item.species.map(({ name, img, w, h }) => {
                 return (

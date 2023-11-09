@@ -144,12 +144,12 @@
     "slug": "cranes"
   },
   {
-    "name": "Sheathbills",
-    "slug": "sheathbills"
-  },
-  {
     "name": "Magellanic Plover",
     "slug": "magellanic-plover"
+  },
+  {
+    "name": "Sheathbills",
+    "slug": "sheathbills"
   },
   {
     "name": "Thick-knees",
@@ -656,8 +656,8 @@
     "slug": "melampittas"
   },
   {
-    "name": "Crested Shrikejay",
-    "slug": "crested-shrikejay"
+    "name": "Crested Jayshrike",
+    "slug": "crested-jayshrike"
   },
   {
     "name": "Shrikes",
@@ -768,6 +768,10 @@
     "slug": "leaf-warblers"
   },
   {
+    "name": "Hylias",
+    "slug": "hylias"
+  },
+  {
     "name": "Bush Warblers and Allies",
     "slug": "bush-warblers-and-allies"
   },
@@ -776,8 +780,12 @@
     "slug": "long-tailed-tits"
   },
   {
-    "name": "Sylviid Warblers, Parrotbills, and Allies",
-    "slug": "sylviid-warblers-parrotbills-and-allies"
+    "name": "Sylviid Warblers and Allies",
+    "slug": "sylviid-warblers-and-allies"
+  },
+  {
+    "name": "Parrotbills",
+    "slug": "parrotbills"
   },
   {
     "name": "White-eyes, Yuhinas, and Allies",

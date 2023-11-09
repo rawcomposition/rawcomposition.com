@@ -45,6 +45,8 @@ export default function About({ countryData }: Props) {
             <br />
             <Link href={`/lifelist/${overview.years[0]}`}>World Life List</Link>
             <br />
+            <Link href="/families">Taxonomic Families</Link>
+            <br />
             <a href="https://ebird.org/profile/NzMwMzI1/world" target="_blank">
               View my eBird profile
             </a>

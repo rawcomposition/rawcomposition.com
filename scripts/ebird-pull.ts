@@ -148,7 +148,7 @@ const endYear = new Date().getFullYear();
   });
 
   const cleanData = (data: any[]) => {
-    return data.map(({ year, date, ...row }) => ({ ...row, date: dayjs(date).format("MMMM D") }));
+    return data.map(({ date, ...row }) => ({ ...row, date: dayjs(date).format("MMMM D") }));
   };
 
   console.log("Writing eBird photos to JSON file...");
