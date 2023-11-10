@@ -29,8 +29,10 @@ export default function LifelistPage({ data, year }: Props) {
       <div className="container max-w-[1200px]">
         <div className="bg-white p-10 mt-6 mb-5">
           <div className="flex gap-2 items-center">
-            <h1 className="font-heading text-neutral-600 text-4xl mb-1">World Life List</h1>
-            <span className="rounded-full bg-neutral-200 text-2xl px-4 py-1 text-neutral-500">{overview.total}</span>
+            <h1 className="font-heading text-neutral-600 text-2xl sm:text-4xl mb-1">World Life List</h1>
+            <span className="rounded-full bg-neutral-200 text-lg sm:text-2xl px-2.5 sm:px-4 py-px sm:py-1 text-neutral-500">
+              {overview.total}
+            </span>
           </div>
 
           <div className="flex gap-x-4 gap-y-1 text-md flex-wrap mb-2 mt-6">
