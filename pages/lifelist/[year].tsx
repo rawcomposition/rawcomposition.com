@@ -79,7 +79,7 @@ export default function LifelistPage({ data, year }: Props) {
                       loading="lazy"
                     />
                     {count > 1 && (
-                      <span className="absolute top-2 right-2 bg-white/40 rounded px-2 py-0.5 text-sm text-neutral-500">
+                      <span className="absolute top-2 right-2 bg-white/40 rounded px-2 py-0.5 text-sm text-neutral-600">
                         {count}
                       </span>
                     )}
