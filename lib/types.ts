@@ -22,6 +22,8 @@ export type SpeciesDate = {
   date: string;
   species: {
     name: string;
+    code: string;
+    count: number;
     img: number;
     w: number;
     h: number;

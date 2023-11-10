@@ -88,6 +88,8 @@ const endYear = new Date().getFullYear();
     const first_date = date_sorted_group[0].date;
     return {
       name: bestPhoto.name.replace(/ *\([^)]*\) */g, ""),
+      code: bestPhoto.code,
+      count: group.length,
       date: first_date,
       year: dayjs(first_date).format("YYYY"),
       family: bestPhoto.family,
@@ -102,6 +104,8 @@ const endYear = new Date().getFullYear();
     year: string;
     species: {
       name: string;
+      code: string;
+      count: number;
       img: number;
       w: number;
       h: number;

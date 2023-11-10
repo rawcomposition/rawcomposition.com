@@ -63,13 +63,13 @@ export default function LifelistPage({ data, year }: Props) {
               <hr className="border-neutral-300 flex-grow" />
             </div>
             <div className="grid sm:grid-cols-3 gap-10 items-start">
-              {item.species.map(({ name, img, w, h }) => {
+              {item.species.map(({ name, code, count, img, w, h }) => {
                 return (
                   <a
                     key={img}
-                    href={`https://macaulaylibrary.org/asset/${img}`}
+                    href={`https://media.ebird.org/catalog?taxonCode=${code}&sort=rating_rank_desc&mediaType=photo&userId=${process.env.NEXT_PUBLIC_EBIRD_USER_ID}`}
                     target="_blank"
-                    className="block bg-white"
+                    className="block bg-white relative"
                   >
                     <img
                       width={w}
@@ -78,6 +78,11 @@ export default function LifelistPage({ data, year }: Props) {
                       className="w-full"
                       loading="lazy"
                     />
+                    {count > 1 && (
+                      <span className="absolute top-2 right-2 bg-white/40 rounded px-2 py-0.5 text-sm text-neutral-500">
+                        {count}
+                      </span>
+                    )}
                     <div className="px-8 py-6">
                       <h3 className="text-neutral-600 font-bold font-heading">{name}</h3>
                     </div>
