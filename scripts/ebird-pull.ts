@@ -44,6 +44,12 @@ const endYear = new Date().getFullYear();
   console.log("Fetching photos from eBird...");
   const photos = await getEbirdPhotos();
 
+  const mlSpeciesNames: any = {};
+
+  photos.forEach((row) => {
+    mlSpeciesNames[row.catalogId] = row.commonName;
+  });
+
   type Species = {
     [key: string]: {
       id: number;
@@ -165,13 +171,14 @@ const endYear = new Date().getFullYear();
       .sort((a, b) => b.date.localeCompare(a.date));
     fs.writeFileSync(`./lifelist/${year}.json`, JSON.stringify(cleanData(year_sorted_species)));
   });
-  fs.writeFileSync(`./lifelist/by-family.json`, JSON.stringify(familyGroupedLiferPhotos));
+  fs.writeFileSync("./lifelist/by-family.json", JSON.stringify(familyGroupedLiferPhotos));
   fs.writeFileSync(
-    `./lifelist/overview.json`,
+    "./lifelist/overview.json",
     JSON.stringify({
       years,
       total: liferPhotos.length,
     })
   );
+  fs.writeFileSync("./lifelist/species-names.json", JSON.stringify(mlSpeciesNames));
   console.log("Done!");
 })();

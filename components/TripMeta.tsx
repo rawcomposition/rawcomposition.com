@@ -14,7 +14,7 @@ type Props = {
 function TripItem({ length, species, lifers, isUS, ebirdLink, subtitle }: Props) {
   return (
     <>
-      {subtitle && <p className="text-gray-500 w-full -mt-3">{subtitle}</p>}
+      {subtitle && <p className="text-gray-500 w-full -mt-3 mb-0">{subtitle}</p>}
       {length && (
         <span className="flex items-center gap-2 text-sm text-gray-600 whitespace-nowrap">
           <Clock className="text-sm text-gray-500" /> {length}
