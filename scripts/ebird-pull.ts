@@ -20,6 +20,7 @@ const sensitiveDates = [
   { code: "yelpar1", date: dayjs("5/13/2023").format() },
   { code: "mexpar1", date: dayjs("8/10/2023").format() },
   { code: "milmac", date: dayjs("8/6/2023").format() },
+  { code: "grpchi", date: dayjs("31/3/2024").format() },
 ];
 
 const beginYear = 2000;
@@ -65,6 +66,7 @@ const endYear = new Date().getFullYear();
 
   let species: Species = {};
   photos.forEach((row) => {
+    if (!row?.commonName) return;
     if (row.commonName.includes("/") || row.commonName.includes("hybrid") || row.commonName.includes("sp.")) {
       return;
     }
