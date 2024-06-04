@@ -6,21 +6,21 @@ import dayjs from "dayjs";
 import Taxonomy from "../taxonomy.json";
 
 const sensitiveDates = [
-  { code: "lepchi", date: dayjs("4/7/2023").format() },
-  { code: "gusgro", date: dayjs("4/8/2023").format() },
-  { code: "yenpar1", date: dayjs("2/5/2023").format() },
-  { code: "fepowl", date: dayjs("6/21/2017").format() },
-  { code: "licpar", date: dayjs("13/5/2018").format() },
-  { code: "purpar1", date: dayjs("23/9/2021").format() },
-  { code: "gyrfal", date: dayjs("7/5/2021").format() },
-  { code: "spoowl", date: dayjs("15/5/2020").format() },
-  { code: "loeowl", date: dayjs("17/9/2017").format() },
-  { code: "grgmac", date: dayjs("3/3/2020").format() },
-  { code: "grgowl", date: dayjs("2/9/2018").format() },
-  { code: "yelpar1", date: dayjs("5/13/2023").format() },
-  { code: "mexpar1", date: dayjs("8/10/2023").format() },
-  { code: "milmac", date: dayjs("8/6/2023").format() },
-  { code: "grpchi", date: dayjs("31/3/2024").format() },
+  { code: "lepchi", date: dayjs("2023-07-04").format() },
+  { code: "gusgro", date: dayjs("2023-08-04").format() },
+  { code: "yenpar1", date: dayjs("2023-05-02").format() },
+  { code: "fepowl", date: dayjs("2017-06-21").format() },
+  { code: "licpar", date: dayjs("2018-05-13").format() },
+  { code: "purpar1", date: dayjs("2021-09-23").format() },
+  { code: "gyrfal", date: dayjs("2021-05-07").format() },
+  { code: "spoowl", date: dayjs("2020-05-15").format() },
+  { code: "loeowl", date: dayjs("2017-09-17").format() },
+  { code: "grgmac", date: dayjs("2020-03-03").format() },
+  { code: "grgowl", date: dayjs("2018-09-02").format() },
+  { code: "yelpar1", date: dayjs("2023-05-13").format() },
+  { code: "mexpar1", date: dayjs("2023-10-08").format() },
+  { code: "milmac", date: dayjs("2023-06-08").format() },
+  { code: "grpchi", date: dayjs("2024-03-31").format() },
 ];
 
 const beginYear = 2000;
