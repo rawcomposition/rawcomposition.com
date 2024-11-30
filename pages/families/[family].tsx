@@ -88,10 +88,26 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: "blocking" };
 };
 
+type FamilySpeciesItem = {
+  family: string;
+  species: {
+    name: string;
+    code: string;
+    count: number;
+    date: string;
+    family: string;
+    year: string;
+    img: number;
+    w: number;
+    h: number;
+  }[];
+};
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slug = params?.family as string;
   const family = families.find((item) => item.slug === slug)?.name || "";
-  const familySpeciesItems = familySpecies.find((item) => item.family === family)?.species ?? [];
+  const familySpeciesItems =
+    (familySpecies as FamilySpeciesItem[]).find((item) => item.family === family)?.species ?? [];
   const filtered = taxonomy.filter((item) => item.family === family);
   const formatted = filtered.map(({ code, name }) => {
     const lifelistEntry = familySpeciesItems.find((it) => it.name === name);
