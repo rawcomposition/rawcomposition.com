@@ -4,20 +4,20 @@
     "slug": "ostriches"
   },
   {
-    "name": "Rheas",
-    "slug": "rheas"
-  },
-  {
-    "name": "Tinamous",
-    "slug": "tinamous"
-  },
-  {
     "name": "Cassowaries and Emu",
     "slug": "cassowaries-and-emu"
   },
   {
     "name": "Kiwis",
     "slug": "kiwis"
+  },
+  {
+    "name": "Rheas",
+    "slug": "rheas"
+  },
+  {
+    "name": "Tinamous",
+    "slug": "tinamous"
   },
   {
     "name": "Screamers",
@@ -52,14 +52,6 @@
     "slug": "pheasants-grouse-and-allies"
   },
   {
-    "name": "Flamingos",
-    "slug": "flamingos"
-  },
-  {
-    "name": "Grebes",
-    "slug": "grebes"
-  },
-  {
     "name": "Pigeons and Doves",
     "slug": "pigeons-and-doves"
   },
@@ -84,10 +76,6 @@
     "slug": "cuckoos"
   },
   {
-    "name": "Frogmouths",
-    "slug": "frogmouths"
-  },
-  {
     "name": "Nightjars and Allies",
     "slug": "nightjars-and-allies"
   },
@@ -98,6 +86,10 @@
   {
     "name": "Oilbird",
     "slug": "oilbird"
+  },
+  {
+    "name": "Frogmouths",
+    "slug": "frogmouths"
   },
   {
     "name": "Owlet-nightjars",
@@ -114,10 +106,6 @@
   {
     "name": "Hummingbirds",
     "slug": "hummingbirds"
-  },
-  {
-    "name": "Hoatzin",
-    "slug": "hoatzin"
   },
   {
     "name": "Flufftails",
@@ -220,6 +208,18 @@
     "slug": "gulls-terns-and-skimmers"
   },
   {
+    "name": "Flamingos",
+    "slug": "flamingos"
+  },
+  {
+    "name": "Grebes",
+    "slug": "grebes"
+  },
+  {
+    "name": "Hoatzin",
+    "slug": "hoatzin"
+  },
+  {
     "name": "Kagu",
     "slug": "kagu"
   },
@@ -276,24 +276,24 @@
     "slug": "cormorants-and-shags"
   },
   {
-    "name": "Pelicans",
-    "slug": "pelicans"
-  },
-  {
-    "name": "Shoebill",
-    "slug": "shoebill"
-  },
-  {
-    "name": "Hamerkop",
-    "slug": "hamerkop"
+    "name": "Ibises and Spoonbills",
+    "slug": "ibises-and-spoonbills"
   },
   {
     "name": "Herons, Egrets, and Bitterns",
     "slug": "herons-egrets-and-bitterns"
   },
   {
-    "name": "Ibises and Spoonbills",
-    "slug": "ibises-and-spoonbills"
+    "name": "Hamerkop",
+    "slug": "hamerkop"
+  },
+  {
+    "name": "Shoebill",
+    "slug": "shoebill"
+  },
+  {
+    "name": "Pelicans",
+    "slug": "pelicans"
   },
   {
     "name": "New World Vultures",
@@ -348,6 +348,10 @@
     "slug": "hornbills"
   },
   {
+    "name": "Bee-eaters",
+    "slug": "bee-eaters"
+  },
+  {
     "name": "Todies",
     "slug": "todies"
   },
@@ -358,10 +362,6 @@
   {
     "name": "Kingfishers",
     "slug": "kingfishers"
-  },
-  {
-    "name": "Bee-eaters",
-    "slug": "bee-eaters"
   },
   {
     "name": "Rollers",
@@ -496,8 +496,12 @@
     "slug": "tityras-and-allies"
   },
   {
-    "name": "Sharpbill, Royal Flycatcher, and Allies",
-    "slug": "sharpbill-royal-flycatcher-and-allies"
+    "name": "Sharpbill",
+    "slug": "sharpbill"
+  },
+  {
+    "name": "Royal Flycatchers and Allies",
+    "slug": "royal-flycatchers-and-allies"
   },
   {
     "name": "Tyrant Flycatchers",
@@ -772,6 +776,10 @@
     "slug": "hylias"
   },
   {
+    "name": "Yellow Flycatchers",
+    "slug": "yellow-flycatchers"
+  },
+  {
     "name": "Bush Warblers and Allies",
     "slug": "bush-warblers-and-allies"
   },
@@ -814,6 +822,10 @@
   {
     "name": "Nuthatches",
     "slug": "nuthatches"
+  },
+  {
+    "name": "Spotted Creepers",
+    "slug": "spotted-creepers"
   },
   {
     "name": "Treecreepers",

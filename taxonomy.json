@@ -10,6 +10,51 @@
     "family": "Ostriches"
   },
   {
+    "code": "soucas1",
+    "name": "Southern Cassowary",
+    "family": "Cassowaries and Emu"
+  },
+  {
+    "code": "dwacas1",
+    "name": "Dwarf Cassowary",
+    "family": "Cassowaries and Emu"
+  },
+  {
+    "code": "norcas1",
+    "name": "Northern Cassowary",
+    "family": "Cassowaries and Emu"
+  },
+  {
+    "code": "emu1",
+    "name": "Emu",
+    "family": "Cassowaries and Emu"
+  },
+  {
+    "code": "sobkiw1",
+    "name": "Southern Brown Kiwi",
+    "family": "Kiwis"
+  },
+  {
+    "code": "okbkiw1",
+    "name": "Okarito Brown Kiwi",
+    "family": "Kiwis"
+  },
+  {
+    "code": "nibkiw1",
+    "name": "North Island Brown Kiwi",
+    "family": "Kiwis"
+  },
+  {
+    "code": "liskiw1",
+    "name": "Little Spotted Kiwi",
+    "family": "Kiwis"
+  },
+  {
+    "code": "grskiw1",
+    "name": "Great Spotted Kiwi",
+    "family": "Kiwis"
+  },
+  {
     "code": "grerhe1",
     "name": "Greater Rhea",
     "family": "Rheas"
@@ -248,51 +293,6 @@
     "code": "pattin1",
     "name": "Patagonian Tinamou",
     "family": "Tinamous"
-  },
-  {
-    "code": "soucas1",
-    "name": "Southern Cassowary",
-    "family": "Cassowaries and Emu"
-  },
-  {
-    "code": "dwacas1",
-    "name": "Dwarf Cassowary",
-    "family": "Cassowaries and Emu"
-  },
-  {
-    "code": "norcas1",
-    "name": "Northern Cassowary",
-    "family": "Cassowaries and Emu"
-  },
-  {
-    "code": "emu1",
-    "name": "Emu",
-    "family": "Cassowaries and Emu"
-  },
-  {
-    "code": "sobkiw1",
-    "name": "Southern Brown Kiwi",
-    "family": "Kiwis"
-  },
-  {
-    "code": "okbkiw1",
-    "name": "Okarito Brown Kiwi",
-    "family": "Kiwis"
-  },
-  {
-    "code": "nibkiw1",
-    "name": "North Island Brown Kiwi",
-    "family": "Kiwis"
-  },
-  {
-    "code": "liskiw1",
-    "name": "Little Spotted Kiwi",
-    "family": "Kiwis"
-  },
-  {
-    "code": "grskiw1",
-    "name": "Great Spotted Kiwi",
-    "family": "Kiwis"
   },
   {
     "code": "horscr1",
@@ -1665,6 +1665,11 @@
     "family": "New World Quail"
   },
   {
+    "code": "crebob2",
+    "name": "Spot-bellied Bobwhite",
+    "family": "New World Quail"
+  },
+  {
     "code": "crebob1",
     "name": "Crested Bobwhite",
     "family": "New World Quail"
@@ -1976,7 +1981,7 @@
   },
   {
     "code": "sevgro1",
-    "name": "Severtzov's Grouse",
+    "name": "Chinese Grouse",
     "family": "Pheasants, Grouse, and Allies"
   },
   {
@@ -2040,13 +2045,13 @@
     "family": "Pheasants, Grouse, and Allies"
   },
   {
-    "code": "blbcap1",
-    "name": "Black-billed Capercaillie",
+    "code": "wescap1",
+    "name": "Western Capercaillie",
     "family": "Pheasants, Grouse, and Allies"
   },
   {
-    "code": "wescap1",
-    "name": "Western Capercaillie",
+    "code": "blbcap1",
+    "name": "Black-billed Capercaillie",
     "family": "Pheasants, Grouse, and Allies"
   },
   {
@@ -2710,146 +2715,6 @@
     "family": "Pheasants, Grouse, and Allies"
   },
   {
-    "code": "chifla1",
-    "name": "Chilean Flamingo",
-    "family": "Flamingos"
-  },
-  {
-    "code": "grefla2",
-    "name": "American Flamingo",
-    "family": "Flamingos"
-  },
-  {
-    "code": "grefla3",
-    "name": "Greater Flamingo",
-    "family": "Flamingos"
-  },
-  {
-    "code": "lesfla1",
-    "name": "Lesser Flamingo",
-    "family": "Flamingos"
-  },
-  {
-    "code": "andfla2",
-    "name": "Andean Flamingo",
-    "family": "Flamingos"
-  },
-  {
-    "code": "jamfla1",
-    "name": "James's Flamingo",
-    "family": "Flamingos"
-  },
-  {
-    "code": "whtgre3",
-    "name": "White-tufted Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "titgre1",
-    "name": "Titicaca Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "alagre1",
-    "name": "Alaotra Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "litgre1",
-    "name": "Little Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "ausgre1",
-    "name": "Australasian Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "madgre1",
-    "name": "Madagascar Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "leagre",
-    "name": "Least Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "pibgre",
-    "name": "Pied-billed Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "atigre1",
-    "name": "Atitlan Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "hohgre1",
-    "name": "Hoary-headed Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "nezgre1",
-    "name": "New Zealand Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "gregre1",
-    "name": "Great Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "horgre",
-    "name": "Horned Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "rengre",
-    "name": "Red-necked Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "grcgre1",
-    "name": "Great Crested Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "eargre",
-    "name": "Eared Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "colgre1",
-    "name": "Colombian Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "silgre1",
-    "name": "Silvery Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "jungre1",
-    "name": "Junin Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "hoogre1",
-    "name": "Hooded Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "wesgre",
-    "name": "Western Grebe",
-    "family": "Grebes"
-  },
-  {
-    "code": "clagre",
-    "name": "Clark's Grebe",
-    "family": "Grebes"
-  },
-  {
     "code": "rocpig",
     "name": "Rock Pigeon",
     "family": "Pigeons and Doves"
@@ -2931,12 +2796,12 @@
   },
   {
     "code": "delpig1",
-    "name": "Delegorgue's Pigeon",
+    "name": "Eastern Bronze-naped Pigeon",
     "family": "Pigeons and Doves"
   },
   {
     "code": "brnpig1",
-    "name": "Bronze-naped Pigeon",
+    "name": "Western Bronze-naped Pigeon",
     "family": "Pigeons and Doves"
   },
   {
@@ -3291,7 +3156,7 @@
   },
   {
     "code": "macdov1",
-    "name": "Mackinlay's Cuckoo-Dove",
+    "name": "Spot-breasted Cuckoo-Dove",
     "family": "Pigeons and Doves"
   },
   {
@@ -3426,7 +3291,7 @@
   },
   {
     "code": "margrd1",
-    "name": "Marquesas Ground Dove",
+    "name": "Marquesan Ground Dove",
     "family": "Pigeons and Doves"
   },
   {
@@ -4331,7 +4196,7 @@
   },
   {
     "code": "veldov1",
-    "name": "Velvet Dove",
+    "name": "Whistling Dove",
     "family": "Pigeons and Doves"
   },
   {
@@ -4441,7 +4306,7 @@
   },
   {
     "code": "marimp1",
-    "name": "Marquesas Imperial-Pigeon",
+    "name": "Nuku Hiva Imperial-Pigeon",
     "family": "Pigeons and Doves"
   },
   {
@@ -4496,7 +4361,7 @@
   },
   {
     "code": "peipig1",
-    "name": "Peale's Imperial-Pigeon",
+    "name": "Barking Imperial-Pigeon",
     "family": "Pigeons and Doves"
   },
   {
@@ -4586,7 +4451,7 @@
   },
   {
     "code": "nezpig3",
-    "name": "Chatham Island Pigeon",
+    "name": "Chatham Islands Pigeon",
     "family": "Pigeons and Doves"
   },
   {
@@ -4736,12 +4601,12 @@
   },
   {
     "code": "houbus1",
-    "name": "Houbara Bustard",
+    "name": "African Houbara",
     "family": "Bustards"
   },
   {
     "code": "macbus1",
-    "name": "Macqueen's Bustard",
+    "name": "Asian Houbara",
     "family": "Bustards"
   },
   {
@@ -4845,98 +4710,13 @@
     "family": "Turacos"
   },
   {
-    "code": "guitur1",
-    "name": "Guinea Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "livtur1",
-    "name": "Livingstone's Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "schtur1",
-    "name": "Schalow's Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "knytur1",
-    "name": "Knysna Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "blbtur1",
-    "name": "Black-billed Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "whctur2",
-    "name": "White-crested Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "fistur1",
-    "name": "Fischer's Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "yebtur1",
-    "name": "Yellow-billed Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "bantur1",
-    "name": "Bannerman's Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "rectur1",
-    "name": "Red-crested Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "hartur1",
-    "name": "Hartlaub's Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "whctur1",
-    "name": "White-cheeked Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "prrtur1",
-    "name": "Prince Ruspoli's Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "puctur2",
-    "name": "Purple-crested Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "ruwtur2",
-    "name": "Rwenzori Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "viotur1",
-    "name": "Violet Turaco",
-    "family": "Turacos"
-  },
-  {
-    "code": "rostur1",
-    "name": "Ross's Turaco",
+    "code": "grygab1",
+    "name": "Gray Go-away-bird",
     "family": "Turacos"
   },
   {
     "code": "bfgbir1",
     "name": "Bare-faced Go-away-bird",
-    "family": "Turacos"
-  },
-  {
-    "code": "grygab1",
-    "name": "Gray Go-away-bird",
     "family": "Turacos"
   },
   {
@@ -4952,6 +4732,91 @@
   {
     "code": "easple1",
     "name": "Eastern Plantain-eater",
+    "family": "Turacos"
+  },
+  {
+    "code": "ruwtur2",
+    "name": "Rwenzori Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "puctur2",
+    "name": "Purple-crested Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "whctur1",
+    "name": "White-cheeked Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "prrtur1",
+    "name": "Prince Ruspoli's Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "viotur1",
+    "name": "Violet Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "rostur1",
+    "name": "Ross's Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "yebtur1",
+    "name": "Yellow-billed Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "bantur1",
+    "name": "Bannerman's Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "whctur2",
+    "name": "White-crested Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "blbtur1",
+    "name": "Black-billed Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "schtur1",
+    "name": "Schalow's Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "rectur1",
+    "name": "Red-crested Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "guitur1",
+    "name": "Guinea Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "hartur1",
+    "name": "Hartlaub's Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "fistur1",
+    "name": "Fischer's Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "livtur1",
+    "name": "Livingstone's Turaco",
+    "family": "Turacos"
+  },
+  {
+    "code": "knytur1",
+    "name": "Knysna Turaco",
     "family": "Turacos"
   },
   {
@@ -5060,8 +4925,13 @@
     "family": "Cuckoos"
   },
   {
-    "code": "reccou1",
+    "code": "reccou2",
     "name": "Red-capped Coua",
+    "family": "Cuckoos"
+  },
+  {
+    "code": "reccou3",
+    "name": "Olive-capped Coua",
     "family": "Cuckoos"
   },
   {
@@ -5170,8 +5040,13 @@
     "family": "Cuckoos"
   },
   {
-    "code": "whbcou1",
+    "code": "whbcou2",
     "name": "White-browed Coucal",
+    "family": "Cuckoos"
+  },
+  {
+    "code": "whbcou3",
+    "name": "Burchell's Coucal",
     "family": "Cuckoos"
   },
   {
@@ -5257,6 +5132,11 @@
   {
     "code": "chbmal2",
     "name": "Chestnut-breasted Malkoha",
+    "family": "Cuckoos"
+  },
+  {
+    "code": "chbmal3",
+    "name": "Mentawai Malkoha",
     "family": "Cuckoos"
   },
   {
@@ -5515,6 +5395,11 @@
     "family": "Cuckoos"
   },
   {
+    "code": "litbrc5",
+    "name": "Pied Bronze-Cuckoo",
+    "family": "Cuckoos"
+  },
+  {
     "code": "palcuc1",
     "name": "Pallid Cuckoo",
     "family": "Cuckoos"
@@ -5550,13 +5435,33 @@
     "family": "Cuckoos"
   },
   {
-    "code": "molcuc1",
-    "name": "Moluccan Cuckoo",
+    "code": "brucuc2",
+    "name": "Sunda Brush Cuckoo",
     "family": "Cuckoos"
   },
   {
-    "code": "brucuc1",
-    "name": "Brush Cuckoo",
+    "code": "brucuc5",
+    "name": "Sulawesi Brush Cuckoo",
+    "family": "Cuckoos"
+  },
+  {
+    "code": "molcuc1",
+    "name": "Moluccan Brush Cuckoo",
+    "family": "Cuckoos"
+  },
+  {
+    "code": "brucuc3",
+    "name": "Sahul Brush Cuckoo",
+    "family": "Cuckoos"
+  },
+  {
+    "code": "brucuc13",
+    "name": "Solomons Brush Cuckoo",
+    "family": "Cuckoos"
+  },
+  {
+    "code": "brucuc10",
+    "name": "Manus Brush Cuckoo",
     "family": "Cuckoos"
   },
   {
@@ -5690,86 +5595,6 @@
     "family": "Cuckoos"
   },
   {
-    "code": "tawfro1",
-    "name": "Tawny Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "marfro1",
-    "name": "Marbled Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "papfro1",
-    "name": "Papuan Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "soifro1",
-    "name": "Solomons Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "larfro1",
-    "name": "Large Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "dulfro1",
-    "name": "Dulit Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "phifro1",
-    "name": "Philippine Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "goufro1",
-    "name": "Gould's Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "ceyfro1",
-    "name": "Sri Lanka Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "hodfro1",
-    "name": "Hodgson's Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "shtfro3",
-    "name": "Sumatran Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "shtfro2",
-    "name": "Bornean Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "javfro3",
-    "name": "Javan Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "javfro2",
-    "name": "Blyth's Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "palfro1",
-    "name": "Palawan Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
-    "code": "sunfro1",
-    "name": "Sunda Frogmouth",
-    "family": "Frogmouths"
-  },
-  {
     "code": "sponig1",
     "name": "Spotted Nightjar",
     "family": "Nightjars and Allies"
@@ -5880,16 +5705,6 @@
     "family": "Nightjars and Allies"
   },
   {
-    "code": "bawnig1",
-    "name": "Band-winged Nightjar",
-    "family": "Nightjars and Allies"
-  },
-  {
-    "code": "bawnig3",
-    "name": "Tschudi's Nightjar",
-    "family": "Nightjars and Allies"
-  },
-  {
     "code": "compau",
     "name": "Common Pauraque",
     "family": "Nightjars and Allies"
@@ -5900,13 +5715,8 @@
     "family": "Nightjars and Allies"
   },
   {
-    "code": "whwnig1",
-    "name": "White-winged Nightjar",
-    "family": "Nightjars and Allies"
-  },
-  {
-    "code": "siwnig1",
-    "name": "Sickle-winged Nightjar",
+    "code": "rornig1",
+    "name": "Roraiman Nightjar",
     "family": "Nightjars and Allies"
   },
   {
@@ -5920,6 +5730,11 @@
     "family": "Nightjars and Allies"
   },
   {
+    "code": "bawnig3",
+    "name": "Tschudi's Nightjar",
+    "family": "Nightjars and Allies"
+  },
+  {
     "code": "samnig1",
     "name": "Todd's Nightjar",
     "family": "Nightjars and Allies"
@@ -5930,23 +5745,33 @@
     "family": "Nightjars and Allies"
   },
   {
-    "code": "rornig1",
-    "name": "Roraiman Nightjar",
-    "family": "Nightjars and Allies"
-  },
-  {
     "code": "caynig1",
     "name": "Cayenne Nightjar",
     "family": "Nightjars and Allies"
   },
   {
-    "code": "whtnig1",
-    "name": "White-tailed Nightjar",
+    "code": "sptnig1",
+    "name": "Spot-tailed Nightjar",
     "family": "Nightjars and Allies"
   },
   {
-    "code": "sptnig1",
-    "name": "Spot-tailed Nightjar",
+    "code": "bawnig1",
+    "name": "Band-winged Nightjar",
+    "family": "Nightjars and Allies"
+  },
+  {
+    "code": "whwnig1",
+    "name": "White-winged Nightjar",
+    "family": "Nightjars and Allies"
+  },
+  {
+    "code": "siwnig1",
+    "name": "Sickle-winged Nightjar",
+    "family": "Nightjars and Allies"
+  },
+  {
+    "code": "whtnig1",
+    "name": "White-tailed Nightjar",
     "family": "Nightjars and Allies"
   },
   {
@@ -6135,6 +5960,11 @@
     "family": "Nightjars and Allies"
   },
   {
+    "code": "timnig1",
+    "name": "Timor Nightjar",
+    "family": "Nightjars and Allies"
+  },
+  {
     "code": "andnig1",
     "name": "Andaman Nightjar",
     "family": "Nightjars and Allies"
@@ -6295,6 +6125,86 @@
     "family": "Oilbird"
   },
   {
+    "code": "tawfro1",
+    "name": "Tawny Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "marfro1",
+    "name": "Marbled Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "papfro1",
+    "name": "Papuan Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "soifro1",
+    "name": "Solomons Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "larfro1",
+    "name": "Large Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "dulfro1",
+    "name": "Dulit Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "phifro1",
+    "name": "Philippine Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "goufro1",
+    "name": "Gould's Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "ceyfro1",
+    "name": "Sri Lanka Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "hodfro1",
+    "name": "Hodgson's Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "shtfro3",
+    "name": "Sumatran Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "shtfro2",
+    "name": "Bornean Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "javfro3",
+    "name": "Javan Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "javfro2",
+    "name": "Blyth's Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "palfro1",
+    "name": "Palawan Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
+    "code": "sunfro1",
+    "name": "Sunda Frogmouth",
+    "family": "Frogmouths"
+  },
+  {
     "code": "nconig1",
     "name": "New Caledonian Owlet-nightjar",
     "family": "Owlet-nightjars"
@@ -6337,6 +6247,11 @@
   {
     "code": "barown1",
     "name": "Barred Owlet-nightjar",
+    "family": "Owlet-nightjars"
+  },
+  {
+    "code": "barown5",
+    "name": "Karimui Owlet-nightjar",
     "family": "Owlet-nightjars"
   },
   {
@@ -6610,18 +6525,8 @@
     "family": "Swifts"
   },
   {
-    "code": "molswi4",
-    "name": "Sulawesi Swiftlet",
-    "family": "Swifts"
-  },
-  {
-    "code": "molswi3",
-    "name": "Halmahera Swiftlet",
-    "family": "Swifts"
-  },
-  {
-    "code": "molswi1",
-    "name": "Seram Swiftlet",
+    "code": "molswi5",
+    "name": "Moluccan Swiftlet",
     "family": "Swifts"
   },
   {
@@ -6720,13 +6625,8 @@
     "family": "Swifts"
   },
   {
-    "code": "ednswi1",
+    "code": "y00731",
     "name": "White-nest Swiftlet",
-    "family": "Swifts"
-  },
-  {
-    "code": "gerswi1",
-    "name": "Germain's Swiftlet",
     "family": "Swifts"
   },
   {
@@ -8600,11 +8500,6 @@
     "family": "Hummingbirds"
   },
   {
-    "code": "manhum1",
-    "name": "Mangrove Hummingbird",
-    "family": "Hummingbirds"
-  },
-  {
     "code": "amahum1",
     "name": "Amazilia Hummingbird",
     "family": "Hummingbirds"
@@ -8627,6 +8522,11 @@
   {
     "code": "gotsap1",
     "name": "Golden-tailed Sapphire",
+    "family": "Hummingbirds"
+  },
+  {
+    "code": "manhum1",
+    "name": "Mangrove Hummingbird",
     "family": "Hummingbirds"
   },
   {
@@ -8733,11 +8633,6 @@
     "code": "bucsap1",
     "name": "Blue-chinned Sapphire",
     "family": "Hummingbirds"
-  },
-  {
-    "code": "hoatzi1",
-    "name": "Hoatzin",
-    "family": "Hoatzin"
   },
   {
     "code": "madwor1",
@@ -8850,6 +8745,11 @@
     "family": "Rails, Gallinules, and Coots"
   },
   {
+    "code": "virrai1",
+    "name": "Ecuadorian Rail",
+    "family": "Rails, Gallinules, and Coots"
+  },
+  {
     "code": "bograi1",
     "name": "Bogota Rail",
     "family": "Rails, Gallinules, and Coots"
@@ -8912,11 +8812,6 @@
   {
     "code": "rourai1",
     "name": "Rouget's Rail",
-    "family": "Rails, Gallinules, and Coots"
-  },
-  {
-    "code": "inirai1",
-    "name": "Inaccessible Island Rail",
     "family": "Rails, Gallinules, and Coots"
   },
   {
@@ -9182,11 +9077,6 @@
   {
     "code": "auscra1",
     "name": "Australian Crake",
-    "family": "Rails, Gallinules, and Coots"
-  },
-  {
-    "code": "dowcra1",
-    "name": "Dot-winged Crake",
     "family": "Rails, Gallinules, and Coots"
   },
   {
@@ -9515,13 +9405,23 @@
     "family": "Rails, Gallinules, and Coots"
   },
   {
-    "code": "chhcra1",
-    "name": "Chestnut-headed Crake",
+    "code": "blbcra1",
+    "name": "Black-banded Crake",
     "family": "Rails, Gallinules, and Coots"
   },
   {
-    "code": "blbcra1",
-    "name": "Black-banded Crake",
+    "code": "rawcra1",
+    "name": "Red-and-white Crake",
+    "family": "Rails, Gallinules, and Coots"
+  },
+  {
+    "code": "rufcra1",
+    "name": "Rufous-faced Crake",
+    "family": "Rails, Gallinules, and Coots"
+  },
+  {
+    "code": "chhcra1",
+    "name": "Chestnut-headed Crake",
     "family": "Rails, Gallinules, and Coots"
   },
   {
@@ -9532,6 +9432,11 @@
   {
     "code": "yelrai",
     "name": "Yellow Rail",
+    "family": "Rails, Gallinules, and Coots"
+  },
+  {
+    "code": "inirai1",
+    "name": "Inaccessible Island Rail",
     "family": "Rails, Gallinules, and Coots"
   },
   {
@@ -9580,13 +9485,8 @@
     "family": "Rails, Gallinules, and Coots"
   },
   {
-    "code": "rawcra1",
-    "name": "Red-and-white Crake",
-    "family": "Rails, Gallinules, and Coots"
-  },
-  {
-    "code": "rufcra1",
-    "name": "Rufous-faced Crake",
+    "code": "dowcra1",
+    "name": "Dot-winged Crake",
     "family": "Rails, Gallinules, and Coots"
   },
   {
@@ -9836,7 +9736,7 @@
   },
   {
     "code": "chaoys1",
-    "name": "Chatham Oystercatcher",
+    "name": "Chatham Islands Oystercatcher",
     "family": "Oystercatchers"
   },
   {
@@ -10446,7 +10346,7 @@
   },
   {
     "code": "snisni1",
-    "name": "Snares Island Snipe",
+    "name": "Snares Snipe",
     "family": "Sandpipers and Allies"
   },
   {
@@ -10885,13 +10785,13 @@
     "family": "Crab-Plover"
   },
   {
-    "code": "brwcou1",
-    "name": "Bronze-winged Courser",
+    "code": "dobcou2",
+    "name": "Double-banded Courser",
     "family": "Pratincoles and Coursers"
   },
   {
-    "code": "thbcou1",
-    "name": "Three-banded Courser",
+    "code": "brwcou1",
+    "name": "Bronze-winged Courser",
     "family": "Pratincoles and Coursers"
   },
   {
@@ -10900,8 +10800,18 @@
     "family": "Pratincoles and Coursers"
   },
   {
-    "code": "dobcou2",
-    "name": "Double-banded Courser",
+    "code": "thbcou1",
+    "name": "Three-banded Courser",
+    "family": "Pratincoles and Coursers"
+  },
+  {
+    "code": "temcou1",
+    "name": "Temminck's Courser",
+    "family": "Pratincoles and Coursers"
+  },
+  {
+    "code": "indcou1",
+    "name": "Indian Courser",
     "family": "Pratincoles and Coursers"
   },
   {
@@ -10920,23 +10830,13 @@
     "family": "Pratincoles and Coursers"
   },
   {
-    "code": "temcou1",
-    "name": "Temminck's Courser",
-    "family": "Pratincoles and Coursers"
-  },
-  {
-    "code": "indcou1",
-    "name": "Indian Courser",
+    "code": "rocpra1",
+    "name": "Rock Pratincole",
     "family": "Pratincoles and Coursers"
   },
   {
     "code": "auspra1",
     "name": "Australian Pratincole",
-    "family": "Pratincoles and Coursers"
-  },
-  {
-    "code": "rocpra1",
-    "name": "Rock Pratincole",
     "family": "Pratincoles and Coursers"
   },
   {
@@ -10950,13 +10850,8 @@
     "family": "Pratincoles and Coursers"
   },
   {
-    "code": "oripra",
-    "name": "Oriental Pratincole",
-    "family": "Pratincoles and Coursers"
-  },
-  {
-    "code": "blwpra1",
-    "name": "Black-winged Pratincole",
+    "code": "madpra1",
+    "name": "Madagascar Pratincole",
     "family": "Pratincoles and Coursers"
   },
   {
@@ -10965,8 +10860,13 @@
     "family": "Pratincoles and Coursers"
   },
   {
-    "code": "madpra1",
-    "name": "Madagascar Pratincole",
+    "code": "blwpra1",
+    "name": "Black-winged Pratincole",
+    "family": "Pratincoles and Coursers"
+  },
+  {
+    "code": "oripra",
+    "name": "Oriental Pratincole",
     "family": "Pratincoles and Coursers"
   },
   {
@@ -11335,8 +11235,23 @@
     "family": "Gulls, Terns, and Skimmers"
   },
   {
-    "code": "hergul",
-    "name": "Herring Gull",
+    "code": "amhgul1",
+    "name": "American Herring Gull",
+    "family": "Gulls, Terns, and Skimmers"
+  },
+  {
+    "code": "veggul1",
+    "name": "Vega Gull",
+    "family": "Gulls, Terns, and Skimmers"
+  },
+  {
+    "code": "casgul4",
+    "name": "Mongolian Gull",
+    "family": "Gulls, Terns, and Skimmers"
+  },
+  {
+    "code": "euhgul1",
+    "name": "European Herring Gull",
     "family": "Gulls, Terns, and Skimmers"
   },
   {
@@ -11628,6 +11543,151 @@
     "code": "chcter2",
     "name": "Chinese Crested Tern",
     "family": "Gulls, Terns, and Skimmers"
+  },
+  {
+    "code": "chifla1",
+    "name": "Chilean Flamingo",
+    "family": "Flamingos"
+  },
+  {
+    "code": "grefla2",
+    "name": "American Flamingo",
+    "family": "Flamingos"
+  },
+  {
+    "code": "grefla3",
+    "name": "Greater Flamingo",
+    "family": "Flamingos"
+  },
+  {
+    "code": "lesfla1",
+    "name": "Lesser Flamingo",
+    "family": "Flamingos"
+  },
+  {
+    "code": "andfla2",
+    "name": "Andean Flamingo",
+    "family": "Flamingos"
+  },
+  {
+    "code": "jamfla1",
+    "name": "James's Flamingo",
+    "family": "Flamingos"
+  },
+  {
+    "code": "whtgre3",
+    "name": "White-tufted Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "titgre1",
+    "name": "Titicaca Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "alagre1",
+    "name": "Alaotra Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "litgre1",
+    "name": "Little Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "ausgre1",
+    "name": "Australasian Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "madgre1",
+    "name": "Madagascar Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "leagre",
+    "name": "Least Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "pibgre",
+    "name": "Pied-billed Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "atigre1",
+    "name": "Atitlan Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "hohgre1",
+    "name": "Hoary-headed Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "nezgre1",
+    "name": "New Zealand Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "gregre1",
+    "name": "Great Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "horgre",
+    "name": "Horned Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "rengre",
+    "name": "Red-necked Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "grcgre1",
+    "name": "Great Crested Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "eargre",
+    "name": "Eared Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "colgre1",
+    "name": "Colombian Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "silgre1",
+    "name": "Silvery Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "jungre1",
+    "name": "Junin Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "hoogre1",
+    "name": "Hooded Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "wesgre",
+    "name": "Western Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "clagre",
+    "name": "Clark's Grebe",
+    "family": "Grebes"
+  },
+  {
+    "code": "hoatzi1",
+    "name": "Hoatzin",
+    "family": "Hoatzin"
   },
   {
     "code": "kagu1",
@@ -12036,7 +12096,7 @@
   },
   {
     "code": "cappet",
-    "name": "Cape Petrel",
+    "name": "Pintado Petrel",
     "family": "Shearwaters and Petrels"
   },
   {
@@ -12181,7 +12241,7 @@
   },
   {
     "code": "chapet1",
-    "name": "Chatham Petrel",
+    "name": "Chatham Islands Petrel",
     "family": "Shearwaters and Petrels"
   },
   {
@@ -12330,8 +12390,13 @@
     "family": "Shearwaters and Petrels"
   },
   {
-    "code": "corshe",
+    "code": "corshe1",
     "name": "Cory's Shearwater",
+    "family": "Shearwaters and Petrels"
+  },
+  {
+    "code": "scoshe1",
+    "name": "Scopoli's Shearwater",
     "family": "Shearwaters and Petrels"
   },
   {
@@ -12461,7 +12526,7 @@
   },
   {
     "code": "audshe",
-    "name": "Audubon's Shearwater",
+    "name": "Sargasso Shearwater",
     "family": "Shearwaters and Petrels"
   },
   {
@@ -12655,6 +12720,11 @@
     "family": "Boobies and Gannets"
   },
   {
+    "code": "cocboo1",
+    "name": "Cocos Booby",
+    "family": "Boobies and Gannets"
+  },
+  {
     "code": "masboo",
     "name": "Masked Booby",
     "family": "Boobies and Gannets"
@@ -12701,7 +12771,7 @@
   },
   {
     "code": "lotcor1",
-    "name": "Long-tailed Cormorant",
+    "name": "Reed Cormorant",
     "family": "Cormorants and Shags"
   },
   {
@@ -12895,411 +12965,6 @@
     "family": "Cormorants and Shags"
   },
   {
-    "code": "amwpel",
-    "name": "American White Pelican",
-    "family": "Pelicans"
-  },
-  {
-    "code": "brnpel",
-    "name": "Brown Pelican",
-    "family": "Pelicans"
-  },
-  {
-    "code": "perpel1",
-    "name": "Peruvian Pelican",
-    "family": "Pelicans"
-  },
-  {
-    "code": "grwpel1",
-    "name": "Great White Pelican",
-    "family": "Pelicans"
-  },
-  {
-    "code": "auspel1",
-    "name": "Australian Pelican",
-    "family": "Pelicans"
-  },
-  {
-    "code": "pibpel1",
-    "name": "Pink-backed Pelican",
-    "family": "Pelicans"
-  },
-  {
-    "code": "spbpel1",
-    "name": "Spot-billed Pelican",
-    "family": "Pelicans"
-  },
-  {
-    "code": "dalpel1",
-    "name": "Dalmatian Pelican",
-    "family": "Pelicans"
-  },
-  {
-    "code": "shoebi1",
-    "name": "Shoebill",
-    "family": "Shoebill"
-  },
-  {
-    "code": "hamerk1",
-    "name": "Hamerkop",
-    "family": "Hamerkop"
-  },
-  {
-    "code": "whcbit1",
-    "name": "White-crested Tiger-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "ruther1",
-    "name": "Rufescent Tiger-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "btther1",
-    "name": "Bare-throated Tiger-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "father1",
-    "name": "Fasciated Tiger-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "bobher1",
-    "name": "Boat-billed Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "agaher1",
-    "name": "Agami Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "zigher1",
-    "name": "Zigzag Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "grebit1",
-    "name": "Great Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "ausbit1",
-    "name": "Australasian Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "amebit",
-    "name": "American Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "pinbit1",
-    "name": "Pinnated Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "stbbit1",
-    "name": "Stripe-backed Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "leabit",
-    "name": "Least Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "blabit1",
-    "name": "Black Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "cinbit1",
-    "name": "Cinnamon Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "schbit1",
-    "name": "Schrenck's Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "dwabit1",
-    "name": "Dwarf Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "litbit1",
-    "name": "Little Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "yelbit",
-    "name": "Yellow Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "bkbbit1",
-    "name": "Black-backed Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "nezbit1",
-    "name": "New Zealand Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "ycnher",
-    "name": "Yellow-crowned Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "bernih1",
-    "name": "Bermuda Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "bcnher",
-    "name": "Black-crowned Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "reunih1",
-    "name": "Reunion Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "maunih1",
-    "name": "Mauritius Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "rodnih1",
-    "name": "Rodrigues Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "runher1",
-    "name": "Nankeen Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "manher1",
-    "name": "Malayan Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "janher1",
-    "name": "Japanese Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "capher1",
-    "name": "Capped Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "whiher1",
-    "name": "Whistling Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "libher",
-    "name": "Little Blue Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "triher",
-    "name": "Tricolored Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "redegr",
-    "name": "Reddish Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "slaegr1",
-    "name": "Slaty Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "blaher1",
-    "name": "Black Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "pacreh1",
-    "name": "Pacific Reef-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "chiegr",
-    "name": "Chinese Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "snoegr",
-    "name": "Snowy Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "litegr",
-    "name": "Little Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "werher",
-    "name": "Western Reef-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "pieher2",
-    "name": "Pied Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "whfher1",
-    "name": "White-faced Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "wbnher1",
-    "name": "White-backed Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "wenher1",
-    "name": "White-eared Night Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "strher",
-    "name": "Striated Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "grnher",
-    "name": "Green Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "forbit1",
-    "name": "Forest Bittern",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "rubher2",
-    "name": "Rufous-bellied Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "squher1",
-    "name": "Squacco Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "mapher1",
-    "name": "Malagasy Pond-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "inpher1",
-    "name": "Indian Pond-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "chpher1",
-    "name": "Chinese Pond-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "japher1",
-    "name": "Javan Pond-Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "categr1",
-    "name": "Western Cattle Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "categr2",
-    "name": "Eastern Cattle Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "pacher1",
-    "name": "Pacific Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "greegr",
-    "name": "Great Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "integr3",
-    "name": "Yellow-billed Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "integr1",
-    "name": "Medium Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "integr2",
-    "name": "Plumed Egret",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "graher1",
-    "name": "Gray Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "grbher3",
-    "name": "Great Blue Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "cocher1",
-    "name": "Cocoi Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "purher1",
-    "name": "Purple Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "humher1",
-    "name": "Humblot's Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "whbher2",
-    "name": "White-bellied Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "grbher2",
-    "name": "Great-billed Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "blhher1",
-    "name": "Black-headed Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
-    "code": "golher1",
-    "name": "Goliath Heron",
-    "family": "Herons, Egrets, and Bitterns"
-  },
-  {
     "code": "whiibi",
     "name": "White Ibis",
     "family": "Ibises and Spoonbills"
@@ -13480,18 +13145,428 @@
     "family": "Ibises and Spoonbills"
   },
   {
+    "code": "whcbit1",
+    "name": "White-crested Tiger-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "ruther1",
+    "name": "Rufescent Tiger-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "btther1",
+    "name": "Bare-throated Tiger-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "father1",
+    "name": "Fasciated Tiger-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "bobher1",
+    "name": "Boat-billed Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "agaher1",
+    "name": "Agami Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "zigher1",
+    "name": "Zigzag Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "grebit1",
+    "name": "Eurasian Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "ausbit1",
+    "name": "Australasian Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "amebit",
+    "name": "American Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "pinbit1",
+    "name": "Pinnated Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "stbbit1",
+    "name": "Stripe-backed Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "leabit",
+    "name": "Least Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "blabit1",
+    "name": "Black Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "cinbit1",
+    "name": "Cinnamon Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "schbit1",
+    "name": "Schrenck's Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "dwabit1",
+    "name": "Dwarf Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "litbit1",
+    "name": "Little Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "yelbit",
+    "name": "Yellow Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "bkbbit1",
+    "name": "Black-backed Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "nezbit1",
+    "name": "New Zealand Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "ycnher",
+    "name": "Yellow-crowned Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "bernih1",
+    "name": "Bermuda Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "bcnher",
+    "name": "Black-crowned Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "reunih1",
+    "name": "Reunion Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "maunih1",
+    "name": "Mauritius Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "rodnih1",
+    "name": "Rodrigues Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "runher1",
+    "name": "Nankeen Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "asnher1",
+    "name": "Ascension Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "manher1",
+    "name": "Malayan Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "janher1",
+    "name": "Japanese Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "capher1",
+    "name": "Capped Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "whiher1",
+    "name": "Whistling Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "libher",
+    "name": "Little Blue Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "triher",
+    "name": "Tricolored Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "redegr",
+    "name": "Reddish Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "slaegr1",
+    "name": "Slaty Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "blaher1",
+    "name": "Black Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "pacreh1",
+    "name": "Pacific Reef-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "chiegr",
+    "name": "Chinese Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "snoegr",
+    "name": "Snowy Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "litegr",
+    "name": "Little Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "werher",
+    "name": "Western Reef-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "pieher2",
+    "name": "Pied Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "whfher1",
+    "name": "White-faced Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "wbnher1",
+    "name": "White-backed Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "wenher1",
+    "name": "White-eared Night Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "strher",
+    "name": "Striated Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "grnher",
+    "name": "Green Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "forbit1",
+    "name": "Forest Bittern",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "rubher2",
+    "name": "Rufous-bellied Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "squher1",
+    "name": "Squacco Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "mapher1",
+    "name": "Malagasy Pond-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "inpher1",
+    "name": "Indian Pond-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "chpher1",
+    "name": "Chinese Pond-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "japher1",
+    "name": "Javan Pond-Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "categr1",
+    "name": "Western Cattle-Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "categr2",
+    "name": "Eastern Cattle-Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "pacher1",
+    "name": "Pacific Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "greegr",
+    "name": "Great Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "integr3",
+    "name": "Yellow-billed Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "integr1",
+    "name": "Medium Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "integr2",
+    "name": "Plumed Egret",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "graher1",
+    "name": "Gray Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "grbher3",
+    "name": "Great Blue Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "cocher1",
+    "name": "Cocoi Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "purher1",
+    "name": "Purple Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "humher1",
+    "name": "Humblot's Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "whbher2",
+    "name": "White-bellied Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "grbher2",
+    "name": "Great-billed Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "blhher1",
+    "name": "Black-headed Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "golher1",
+    "name": "Goliath Heron",
+    "family": "Herons, Egrets, and Bitterns"
+  },
+  {
+    "code": "hamerk1",
+    "name": "Hamerkop",
+    "family": "Hamerkop"
+  },
+  {
+    "code": "shoebi1",
+    "name": "Shoebill",
+    "family": "Shoebill"
+  },
+  {
+    "code": "amwpel",
+    "name": "American White Pelican",
+    "family": "Pelicans"
+  },
+  {
+    "code": "brnpel",
+    "name": "Brown Pelican",
+    "family": "Pelicans"
+  },
+  {
+    "code": "perpel1",
+    "name": "Peruvian Pelican",
+    "family": "Pelicans"
+  },
+  {
+    "code": "grwpel1",
+    "name": "Great White Pelican",
+    "family": "Pelicans"
+  },
+  {
+    "code": "auspel1",
+    "name": "Australian Pelican",
+    "family": "Pelicans"
+  },
+  {
+    "code": "pibpel1",
+    "name": "Pink-backed Pelican",
+    "family": "Pelicans"
+  },
+  {
+    "code": "spbpel1",
+    "name": "Spot-billed Pelican",
+    "family": "Pelicans"
+  },
+  {
+    "code": "dalpel1",
+    "name": "Dalmatian Pelican",
+    "family": "Pelicans"
+  },
+  {
     "code": "calcon",
     "name": "California Condor",
     "family": "New World Vultures"
   },
   {
-    "code": "andcon1",
-    "name": "Andean Condor",
+    "code": "kinvul1",
+    "name": "King Vulture",
     "family": "New World Vultures"
   },
   {
-    "code": "kinvul1",
-    "name": "King Vulture",
+    "code": "andcon1",
+    "name": "Andean Condor",
     "family": "New World Vultures"
   },
   {
@@ -13530,6 +13605,16 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "sctkit1",
+    "name": "Scissor-tailed Kite",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "whtkit",
+    "name": "White-tailed Kite",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "bkskit1",
     "name": "Black-winged Kite",
     "family": "Hawks, Eagles, and Kites"
@@ -13540,18 +13625,8 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "whtkit",
-    "name": "White-tailed Kite",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
     "code": "lewkit1",
     "name": "Letter-winged Kite",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "sctkit1",
-    "name": "Scissor-tailed Kite",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13570,11 +13645,6 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "maseag1",
-    "name": "Madagascar Serpent-Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
     "code": "lammer1",
     "name": "Bearded Vulture",
     "family": "Hawks, Eagles, and Kites"
@@ -13582,6 +13652,11 @@
   {
     "code": "egyvul1",
     "name": "Egyptian Vulture",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "maseag1",
+    "name": "Madagascar Serpent-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13602,51 +13677,6 @@
   {
     "code": "whckit1",
     "name": "White-collared Kite",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "euhbuz1",
-    "name": "European Honey-buzzard",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "barhob1",
-    "name": "Sulawesi Honey-buzzard",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "barhob2",
-    "name": "Philippine Honey-buzzard",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "orihob2",
-    "name": "Oriental Honey-buzzard",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "swtkit",
-    "name": "Swallow-tailed Kite",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "bkbkit1",
-    "name": "Black-breasted Kite",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "lthbuz1",
-    "name": "Long-tailed Honey-buzzard",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "blhbuz1",
-    "name": "Black Honey-buzzard",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "sqtkit1",
-    "name": "Square-tailed Kite",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13675,6 +13705,51 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "euhbuz1",
+    "name": "European Honey-buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "orihob2",
+    "name": "Oriental Honey-buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "barhob1",
+    "name": "Sulawesi Honey-buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "barhob2",
+    "name": "Philippine Honey-buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "swtkit",
+    "name": "Swallow-tailed Kite",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "bkbkit1",
+    "name": "Black-breasted Kite",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "sqtkit1",
+    "name": "Square-tailed Kite",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "lthbuz1",
+    "name": "Long-tailed Honey-buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "blhbuz1",
+    "name": "Black Honey-buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "rehvul1",
     "name": "Red-headed Vulture",
     "family": "Hawks, Eagles, and Kites"
@@ -13700,13 +13775,18 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "whbvul1",
-    "name": "White-backed Vulture",
+    "code": "himgri1",
+    "name": "Himalayan Griffon",
     "family": "Hawks, Eagles, and Kites"
   },
   {
     "code": "whrvul1",
     "name": "White-rumped Vulture",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "whbvul1",
+    "name": "White-backed Vulture",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13720,23 +13800,18 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "capgri1",
+    "name": "Cape Griffon",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "ruegri1",
     "name": "Rüppell's Griffon",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "himgri1",
-    "name": "Himalayan Griffon",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
     "code": "eurgri1",
     "name": "Eurasian Griffon",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "capgri1",
-    "name": "Cape Griffon",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13775,18 +13850,23 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "coseag1",
-    "name": "Congo Serpent-Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
     "code": "batele1",
     "name": "Bateleur",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "shteag1",
-    "name": "Short-toed Snake-Eagle",
+    "code": "baseag1",
+    "name": "Western Banded Snake-Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "faseag1",
+    "name": "Southern Banded Snake-Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "coseag1",
+    "name": "Congo Snake-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13800,38 +13880,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "shteag1",
+    "name": "Short-toed Snake-Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "brseag1",
     "name": "Brown Snake-Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "faseag1",
-    "name": "Fasciated Snake-Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "baseag1",
-    "name": "Banded Snake-Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "bathaw1",
-    "name": "Bat Hawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "negeag1",
-    "name": "New Guinea Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "creeag1",
-    "name": "Crested Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "hareag1",
-    "name": "Harpy Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13840,13 +13895,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "mouhae2",
-    "name": "Legge's Hawk-Eagle",
+    "code": "walhae1",
+    "name": "Wallace's Hawk-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "walhae1",
-    "name": "Wallace's Hawk-Eagle",
+    "code": "mouhae2",
+    "name": "Legge's Hawk-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13865,13 +13920,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "pinhae1",
-    "name": "Pinsker's Hawk-Eagle",
+    "code": "sulhae1",
+    "name": "Sulawesi Hawk-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "sulhae1",
-    "name": "Sulawesi Hawk-Eagle",
+    "code": "pinhae1",
+    "name": "Pinsker's Hawk-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13890,23 +13945,8 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "mareag1",
-    "name": "Martial Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "rubeag2",
-    "name": "Rufous-bellied Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
     "code": "blheag1",
     "name": "Black Hawk-Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "orheag1",
-    "name": "Ornate Hawk-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13915,8 +13955,23 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "orheag1",
+    "name": "Ornate Hawk-Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "baceag2",
     "name": "Black-and-chestnut Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "rubeag2",
+    "name": "Rufous-bellied Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "mareag1",
+    "name": "Martial Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13930,13 +13985,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "leseag1",
-    "name": "Lesser Spotted Eagle",
+    "code": "inseag1",
+    "name": "Indian Spotted Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "inseag1",
-    "name": "Indian Spotted Eagle",
+    "code": "leseag1",
+    "name": "Lesser Spotted Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13950,8 +14005,8 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "booeag1",
-    "name": "Booted Eagle",
+    "code": "ayheag1",
+    "name": "Ayres's Hawk-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13960,18 +14015,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "booeag1",
+    "name": "Booted Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "liteag1",
     "name": "Little Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "ayheag1",
-    "name": "Ayres's Hawk-Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "taweag1",
-    "name": "Tawny Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13980,13 +14030,23 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "impeag1",
+    "name": "Imperial Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "spaeag1",
     "name": "Spanish Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "impeag1",
-    "name": "Imperial Eagle",
+    "code": "taweag1",
+    "name": "Tawny Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "cashae1",
+    "name": "Cassin's Hawk-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -13995,18 +14055,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "goleag",
-    "name": "Golden Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
     "code": "weteag1",
     "name": "Wedge-tailed Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "cashae1",
-    "name": "Cassin's Hawk-Eagle",
+    "code": "goleag",
+    "name": "Golden Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14025,18 +14080,43 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "lizbuz1",
-    "name": "Lizard Buzzard",
+    "code": "negeag1",
+    "name": "New Guinea Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "tinhaw1",
-    "name": "Tiny Hawk",
+    "code": "bathaw1",
+    "name": "Bat Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "semhaw2",
-    "name": "Semicollared Hawk",
+    "code": "creeag1",
+    "name": "Crested Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "hareag1",
+    "name": "Harpy Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "cregos1",
+    "name": "Crested Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "sulgos1",
+    "name": "Sulawesi Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "gabgos2",
+    "name": "Gabar Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "lothaw1",
+    "name": "Long-tailed Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14055,63 +14135,243 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "gabgos2",
-    "name": "Gabar Goshawk",
+    "code": "lizbuz1",
+    "name": "Lizard Buzzard",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "blchaw1",
-    "name": "Black-collared Hawk",
+    "code": "afrgos1",
+    "name": "African Goshawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "snakit",
-    "name": "Snail Kite",
+    "code": "chfspa1",
+    "name": "Chestnut-flanked Sparrowhawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "slbkit1",
-    "name": "Slender-billed Kite",
+    "code": "retspa1",
+    "name": "Red-thighed Sparrowhawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "dotkit1",
-    "name": "Double-toothed Kite",
+    "code": "litspa1",
+    "name": "Little Sparrowhawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "rutkit1",
-    "name": "Rufous-thighed Kite",
+    "code": "besra1",
+    "name": "Besra",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "miskit",
-    "name": "Mississippi Kite",
+    "code": "smaspa1",
+    "name": "Small Sparrowhawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "plukit1",
-    "name": "Plumbeous Kite",
+    "code": "runspa1",
+    "name": "Rufous-necked Sparrowhawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "grabuz1",
-    "name": "Grasshopper Buzzard",
+    "code": "colspa1",
+    "name": "Collared Sparrowhawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "whebuz1",
-    "name": "White-eyed Buzzard",
+    "code": "nebspa1",
+    "name": "New Britain Sparrowhawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "ruwbuz1",
-    "name": "Rufous-winged Buzzard",
+    "code": "vibspa1",
+    "name": "Vinous-breasted Sparrowhawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "gyfbuz1",
-    "name": "Gray-faced Buzzard",
+    "code": "japspa1",
+    "name": "Japanese Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "shikra1",
+    "name": "Shikra",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "nicspa1",
+    "name": "Nicobar Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "levspa1",
+    "name": "Levant Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "grfhaw1",
+    "name": "Chinese Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "imispa1",
+    "name": "Imitator Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "fragos2",
+    "name": "Frances's Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "sptgos1",
+    "name": "Spot-tailed Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "gyhgos1",
+    "name": "Gray-headed Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "nebgos1",
+    "name": "New Britain Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "grygos1",
+    "name": "Gray Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "vargos1",
+    "name": "Variable Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "blmgos1",
+    "name": "Black-mantled Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "piegos1",
+    "name": "Pied Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "fijgos1",
+    "name": "Fiji Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "molgos1",
+    "name": "Moluccan Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "slmgos1",
+    "name": "Slaty-mantled Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "necgos1",
+    "name": "New Caledonian Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "brogos1",
+    "name": "Brown Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "chsgos1",
+    "name": "Chestnut-shouldered Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "redgos1",
+    "name": "Red Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "gybhaw1",
+    "name": "Gray-bellied Hawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "ovaspa2",
+    "name": "Ovambo Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "madspa1",
+    "name": "Madagascar Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "eurspa1",
+    "name": "Eurasian Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "rucspa2",
+    "name": "Rufous-breasted Sparrowhawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "shshaw",
+    "name": "Sharp-shinned Hawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "bichaw1",
+    "name": "Bicolored Hawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "bichaw4",
+    "name": "Chilean Hawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "coohaw",
+    "name": "Cooper's Hawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "gunhaw1",
+    "name": "Gundlach's Hawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "norgos1",
+    "name": "Eurasian Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "norgos",
+    "name": "American Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "meygos1",
+    "name": "Meyer's Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "blagos1",
+    "name": "Black Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "hengos1",
+    "name": "Henst's Goshawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "dorgos1",
+    "name": "Doria's Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14195,253 +14455,23 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "gybhaw1",
-    "name": "Gray-bellied Hawk",
+    "code": "tinhaw1",
+    "name": "Tiny Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "cregos1",
-    "name": "Crested Goshawk",
+    "code": "semhaw2",
+    "name": "Semicollared Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "sulgos1",
-    "name": "Sulawesi Goshawk",
+    "code": "dotkit1",
+    "name": "Double-toothed Kite",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "afrgos1",
-    "name": "African Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "chfspa1",
-    "name": "Chestnut-flanked Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "shikra1",
-    "name": "Shikra",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "nicspa1",
-    "name": "Nicobar Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "levspa1",
-    "name": "Levant Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "grfhaw1",
-    "name": "Chinese Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "fragos2",
-    "name": "Frances's Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "sptgos1",
-    "name": "Spot-tailed Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "vargos1",
-    "name": "Variable Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "grygos1",
-    "name": "Gray Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "brogos1",
-    "name": "Brown Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "blmgos1",
-    "name": "Black-mantled Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "piegos1",
-    "name": "Pied Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "necgos1",
-    "name": "New Caledonian Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "fijgos1",
-    "name": "Fiji Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "molgos1",
-    "name": "Moluccan Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "slmgos1",
-    "name": "Slaty-mantled Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "imispa1",
-    "name": "Imitator Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "gyhgos1",
-    "name": "Gray-headed Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "nebgos1",
-    "name": "New Britain Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "retspa1",
-    "name": "Red-thighed Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "litspa1",
-    "name": "Little Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "japspa1",
-    "name": "Japanese Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "smaspa1",
-    "name": "Small Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "besra1",
-    "name": "Besra",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "runspa1",
-    "name": "Rufous-necked Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "colspa1",
-    "name": "Collared Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "nebspa1",
-    "name": "New Britain Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "vibspa1",
-    "name": "Vinous-breasted Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "madspa1",
-    "name": "Madagascar Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "ovaspa2",
-    "name": "Ovambo Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "eurspa1",
-    "name": "Eurasian Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "rucspa2",
-    "name": "Rufous-breasted Sparrowhawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "shshaw",
-    "name": "Sharp-shinned Hawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "coohaw",
-    "name": "Cooper's Hawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "gunhaw1",
-    "name": "Gundlach's Hawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "bichaw1",
-    "name": "Bicolored Hawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "bichaw4",
-    "name": "Chilean Hawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "blagos1",
-    "name": "Black Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "hengos1",
-    "name": "Henst's Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "norgos1",
-    "name": "Eurasian Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "norgos",
-    "name": "American Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "meygos1",
-    "name": "Meyer's Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "chsgos1",
-    "name": "Chestnut-shouldered Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "redgos1",
-    "name": "Red Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "dorgos1",
-    "name": "Doria's Goshawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "lothaw1",
-    "name": "Long-tailed Hawk",
+    "code": "rutkit1",
+    "name": "Rufous-thighed Kite",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14455,23 +14485,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "whikit1",
-    "name": "Whistling Kite",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
     "code": "brakit1",
     "name": "Brahminy Kite",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "stseag",
-    "name": "Steller's Sea-Eagle",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "pafeag1",
-    "name": "Pallas's Fish-Eagle",
+    "code": "whikit1",
+    "name": "Whistling Kite",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14485,13 +14505,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "wbseag1",
-    "name": "White-bellied Sea-Eagle",
+    "code": "pafeag1",
+    "name": "Pallas's Fish-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "solsee1",
-    "name": "Sanford's Sea-Eagle",
+    "code": "stseag",
+    "name": "Steller's Sea-Eagle",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14505,6 +14525,16 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "wbseag1",
+    "name": "White-bellied Sea-Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "solsee1",
+    "name": "Sanford's Sea-Eagle",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "lefeag1",
     "name": "Lesser Fish-Eagle",
     "family": "Hawks, Eagles, and Kites"
@@ -14515,8 +14545,58 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "ruwbuz1",
+    "name": "Rufous-winged Buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "grabuz1",
+    "name": "Grasshopper Buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "whebuz1",
+    "name": "White-eyed Buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "gyfbuz1",
+    "name": "Gray-faced Buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "miskit",
+    "name": "Mississippi Kite",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "plukit1",
+    "name": "Plumbeous Kite",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "crahaw",
     "name": "Crane Hawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "blchaw1",
+    "name": "Black-collared Hawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "snakit",
+    "name": "Snail Kite",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "slbkit1",
+    "name": "Slender-billed Kite",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "barhaw1",
+    "name": "Barred Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14570,11 +14650,6 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "barhaw1",
-    "name": "Barred Hawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
     "code": "roahaw",
     "name": "Roadside Hawk",
     "family": "Hawks, Eagles, and Kites"
@@ -14605,8 +14680,8 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "manhaw2",
-    "name": "Mantled Hawk",
+    "code": "gybhaw2",
+    "name": "Gray-backed Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14615,8 +14690,8 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "gybhaw2",
-    "name": "Gray-backed Hawk",
+    "code": "manhaw2",
+    "name": "Mantled Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14650,6 +14725,11 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
+    "code": "brwhaw",
+    "name": "Broad-winged Hawk",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
     "code": "reshaw",
     "name": "Red-shouldered Hawk",
     "family": "Hawks, Eagles, and Kites"
@@ -14660,8 +14740,8 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "brwhaw",
-    "name": "Broad-winged Hawk",
+    "code": "zothaw",
+    "name": "Zone-tailed Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14670,13 +14750,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "shthaw",
-    "name": "Short-tailed Hawk",
+    "code": "whthaw1",
+    "name": "White-throated Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "whthaw1",
-    "name": "White-throated Hawk",
+    "code": "shthaw",
+    "name": "Short-tailed Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14690,18 +14770,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "zothaw",
-    "name": "Zone-tailed Hawk",
+    "code": "rethaw",
+    "name": "Red-tailed Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
     "code": "ruthaw1",
     "name": "Rufous-tailed Hawk",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "rethaw",
-    "name": "Red-tailed Hawk",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14715,23 +14790,28 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "combuz1",
-    "name": "Common Buzzard",
+    "code": "renbuz1",
+    "name": "Red-necked Buzzard",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "combuz9",
-    "name": "Himalayan Buzzard",
+    "code": "augbuz2",
+    "name": "Augur Buzzard",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "combuz6",
-    "name": "Eastern Buzzard",
+    "code": "jacbuz1",
+    "name": "Jackal Buzzard",
     "family": "Hawks, Eagles, and Kites"
   },
   {
     "code": "moubuz2",
     "name": "Mountain Buzzard",
+    "family": "Hawks, Eagles, and Kites"
+  },
+  {
+    "code": "combuz1",
+    "name": "Common Buzzard",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14760,18 +14840,13 @@
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "renbuz1",
-    "name": "Red-necked Buzzard",
+    "code": "combuz9",
+    "name": "Himalayan Buzzard",
     "family": "Hawks, Eagles, and Kites"
   },
   {
-    "code": "augbuz2",
-    "name": "Augur Buzzard",
-    "family": "Hawks, Eagles, and Kites"
-  },
-  {
-    "code": "jacbuz1",
-    "name": "Jackal Buzzard",
+    "code": "combuz6",
+    "name": "Eastern Buzzard",
     "family": "Hawks, Eagles, and Kites"
   },
   {
@@ -14835,8 +14910,18 @@
     "family": "Barn-Owls"
   },
   {
+    "code": "webowl1",
+    "name": "Western Barn Owl",
+    "family": "Barn-Owls"
+  },
+  {
+    "code": "eabowl1",
+    "name": "Eastern Barn Owl",
+    "family": "Barn-Owls"
+  },
+  {
     "code": "brnowl",
-    "name": "Barn Owl",
+    "name": "American Barn Owl",
     "family": "Barn-Owls"
   },
   {
@@ -15846,7 +15931,7 @@
   },
   {
     "code": "souboo8",
-    "name": "Southern Boobook",
+    "name": "Australian Boobook",
     "family": "Owls"
   },
   {
@@ -16650,6 +16735,161 @@
     "family": "Hornbills"
   },
   {
+    "code": "rbbeat1",
+    "name": "Red-bearded Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "bbbeat1",
+    "name": "Blue-bearded Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "pbbeat1",
+    "name": "Purple-bearded Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "blbeat1",
+    "name": "Black Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "bumbee1",
+    "name": "Blue-moustached Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "bhbeat2",
+    "name": "Blue-headed Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "rtbeat1",
+    "name": "Red-throated Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "wfbeat1",
+    "name": "White-fronted Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "libeat1",
+    "name": "Little Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "bbbeat2",
+    "name": "Blue-breasted Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "bubbee2",
+    "name": "Ethiopian Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "ccbeat1",
+    "name": "Cinnamon-chested Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "stbeat1",
+    "name": "Swallow-tailed Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "bhbeat1",
+    "name": "Black-headed Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "sobeat1",
+    "name": "Somali Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "wtbeat1",
+    "name": "White-throated Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "grnbee1",
+    "name": "African Green Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "grnbee2",
+    "name": "Arabian Green Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "grnbee3",
+    "name": "Asian Green Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "bobeat1",
+    "name": "Böhm's Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "btbeat2",
+    "name": "Blue-throated Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "rucbee1",
+    "name": "Rufous-crowned Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "bcbeat1",
+    "name": "Blue-cheeked Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "mabeat1",
+    "name": "Olive Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "btbeat1",
+    "name": "Blue-tailed Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "rabeat1",
+    "name": "Rainbow Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "eubeat1",
+    "name": "European Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "chbeat1",
+    "name": "Chestnut-headed Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "robeat1",
+    "name": "Rosy Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "ncbeat1",
+    "name": "Northern Carmine Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
+    "code": "scbeat1",
+    "name": "Southern Carmine Bee-eater",
+    "family": "Bee-eaters"
+  },
+  {
     "code": "cubtod1",
     "name": "Cuban Tody",
     "family": "Todies"
@@ -17091,7 +17331,7 @@
   },
   {
     "code": "markin2",
-    "name": "Marquesas Kingfisher",
+    "name": "Marquesan Kingfisher",
     "family": "Kingfishers"
   },
   {
@@ -17330,161 +17570,6 @@
     "family": "Kingfishers"
   },
   {
-    "code": "rbbeat1",
-    "name": "Red-bearded Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "bbbeat1",
-    "name": "Blue-bearded Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "pbbeat1",
-    "name": "Purple-bearded Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "blbeat1",
-    "name": "Black Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "bumbee1",
-    "name": "Blue-moustached Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "bhbeat2",
-    "name": "Blue-headed Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "rtbeat1",
-    "name": "Red-throated Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "wfbeat1",
-    "name": "White-fronted Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "libeat1",
-    "name": "Little Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "bbbeat2",
-    "name": "Blue-breasted Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "bubbee2",
-    "name": "Ethiopian Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "ccbeat1",
-    "name": "Cinnamon-chested Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "stbeat1",
-    "name": "Swallow-tailed Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "bhbeat1",
-    "name": "Black-headed Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "sobeat1",
-    "name": "Somali Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "wtbeat1",
-    "name": "White-throated Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "grnbee1",
-    "name": "African Green Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "grnbee2",
-    "name": "Arabian Green Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "grnbee3",
-    "name": "Asian Green Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "bobeat1",
-    "name": "Böhm's Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "btbeat2",
-    "name": "Blue-throated Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "rucbee1",
-    "name": "Rufous-crowned Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "bcbeat1",
-    "name": "Blue-cheeked Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "mabeat1",
-    "name": "Madagascar Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "btbeat1",
-    "name": "Blue-tailed Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "rabeat1",
-    "name": "Rainbow Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "eubeat1",
-    "name": "European Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "chbeat1",
-    "name": "Chestnut-headed Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "robeat1",
-    "name": "Rosy Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "ncbeat1",
-    "name": "Northern Carmine Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
-    "code": "scbeat1",
-    "name": "Southern Carmine Bee-eater",
-    "family": "Bee-eaters"
-  },
-  {
     "code": "eurrol1",
     "name": "European Roller",
     "family": "Rollers"
@@ -17506,7 +17591,7 @@
   },
   {
     "code": "rucrol2",
-    "name": "Rufous-crowned Roller",
+    "name": "Purple Roller",
     "family": "Rollers"
   },
   {
@@ -17851,7 +17936,12 @@
   },
   {
     "code": "yebbar1",
-    "name": "Yellow-billed Barbet",
+    "name": "Western Yellow-billed Barbet",
+    "family": "African Barbets"
+  },
+  {
+    "code": "yebbar5",
+    "name": "Eastern Yellow-billed Barbet",
     "family": "African Barbets"
   },
   {
@@ -17951,7 +18041,12 @@
   },
   {
     "code": "reftin1",
-    "name": "Red-fronted Tinkerbird",
+    "name": "Northern Red-fronted Tinkerbird",
+    "family": "African Barbets"
+  },
+  {
+    "code": "reftin4",
+    "name": "Southern Red-fronted Tinkerbird",
     "family": "African Barbets"
   },
   {
@@ -18496,17 +18591,17 @@
   },
   {
     "code": "cashon1",
-    "name": "Cassin's Honeyguide",
+    "name": "Cassin's Honeybird",
     "family": "Honeyguides"
   },
   {
     "code": "grbhon2",
-    "name": "Green-backed Honeyguide",
+    "name": "Green-backed Honeybird",
     "family": "Honeyguides"
   },
   {
     "code": "wahhon1",
-    "name": "Wahlberg's Honeyguide",
+    "name": "Brown-backed Honeybird",
     "family": "Honeyguides"
   },
   {
@@ -18581,7 +18676,7 @@
   },
   {
     "code": "runwry1",
-    "name": "Rufous-necked Wryneck",
+    "name": "Red-throated Wryneck",
     "family": "Woodpeckers"
   },
   {
@@ -19521,7 +19616,7 @@
   },
   {
     "code": "reiwoo1",
-    "name": "Reichenow's Woodpecker",
+    "name": "Speckle-throated Woodpecker",
     "family": "Woodpeckers"
   },
   {
@@ -19717,6 +19812,11 @@
   {
     "code": "norfli",
     "name": "Northern Flicker",
+    "family": "Woodpeckers"
+  },
+  {
+    "code": "norfli1",
+    "name": "Guatemalan Flicker",
     "family": "Woodpeckers"
   },
   {
@@ -20166,7 +20266,7 @@
   },
   {
     "code": "duccoc1",
-    "name": "Ducorps's Cockatoo",
+    "name": "Solomons Corella",
     "family": "Cockatoos"
   },
   {
@@ -20642,11 +20742,6 @@
   {
     "code": "refpar4",
     "name": "Red-crowned Parakeet",
-    "family": "Old World Parrots"
-  },
-  {
-    "code": "recpar23",
-    "name": "Macquarie Parakeet",
     "family": "Old World Parrots"
   },
   {
@@ -21516,162 +21611,162 @@
   },
   {
     "code": "fespar1",
-    "name": "Festive Parrot",
+    "name": "Festive Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "vinpar1",
-    "name": "Vinaceous-breasted Parrot",
+    "name": "Vinaceous-breasted Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "tucpar1",
-    "name": "Tucuman Parrot",
+    "name": "Tucuman Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "respar2",
-    "name": "Red-spectacled Parrot",
+    "name": "Red-spectacled Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "recpar",
-    "name": "Red-crowned Parrot",
+    "name": "Red-crowned Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "licpar",
-    "name": "Lilac-crowned Parrot",
+    "name": "Lilac-crowned Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "relpar",
-    "name": "Red-lored Parrot",
+    "name": "Red-lored Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "blcpar2",
-    "name": "Blue-cheeked Parrot",
+    "name": "Blue-cheeked Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "rebpar7",
-    "name": "Red-browed Parrot",
+    "name": "Red-browed Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "renpar1",
-    "name": "Red-necked Parrot",
+    "name": "Red-necked Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "marpar1",
-    "name": "Martinique Parrot",
+    "name": "Martinique Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "stlpar1",
-    "name": "St. Lucia Parrot",
+    "name": "St. Lucia Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "yenpar1",
-    "name": "Yellow-naped Parrot",
+    "name": "Yellow-naped Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "yehpar",
-    "name": "Yellow-headed Parrot",
+    "name": "Yellow-headed Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "ywcpar",
-    "name": "Yellow-crowned Parrot",
+    "name": "Yellow-crowned Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "yespar1",
-    "name": "Yellow-shouldered Parrot",
+    "name": "Yellow-shouldered Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "bufpar",
-    "name": "Turquoise-fronted Parrot",
+    "name": "Turquoise-fronted Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "blbpar1",
-    "name": "Black-billed Parrot",
+    "name": "Black-billed Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "whfpar1",
-    "name": "White-fronted Parrot",
+    "name": "White-fronted Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "yelpar1",
-    "name": "Yellow-lored Parrot",
+    "name": "Yellow-lored Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "yebpar1",
-    "name": "Yellow-billed Parrot",
+    "name": "Yellow-billed Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "cubpar1",
-    "name": "Cuban Parrot",
+    "name": "Cuban Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "hispar1",
-    "name": "Hispaniolan Parrot",
+    "name": "Hispaniolan Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "purpar1",
-    "name": "Puerto Rican Parrot",
+    "name": "Puerto Rican Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "meapar",
-    "name": "Mealy Parrot",
+    "name": "Mealy Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "kawpar1",
-    "name": "Kawall's Parrot",
+    "name": "Kawall's Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "imppar1",
-    "name": "Imperial Parrot",
+    "name": "Imperial Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "guapar1",
-    "name": "Guadeloupe Parrot",
+    "name": "Guadeloupe Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "retpar1",
-    "name": "Red-tailed Parrot",
+    "name": "Red-tailed Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "stvpar1",
-    "name": "St. Vincent Parrot",
+    "name": "St. Vincent Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "orwpar",
-    "name": "Orange-winged Parrot",
+    "name": "Orange-winged Amazon",
     "family": "New World and African Parrots"
   },
   {
     "code": "scnpar1",
-    "name": "Scaly-naped Parrot",
+    "name": "Scaly-naped Amazon",
     "family": "New World and African Parrots"
   },
   {
@@ -22265,13 +22360,8 @@
     "family": "Pittas"
   },
   {
-    "code": "pappit2",
-    "name": "North Papuan Pitta",
-    "family": "Pittas"
-  },
-  {
     "code": "pappit1",
-    "name": "South Papuan Pitta",
+    "name": "Papuan Pitta",
     "family": "Pittas"
   },
   {
@@ -24570,8 +24660,18 @@
     "family": "Ovenbirds and Woodcreepers"
   },
   {
-    "code": "lotwoo1",
-    "name": "Long-tailed Woodcreeper",
+    "code": "lotwoo3",
+    "name": "Piping Woodcreeper",
+    "family": "Ovenbirds and Woodcreepers"
+  },
+  {
+    "code": "lotwoo4",
+    "name": "Whistling Woodcreeper",
+    "family": "Ovenbirds and Woodcreepers"
+  },
+  {
+    "code": "lotwoo5",
+    "name": "Mournful Woodcreeper",
     "family": "Ovenbirds and Woodcreepers"
   },
   {
@@ -24855,8 +24955,18 @@
     "family": "Ovenbirds and Woodcreepers"
   },
   {
-    "code": "plaxen1",
-    "name": "Plain Xenops",
+    "code": "plaxen2",
+    "name": "Northern Plain-Xenops",
+    "family": "Ovenbirds and Woodcreepers"
+  },
+  {
+    "code": "plaxen3",
+    "name": "Amazonian Plain-Xenops",
+    "family": "Ovenbirds and Woodcreepers"
+  },
+  {
+    "code": "plaxen4",
+    "name": "Atlantic Plain-Xenops",
     "family": "Ovenbirds and Woodcreepers"
   },
   {
@@ -26650,6 +26760,11 @@
     "family": "Tityras and Allies"
   },
   {
+    "code": "whttit2",
+    "name": "White-tailed Tityra",
+    "family": "Tityras and Allies"
+  },
+  {
     "code": "mastit1",
     "name": "Masked Tityra",
     "family": "Tityras and Allies"
@@ -26817,42 +26932,42 @@
   {
     "code": "sharpb1",
     "name": "Sharpbill",
-    "family": "Sharpbill, Royal Flycatcher, and Allies"
+    "family": "Sharpbill"
   },
   {
     "code": "royfly1",
     "name": "Tropical Royal Flycatcher",
-    "family": "Sharpbill, Royal Flycatcher, and Allies"
+    "family": "Royal Flycatchers and Allies"
   },
   {
     "code": "royfly5",
     "name": "Atlantic Royal Flycatcher",
-    "family": "Sharpbill, Royal Flycatcher, and Allies"
+    "family": "Royal Flycatchers and Allies"
   },
   {
     "code": "rutfly2",
     "name": "Ruddy-tailed Flycatcher",
-    "family": "Sharpbill, Royal Flycatcher, and Allies"
+    "family": "Royal Flycatchers and Allies"
   },
   {
     "code": "tabfly1",
     "name": "Tawny-breasted Flycatcher",
-    "family": "Sharpbill, Royal Flycatcher, and Allies"
+    "family": "Royal Flycatchers and Allies"
   },
   {
     "code": "surfly1",
     "name": "Sulphur-rumped Flycatcher",
-    "family": "Sharpbill, Royal Flycatcher, and Allies"
+    "family": "Royal Flycatchers and Allies"
   },
   {
     "code": "whifly1",
     "name": "Whiskered Flycatcher",
-    "family": "Sharpbill, Royal Flycatcher, and Allies"
+    "family": "Royal Flycatchers and Allies"
   },
   {
     "code": "bltfly1",
     "name": "Black-tailed Flycatcher",
-    "family": "Sharpbill, Royal Flycatcher, and Allies"
+    "family": "Royal Flycatchers and Allies"
   },
   {
     "code": "wibpip1",
@@ -27581,7 +27696,7 @@
   },
   {
     "code": "moctyr6",
-    "name": "Tumbes Tyrannulet",
+    "name": "Tumbesian Tyrannulet",
     "family": "Tyrant Flycatchers"
   },
   {
@@ -27590,18 +27705,13 @@
     "family": "Tyrant Flycatchers"
   },
   {
-    "code": "moctyr7",
-    "name": "Northern Mouse-colored Tyrannulet",
-    "family": "Tyrant Flycatchers"
-  },
-  {
     "code": "cocfly1",
     "name": "Cocos Tyrannulet",
     "family": "Tyrant Flycatchers"
   },
   {
-    "code": "moctyr3",
-    "name": "Southern Mouse-colored Tyrannulet",
+    "code": "y01204",
+    "name": "Mouse-colored Tyrannulet",
     "family": "Tyrant Flycatchers"
   },
   {
@@ -27830,16 +27940,6 @@
     "family": "Tyrant Flycatchers"
   },
   {
-    "code": "roltyr1",
-    "name": "White-fronted Tyrannulet",
-    "family": "Tyrant Flycatchers"
-  },
-  {
-    "code": "roltyr3",
-    "name": "Rough-legged Tyrannulet",
-    "family": "Tyrant Flycatchers"
-  },
-  {
     "code": "gretyr1",
     "name": "Greenish Tyrannulet",
     "family": "Tyrant Flycatchers"
@@ -27875,6 +27975,26 @@
     "family": "Tyrant Flycatchers"
   },
   {
+    "code": "plctyr1",
+    "name": "Plumbeous-crowned Tyrannulet",
+    "family": "Tyrant Flycatchers"
+  },
+  {
+    "code": "gyctyr1",
+    "name": "Gray-capped Tyrannulet",
+    "family": "Tyrant Flycatchers"
+  },
+  {
+    "code": "roltyr1",
+    "name": "White-fronted Tyrannulet",
+    "family": "Tyrant Flycatchers"
+  },
+  {
+    "code": "roltyr3",
+    "name": "Rough-legged Tyrannulet",
+    "family": "Tyrant Flycatchers"
+  },
+  {
     "code": "blctyr1",
     "name": "Black-capped Tyrannulet",
     "family": "Tyrant Flycatchers"
@@ -27887,16 +28007,6 @@
   {
     "code": "tartyr1",
     "name": "Tawny-rumped Tyrannulet",
-    "family": "Tyrant Flycatchers"
-  },
-  {
-    "code": "plctyr1",
-    "name": "Plumbeous-crowned Tyrannulet",
-    "family": "Tyrant Flycatchers"
-  },
-  {
-    "code": "gyctyr1",
-    "name": "Gray-capped Tyrannulet",
     "family": "Tyrant Flycatchers"
   },
   {
@@ -29255,8 +29365,13 @@
     "family": "Fairywrens"
   },
   {
-    "code": "rufgra1",
-    "name": "Rufous Grasswren",
+    "code": "strgra4",
+    "name": "Pilbara Grasswren",
+    "family": "Fairywrens"
+  },
+  {
+    "code": "sangra1",
+    "name": "Sandhill Grasswren",
     "family": "Fairywrens"
   },
   {
@@ -29461,7 +29576,7 @@
   },
   {
     "code": "chibel1",
-    "name": "Chatham Island Bellbird",
+    "name": "Chatham Islands Bellbird",
     "family": "Honeyeaters"
   },
   {
@@ -29771,7 +29886,7 @@
   },
   {
     "code": "descha1",
-    "name": "Gibber Chat",
+    "name": "Gibberbird",
     "family": "Honeyeaters"
   },
   {
@@ -29865,13 +29980,33 @@
     "family": "Honeyeaters"
   },
   {
-    "code": "dusmyz1",
+    "code": "dusmyz4",
+    "name": "Moluccan Myzomela",
+    "family": "Honeyeaters"
+  },
+  {
+    "code": "dusmyz3",
+    "name": "Red-tinged Myzomela",
+    "family": "Honeyeaters"
+  },
+  {
+    "code": "dusmyz2",
+    "name": "Biak Myzomela",
+    "family": "Honeyeaters"
+  },
+  {
+    "code": "dusmyz5",
     "name": "Dusky Myzomela",
     "family": "Honeyeaters"
   },
   {
-    "code": "redmyz1",
+    "code": "redmyz2",
     "name": "Red Myzomela",
+    "family": "Honeyeaters"
+  },
+  {
+    "code": "redmyz3",
+    "name": "Reddish Myzomela",
     "family": "Honeyeaters"
   },
   {
@@ -30006,7 +30141,7 @@
   },
   {
     "code": "orbmyz1",
-    "name": "Orange-breasted Myzomela",
+    "name": "Sulphur-breasted Myzomela",
     "family": "Honeyeaters"
   },
   {
@@ -30221,7 +30356,7 @@
   },
   {
     "code": "chagih1",
-    "name": "Chattering Giant-Honeyeater",
+    "name": "Yellow-billed Giant-Honeyeater",
     "family": "Honeyeaters"
   },
   {
@@ -30726,7 +30861,7 @@
   },
   {
     "code": "chiger2",
-    "name": "Chatham Island Gerygone",
+    "name": "Chatham Islands Gerygone",
     "family": "Thornbills and Allies"
   },
   {
@@ -30995,13 +31130,43 @@
     "family": "Cuckooshrikes"
   },
   {
-    "code": "larcus1",
-    "name": "Large Cuckooshrike",
+    "code": "larcuc1",
+    "name": "Indian Cuckooshrike",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "larcuc11",
+    "name": "Oriental Cuckooshrike",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "larcuc3",
+    "name": "Malayan Cuckooshrike",
     "family": "Cuckooshrikes"
   },
   {
     "code": "babcus1",
     "name": "Bar-bellied Cuckooshrike",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "babcuc19",
+    "name": "Mindoro Cuckooshrike",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "babcuc5",
+    "name": "Visayan Cuckooshrike",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "mincuc1",
+    "name": "Mindanao Cuckooshrike",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "babcuc24",
+    "name": "Sulu Cuckooshrike",
     "family": "Cuckooshrikes"
   },
   {
@@ -31015,13 +31180,13 @@
     "family": "Cuckooshrikes"
   },
   {
-    "code": "javcus1",
-    "name": "Javan Cuckooshrike",
+    "code": "walcus1",
+    "name": "Wallacean Cuckooshrike",
     "family": "Cuckooshrikes"
   },
   {
-    "code": "walcus1",
-    "name": "Wallacean Cuckooshrike",
+    "code": "halcus1",
+    "name": "Halmahera Cuckooshrike",
     "family": "Cuckooshrikes"
   },
   {
@@ -31110,6 +31275,11 @@
     "family": "Cuckooshrikes"
   },
   {
+    "code": "bkbtri2",
+    "name": "Biak Triller",
+    "family": "Cuckooshrikes"
+  },
+  {
     "code": "whbtri1",
     "name": "White-browed Triller",
     "family": "Cuckooshrikes"
@@ -31180,11 +31350,6 @@
     "family": "Cuckooshrikes"
   },
   {
-    "code": "halcus1",
-    "name": "Halmahera Cuckooshrike",
-    "family": "Cuckooshrikes"
-  },
-  {
     "code": "blucus1",
     "name": "Blue Cuckooshrike",
     "family": "Cuckooshrikes"
@@ -31210,8 +31375,8 @@
     "family": "Cuckooshrikes"
   },
   {
-    "code": "pagcus1",
-    "name": "Pale Cicadabird",
+    "code": "sumcus1",
+    "name": "Pale-shouldered Cicadabird",
     "family": "Cuckooshrikes"
   },
   {
@@ -31220,48 +31385,23 @@
     "family": "Cuckooshrikes"
   },
   {
-    "code": "sumcus1",
-    "name": "Pale-shouldered Cicadabird",
+    "code": "timcic1",
+    "name": "Timor Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "pagcus1",
+    "name": "Pale Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "cicada3",
+    "name": "Pohnpei Cicadabird",
     "family": "Cuckooshrikes"
   },
   {
     "code": "bkbcus1",
-    "name": "Black-bibbed Cuckooshrike",
-    "family": "Cuckooshrikes"
-  },
-  {
-    "code": "mancic1",
-    "name": "Manus Cicadabird",
-    "family": "Cuckooshrikes"
-  },
-  {
-    "code": "cicada7",
-    "name": "Makira Cicadabird",
-    "family": "Cuckooshrikes"
-  },
-  {
-    "code": "soicus1",
-    "name": "Solomons Cuckooshrike",
-    "family": "Cuckooshrikes"
-  },
-  {
-    "code": "papcus1",
-    "name": "Papuan Cicadabird",
-    "family": "Cuckooshrikes"
-  },
-  {
-    "code": "sulcus2",
-    "name": "Sulawesi Cicadabird",
-    "family": "Cuckooshrikes"
-  },
-  {
-    "code": "sulcus1",
-    "name": "Sula Cicadabird",
-    "family": "Cuckooshrikes"
-  },
-  {
-    "code": "cicada1",
-    "name": "Common Cicadabird",
+    "name": "Black-bibbed Cicadabird",
     "family": "Cuckooshrikes"
   },
   {
@@ -31272,6 +31412,101 @@
   {
     "code": "negcus1",
     "name": "Black Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "soicus1",
+    "name": "Solomons Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "solcuc4",
+    "name": "Malaita Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "cicada7",
+    "name": "Makira Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "mancic1",
+    "name": "Manus Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "sancic1",
+    "name": "Sangihe Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "cicada4",
+    "name": "Palau Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "cicada5",
+    "name": "Yap Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "cemcic1",
+    "name": "Central Melanesian Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "sulcus2",
+    "name": "Sulawesi Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "comcic4",
+    "name": "Geelvink Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "comcic19",
+    "name": "Banggai Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "comcic20",
+    "name": "Obi Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "sulcus1",
+    "name": "Sula Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "nomcic1",
+    "name": "North Moluccan Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "papcus1",
+    "name": "Papuan Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "comcic6",
+    "name": "Bismarck Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "comcic5",
+    "name": "Rossel Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "comcic11",
+    "name": "South Moluccan Cicadabird",
+    "family": "Cuckooshrikes"
+  },
+  {
+    "code": "cicada1",
+    "name": "Sahul Cicadabird",
     "family": "Cuckooshrikes"
   },
   {
@@ -31810,8 +32045,13 @@
     "family": "Whistlers and Allies"
   },
   {
-    "code": "fijwhi2",
-    "name": "Fiji Whistler",
+    "code": "whtwhi1",
+    "name": "White-throated Fiji Whistler",
+    "family": "Whistlers and Allies"
+  },
+  {
+    "code": "fijwhi1",
+    "name": "Yellow-throated Fiji Whistler",
     "family": "Whistlers and Allies"
   },
   {
@@ -31850,8 +32090,18 @@
     "family": "Whistlers and Allies"
   },
   {
-    "code": "temwhi1",
-    "name": "Temotu Whistler",
+    "code": "temwhi2",
+    "name": "Nendo Whistler",
+    "family": "Whistlers and Allies"
+  },
+  {
+    "code": "temwhi3",
+    "name": "Utupua Whistler",
+    "family": "Whistlers and Allies"
+  },
+  {
+    "code": "temwhi4",
+    "name": "Vanikoro Whistler",
     "family": "Whistlers and Allies"
   },
   {
@@ -31866,12 +32116,22 @@
   },
   {
     "code": "rubwhi1",
-    "name": "Rusty-breasted Whistler",
+    "name": "Tenggara Whistler",
+    "family": "Whistlers and Allies"
+  },
+  {
+    "code": "rubwhi2",
+    "name": "Selayar Whistler",
     "family": "Whistlers and Allies"
   },
   {
     "code": "yetwhi1",
-    "name": "Yellow-throated Whistler",
+    "name": "Moluccan Whistler",
+    "family": "Whistlers and Allies"
+  },
+  {
+    "code": "yetwhi6",
+    "name": "Babar Whistler",
     "family": "Whistlers and Allies"
   },
   {
@@ -31885,13 +32145,8 @@
     "family": "Whistlers and Allies"
   },
   {
-    "code": "golwhi1",
+    "code": "y01193",
     "name": "Golden Whistler",
-    "family": "Whistlers and Allies"
-  },
-  {
-    "code": "weswhi2",
-    "name": "Western Whistler",
     "family": "Whistlers and Allies"
   },
   {
@@ -32345,6 +32600,21 @@
     "family": "Wattle-eyes and Batises"
   },
   {
+    "code": "chweye1",
+    "name": "Chestnut Wattle-eye",
+    "family": "Wattle-eyes and Batises"
+  },
+  {
+    "code": "weawae1",
+    "name": "West African Wattle-eye",
+    "family": "Wattle-eyes and Batises"
+  },
+  {
+    "code": "wsweye1",
+    "name": "White-spotted Wattle-eye",
+    "family": "Wattle-eyes and Batises"
+  },
+  {
     "code": "btweye2",
     "name": "Brown-throated Wattle-eye",
     "family": "Wattle-eyes and Batises"
@@ -32362,21 +32632,6 @@
   {
     "code": "baweye1",
     "name": "Banded Wattle-eye",
-    "family": "Wattle-eyes and Batises"
-  },
-  {
-    "code": "chweye1",
-    "name": "Chestnut Wattle-eye",
-    "family": "Wattle-eyes and Batises"
-  },
-  {
-    "code": "weawae1",
-    "name": "West African Wattle-eye",
-    "family": "Wattle-eyes and Batises"
-  },
-  {
-    "code": "wsweye1",
-    "name": "White-spotted Wattle-eye",
     "family": "Wattle-eyes and Batises"
   },
   {
@@ -32501,7 +32756,7 @@
   },
   {
     "code": "whihel1",
-    "name": "White Helmetshrike",
+    "name": "White-crested Helmetshrike",
     "family": "Vangas, Helmetshrikes, and Allies"
   },
   {
@@ -32905,6 +33160,16 @@
     "family": "Bushshrikes and Allies"
   },
   {
+    "code": "focbus2",
+    "name": "Four-colored Bushshrike",
+    "family": "Bushshrikes and Allies"
+  },
+  {
+    "code": "dohbus1",
+    "name": "Doherty's Bushshrike",
+    "family": "Bushshrikes and Allies"
+  },
+  {
     "code": "gygbus1",
     "name": "Gray-green Bushshrike",
     "family": "Bushshrikes and Allies"
@@ -32932,16 +33197,6 @@
   {
     "code": "mtkbus1",
     "name": "Mount Kupe Bushshrike",
-    "family": "Bushshrikes and Allies"
-  },
-  {
-    "code": "focbus2",
-    "name": "Four-colored Bushshrike",
-    "family": "Bushshrikes and Allies"
-  },
-  {
-    "code": "dohbus1",
-    "name": "Doherty's Bushshrike",
     "family": "Bushshrikes and Allies"
   },
   {
@@ -33326,7 +33581,7 @@
   },
   {
     "code": "comdro1",
-    "name": "Comoro Drongo",
+    "name": "Grande Comore Drongo",
     "family": "Drongos"
   },
   {
@@ -33715,6 +33970,11 @@
     "family": "Monarch Flycatchers"
   },
   {
+    "code": "blypaf3",
+    "name": "Tenggara Paradise-Flycatcher",
+    "family": "Monarch Flycatchers"
+  },
+  {
     "code": "mapfly2",
     "name": "Mascarene Paradise-Flycatcher",
     "family": "Monarch Flycatchers"
@@ -33816,12 +34076,12 @@
   },
   {
     "code": "marmon2",
-    "name": "Marquesas Monarch",
+    "name": "Marquesan Monarch",
     "family": "Monarch Flycatchers"
   },
   {
     "code": "fatmon1",
-    "name": "Fatuhiva Monarch",
+    "name": "Fatu Hiva Monarch",
     "family": "Monarch Flycatchers"
   },
   {
@@ -33876,7 +34136,7 @@
   },
   {
     "code": "loemon1",
-    "name": "Loetoe Monarch",
+    "name": "Tanimbar Monarch",
     "family": "Monarch Flycatchers"
   },
   {
@@ -33891,7 +34151,7 @@
   },
   {
     "code": "trumon1",
-    "name": "Truk Monarch",
+    "name": "Chuuk Monarch",
     "family": "Monarch Flycatchers"
   },
   {
@@ -33917,11 +34177,6 @@
   {
     "code": "chbmon1",
     "name": "Chestnut-bellied Monarch",
-    "family": "Monarch Flycatchers"
-  },
-  {
-    "code": "boumon1",
-    "name": "Bougainville Monarch",
     "family": "Monarch Flycatchers"
   },
   {
@@ -33951,27 +34206,37 @@
   },
   {
     "code": "blcmon1",
-    "name": "Black-chinned Monarch",
+    "name": "Boano Monarch",
+    "family": "Monarch Flycatchers"
+  },
+  {
+    "code": "molmon1",
+    "name": "Moluccan Spectacled Monarch",
     "family": "Monarch Flycatchers"
   },
   {
     "code": "spemon1",
-    "name": "Spectacled Monarch",
+    "name": "Australian Spectacled Monarch",
+    "family": "Monarch Flycatchers"
+  },
+  {
+    "code": "spemon10",
+    "name": "Louisiade Spectacled Monarch",
     "family": "Monarch Flycatchers"
   },
   {
     "code": "whtmon1",
-    "name": "White-tailed Monarch",
+    "name": "Kai Monarch",
     "family": "Monarch Flycatchers"
   },
   {
     "code": "whtmon2",
-    "name": "White-tipped Monarch",
+    "name": "Tanahjampea Monarch",
     "family": "Monarch Flycatchers"
   },
   {
     "code": "bltmon2",
-    "name": "Black-tipped Monarch",
+    "name": "Buru Monarch",
     "family": "Monarch Flycatchers"
   },
   {
@@ -33996,27 +34261,37 @@
   },
   {
     "code": "whbmon1",
-    "name": "White-breasted Monarch",
+    "name": "Mussau Monarch",
     "family": "Monarch Flycatchers"
   },
   {
     "code": "bltmon1",
-    "name": "Black-tailed Monarch",
+    "name": "Bismarck Monarch",
     "family": "Monarch Flycatchers"
   },
   {
-    "code": "bawmon1",
-    "name": "Black-and-white Monarch",
+    "code": "bawmon2",
+    "name": "Solomons Monarch",
     "family": "Monarch Flycatchers"
   },
   {
-    "code": "kulmon1",
+    "code": "bawmon4",
+    "name": "Malaita Monarch",
+    "family": "Monarch Flycatchers"
+  },
+  {
+    "code": "kolmon5",
     "name": "Kolombangara Monarch",
     "family": "Monarch Flycatchers"
   },
   {
+    "code": "velmon1",
+    "name": "Vella Lavella Monarch",
+    "family": "Monarch Flycatchers"
+  },
+  {
     "code": "blbmon2",
-    "name": "Black-bibbed Monarch",
+    "name": "Banda Sea Monarch",
     "family": "Monarch Flycatchers"
   },
   {
@@ -34076,7 +34351,7 @@
   },
   {
     "code": "ocefly1",
-    "name": "Oceanic Flycatcher",
+    "name": "Chuuk Flycatcher",
     "family": "Monarch Flycatchers"
   },
   {
@@ -34155,8 +34430,13 @@
     "family": "Monarch Flycatchers"
   },
   {
-    "code": "dulfly1",
-    "name": "Dull Flycatcher",
+    "code": "dulfly2",
+    "name": "Mussau Flycatcher",
+    "family": "Monarch Flycatchers"
+  },
+  {
+    "code": "velfly1",
+    "name": "Velvet Flycatcher",
     "family": "Monarch Flycatchers"
   },
   {
@@ -34183,6 +34463,16 @@
     "code": "crejay1",
     "name": "Crested Jayshrike",
     "family": "Crested Jayshrike"
+  },
+  {
+    "code": "yebshr1",
+    "name": "Yellow-billed Shrike",
+    "family": "Shrikes"
+  },
+  {
+    "code": "magshr1",
+    "name": "Magpie Shrike",
+    "family": "Shrikes"
   },
   {
     "code": "tigshr1",
@@ -34290,16 +34580,6 @@
     "family": "Shrikes"
   },
   {
-    "code": "yebshr1",
-    "name": "Yellow-billed Shrike",
-    "family": "Shrikes"
-  },
-  {
-    "code": "magshr1",
-    "name": "Magpie Shrike",
-    "family": "Shrikes"
-  },
-  {
     "code": "taifis1",
     "name": "Taita Fiscal",
     "family": "Shrikes"
@@ -34355,8 +34635,13 @@
     "family": "Shrikes"
   },
   {
-    "code": "blamag1",
-    "name": "Black Magpie",
+    "code": "blkmag1",
+    "name": "Malayan Black Magpie",
+    "family": "Crows, Jays, and Magpies"
+  },
+  {
+    "code": "blkmag2",
+    "name": "Bornean Black Magpie",
     "family": "Crows, Jays, and Magpies"
   },
   {
@@ -34435,13 +34720,23 @@
     "family": "Crows, Jays, and Magpies"
   },
   {
-    "code": "tufjay1",
-    "name": "Tufted Jay",
+    "code": "azujay1",
+    "name": "Azure Jay",
     "family": "Crows, Jays, and Magpies"
   },
   {
-    "code": "blcjay1",
-    "name": "Black-chested Jay",
+    "code": "viojay1",
+    "name": "Violaceous Jay",
+    "family": "Crows, Jays, and Magpies"
+  },
+  {
+    "code": "purjay1",
+    "name": "Purplish Jay",
+    "family": "Crows, Jays, and Magpies"
+  },
+  {
+    "code": "cucjay1",
+    "name": "Curl-crested Jay",
     "family": "Crows, Jays, and Magpies"
   },
   {
@@ -34450,13 +34745,13 @@
     "family": "Crows, Jays, and Magpies"
   },
   {
-    "code": "bucjay1",
-    "name": "Bushy-crested Jay",
+    "code": "whtjay2",
+    "name": "White-tailed Jay",
     "family": "Crows, Jays, and Magpies"
   },
   {
-    "code": "sabjay",
-    "name": "San Blas Jay",
+    "code": "bucjay1",
+    "name": "Bushy-crested Jay",
     "family": "Crows, Jays, and Magpies"
   },
   {
@@ -34470,38 +34765,28 @@
     "family": "Crows, Jays, and Magpies"
   },
   {
-    "code": "purjay1",
-    "name": "Purplish Jay",
+    "code": "sabjay",
+    "name": "San Blas Jay",
     "family": "Crows, Jays, and Magpies"
   },
   {
-    "code": "azujay1",
-    "name": "Azure Jay",
+    "code": "tufjay1",
+    "name": "Tufted Jay",
     "family": "Crows, Jays, and Magpies"
   },
   {
-    "code": "viojay1",
-    "name": "Violaceous Jay",
-    "family": "Crows, Jays, and Magpies"
-  },
-  {
-    "code": "cucjay1",
-    "name": "Curl-crested Jay",
-    "family": "Crows, Jays, and Magpies"
-  },
-  {
-    "code": "whtjay2",
-    "name": "White-tailed Jay",
-    "family": "Crows, Jays, and Magpies"
-  },
-  {
-    "code": "cayjay1",
-    "name": "Cayenne Jay",
+    "code": "blcjay1",
+    "name": "Black-chested Jay",
     "family": "Crows, Jays, and Magpies"
   },
   {
     "code": "aznjay1",
     "name": "Azure-naped Jay",
+    "family": "Crows, Jays, and Magpies"
+  },
+  {
+    "code": "cayjay1",
+    "name": "Cayenne Jay",
     "family": "Crows, Jays, and Magpies"
   },
   {
@@ -34750,8 +35035,13 @@
     "family": "Crows, Jays, and Magpies"
   },
   {
-    "code": "eurnut1",
-    "name": "Eurasian Nutcracker",
+    "code": "eurnut3",
+    "name": "Northern Nutcracker",
+    "family": "Crows, Jays, and Magpies"
+  },
+  {
+    "code": "eurnut4",
+    "name": "Southern Nutcracker",
     "family": "Crows, Jays, and Magpies"
   },
   {
@@ -34800,8 +35090,23 @@
     "family": "Crows, Jays, and Magpies"
   },
   {
-    "code": "slbcro1",
-    "name": "Slender-billed Crow",
+    "code": "slbcro2",
+    "name": "Sunda Crow",
+    "family": "Crows, Jays, and Magpies"
+  },
+  {
+    "code": "slbcro5",
+    "name": "Sierra Madre Crow",
+    "family": "Crows, Jays, and Magpies"
+  },
+  {
+    "code": "slbcro6",
+    "name": "Samar Crow",
+    "family": "Crows, Jays, and Magpies"
+  },
+  {
+    "code": "slbcro12",
+    "name": "Sulawesi Crow",
     "family": "Crows, Jays, and Magpies"
   },
   {
@@ -34932,6 +35237,11 @@
   {
     "code": "labcro1",
     "name": "Large-billed Crow",
+    "family": "Crows, Jays, and Magpies"
+  },
+  {
+    "code": "labcro15",
+    "name": "Philippine Jungle Crow",
     "family": "Crows, Jays, and Magpies"
   },
   {
@@ -35141,7 +35451,7 @@
   },
   {
     "code": "charob1",
-    "name": "Chatham Robin",
+    "name": "Black Robin",
     "family": "Australasian Robins"
   },
   {
@@ -35172,6 +35482,11 @@
   {
     "code": "recrob1",
     "name": "Red-capped Robin",
+    "family": "Australasian Robins"
+  },
+  {
+    "code": "pacrob3",
+    "name": "Solomons Robin",
     "family": "Australasian Robins"
   },
   {
@@ -35660,13 +35975,8 @@
     "family": "Tits, Chickadees, and Titmice"
   },
   {
-    "code": "gretit2",
-    "name": "Cinereous Tit",
-    "family": "Tits, Chickadees, and Titmice"
-  },
-  {
-    "code": "gretit4",
-    "name": "Japanese Tit",
+    "code": "cintit13",
+    "name": "Asian Tit",
     "family": "Tits, Chickadees, and Titmice"
   },
   {
@@ -35820,6 +36130,16 @@
     "family": "Penduline-Tits"
   },
   {
+    "code": "sphlar12",
+    "name": "Spike-heeled Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "beelar1",
+    "name": "Beesley's Lark",
+    "family": "Larks"
+  },
+  {
     "code": "grhlar1",
     "name": "Greater Hoopoe-Lark",
     "family": "Larks"
@@ -35827,11 +36147,6 @@
   {
     "code": "lehlar1",
     "name": "Lesser Hoopoe-Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "sphlar12",
-    "name": "Spike-heeled Lark",
     "family": "Larks"
   },
   {
@@ -35856,7 +36171,7 @@
   },
   {
     "code": "y00415",
-    "name": "Cape Lark",
+    "name": "Cape Long-billed Lark",
     "family": "Larks"
   },
   {
@@ -35930,8 +36245,18 @@
     "family": "Larks"
   },
   {
+    "code": "ruslar1",
+    "name": "Rusty Lark",
+    "family": "Larks"
+  },
+  {
     "code": "sablar2",
     "name": "Sabota Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "gillar1",
+    "name": "Gillett's Lark",
     "family": "Larks"
   },
   {
@@ -35970,98 +36295,8 @@
     "family": "Larks"
   },
   {
-    "code": "caclar1",
-    "name": "Cape Clapper Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "eaclar1",
-    "name": "Eastern Clapper Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "collar1",
-    "name": "Collared Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "rewlar1",
-    "name": "Red-winged Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "runlar2",
-    "name": "Sharpe's Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "runlar1",
-    "name": "Rufous-naped Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "ashlar1",
-    "name": "Ash's Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "slblar1",
-    "name": "Somali Long-billed Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "anglar1",
-    "name": "Angola Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "flalar1",
-    "name": "Flappet Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "korlar1",
-    "name": "Kordofan Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "willar1",
-    "name": "Williams's Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "frilar1",
-    "name": "Friedmann's Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "monlar2",
-    "name": "Monotonous Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "whtlar1",
-    "name": "White-tailed Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "latlar1",
-    "name": "Melodious Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "sinbus6",
-    "name": "Singing Bushlark",
-    "family": "Larks"
-  },
-  {
     "code": "burbus1",
     "name": "Burmese Bushlark",
-    "family": "Larks"
-  },
-  {
-    "code": "benbus1",
-    "name": "Bengal Bushlark",
     "family": "Larks"
   },
   {
@@ -36080,13 +36315,203 @@
     "family": "Larks"
   },
   {
-    "code": "ruslar1",
-    "name": "Rusty Lark",
+    "code": "benbus1",
+    "name": "Bengal Bushlark",
     "family": "Larks"
   },
   {
-    "code": "gillar1",
-    "name": "Gillett's Lark",
+    "code": "monlar2",
+    "name": "Monotonous Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "korlar1",
+    "name": "Kordofan Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "willar1",
+    "name": "Williams's Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "frilar1",
+    "name": "Friedmann's Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "whtlar1",
+    "name": "White-tailed Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "latlar1",
+    "name": "Melodious Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "sinbus6",
+    "name": "Singing Bushlark",
+    "family": "Larks"
+  },
+  {
+    "code": "collar1",
+    "name": "Collared Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "flalar1",
+    "name": "Flappet Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "anglar1",
+    "name": "Angola Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "higlar1",
+    "name": "Highland Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "caclar1",
+    "name": "Cape Clapper Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "eaclar1",
+    "name": "Eastern Clapper Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "plalar1",
+    "name": "Plains Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "runlar7",
+    "name": "Plateau Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "runlar1",
+    "name": "Rufous-naped Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "senlar1",
+    "name": "Sentinel Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "slblar1",
+    "name": "Somali Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "rewlar1",
+    "name": "Red-winged Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "runlar2",
+    "name": "Russet Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "kidlar1",
+    "name": "Kidepo Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "woolar1",
+    "name": "Wood Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "stalar2",
+    "name": "Stark's Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "maslar1",
+    "name": "Masked Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "piblar1",
+    "name": "Pink-billed Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "botlar1",
+    "name": "Botha's Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "shtlar1",
+    "name": "Short-tailed Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "obblar1",
+    "name": "Obbia Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "scllar1",
+    "name": "Sclater's Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "whwlar1",
+    "name": "White-winged Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "razsky1",
+    "name": "Raso Skylark",
+    "family": "Larks"
+  },
+  {
+    "code": "skylar",
+    "name": "Eurasian Skylark",
+    "family": "Larks"
+  },
+  {
+    "code": "orisky1",
+    "name": "Oriental Skylark",
+    "family": "Larks"
+  },
+  {
+    "code": "sunlar1",
+    "name": "Sun Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "lablar1",
+    "name": "Large-billed Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "tawlar1",
+    "name": "Tawny Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "thelar1",
+    "name": "Thekla's Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "crelar1",
+    "name": "Crested Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "mallar1",
+    "name": "Malabar Lark",
     "family": "Larks"
   },
   {
@@ -36100,18 +36525,13 @@
     "family": "Larks"
   },
   {
-    "code": "blalar2",
-    "name": "Blanford's Lark",
-    "family": "Larks"
-  },
-  {
     "code": "blalar4",
     "name": "Rufous-capped Lark",
     "family": "Larks"
   },
   {
-    "code": "reclar1",
-    "name": "Red-capped Lark",
+    "code": "blalar2",
+    "name": "Blanford's Lark",
     "family": "Larks"
   },
   {
@@ -36120,8 +36540,8 @@
     "family": "Larks"
   },
   {
-    "code": "sstlar4",
-    "name": "Mongolian Short-toed Lark",
+    "code": "reclar1",
+    "name": "Red-capped Lark",
     "family": "Larks"
   },
   {
@@ -36130,13 +36550,13 @@
     "family": "Larks"
   },
   {
-    "code": "bimlar1",
-    "name": "Bimaculated Lark",
+    "code": "sstlar4",
+    "name": "Mongolian Short-toed Lark",
     "family": "Larks"
   },
   {
-    "code": "callar1",
-    "name": "Calandra Lark",
+    "code": "bimlar1",
+    "name": "Bimaculated Lark",
     "family": "Larks"
   },
   {
@@ -36145,13 +36565,18 @@
     "family": "Larks"
   },
   {
-    "code": "blalar1",
-    "name": "Black Lark",
+    "code": "monlar1",
+    "name": "Mongolian Lark",
     "family": "Larks"
   },
   {
-    "code": "monlar1",
-    "name": "Mongolian Lark",
+    "code": "callar1",
+    "name": "Calandra Lark",
+    "family": "Larks"
+  },
+  {
+    "code": "blalar1",
+    "name": "Black Lark",
     "family": "Larks"
   },
   {
@@ -36192,96 +36617,6 @@
   {
     "code": "sanlar1",
     "name": "Sand Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "woolar1",
-    "name": "Wood Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "stalar2",
-    "name": "Stark's Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "scllar1",
-    "name": "Sclater's Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "shtlar1",
-    "name": "Short-tailed Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "piblar1",
-    "name": "Pink-billed Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "botlar1",
-    "name": "Botha's Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "obblar1",
-    "name": "Obbia Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "maslar1",
-    "name": "Masked Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "whwlar1",
-    "name": "White-winged Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "skylar",
-    "name": "Eurasian Skylark",
-    "family": "Larks"
-  },
-  {
-    "code": "orisky1",
-    "name": "Oriental Skylark",
-    "family": "Larks"
-  },
-  {
-    "code": "razsky1",
-    "name": "Raso Skylark",
-    "family": "Larks"
-  },
-  {
-    "code": "sunlar1",
-    "name": "Sun Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "lablar1",
-    "name": "Large-billed Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "thelar1",
-    "name": "Thekla's Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "crelar1",
-    "name": "Crested Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "mallar1",
-    "name": "Malabar Lark",
-    "family": "Larks"
-  },
-  {
-    "code": "tawlar1",
-    "name": "Tawny Lark",
     "family": "Larks"
   },
   {
@@ -36346,7 +36681,7 @@
   },
   {
     "code": "capcro1",
-    "name": "Cape Crombec",
+    "name": "Long-billed Crombec",
     "family": "African Warblers"
   },
   {
@@ -36420,11 +36755,6 @@
     "family": "Cisticolas and Allies"
   },
   {
-    "code": "salere1",
-    "name": "Salvadori's Eremomela",
-    "family": "Cisticolas and Allies"
-  },
-  {
     "code": "yevere1",
     "name": "Yellow-vented Eremomela",
     "family": "Cisticolas and Allies"
@@ -36446,12 +36776,12 @@
   },
   {
     "code": "greere1",
-    "name": "Greencap Eremomela",
+    "name": "Green-capped Eremomela",
     "family": "Cisticolas and Allies"
   },
   {
     "code": "yerere1",
-    "name": "Yellow-rumped Eremomela",
+    "name": "Karoo Eremomela",
     "family": "Cisticolas and Allies"
   },
   {
@@ -36695,8 +37025,13 @@
     "family": "Cisticolas and Allies"
   },
   {
-    "code": "karapa1",
+    "code": "karapa2",
     "name": "Karamoja Apalis",
+    "family": "Cisticolas and Allies"
+  },
+  {
+    "code": "karapa3",
+    "name": "Maasai Apalis",
     "family": "Cisticolas and Allies"
   },
   {
@@ -36911,7 +37246,7 @@
   },
   {
     "code": "kopwar1",
-    "name": "Kopje Warbler",
+    "name": "Cinnamon-breasted Warbler",
     "family": "Cisticolas and Allies"
   },
   {
@@ -37005,6 +37340,11 @@
     "family": "Cisticolas and Allies"
   },
   {
+    "code": "rolcis4",
+    "name": "Huambo Cisticola",
+    "family": "Cisticolas and Allies"
+  },
+  {
     "code": "borcis1",
     "name": "Boran Cisticola",
     "family": "Cisticolas and Allies"
@@ -37036,7 +37376,12 @@
   },
   {
     "code": "rehcis2",
-    "name": "Red-headed Cisticola",
+    "name": "Gray-backed Cisticola",
+    "family": "Cisticolas and Allies"
+  },
+  {
+    "code": "waicis2",
+    "name": "Lynes's Cisticola",
     "family": "Cisticolas and Allies"
   },
   {
@@ -37181,7 +37526,7 @@
   },
   {
     "code": "clscis1",
-    "name": "Cloud-scraping Cisticola",
+    "name": "Dambo Cisticola",
     "family": "Cisticolas and Allies"
   },
   {
@@ -37471,7 +37816,7 @@
   },
   {
     "code": "rimrew1",
-    "name": "Rimitara Reed Warbler",
+    "name": "Rimatara Reed Warbler",
     "family": "Reed Warblers and Allies"
   },
   {
@@ -37871,7 +38216,12 @@
   },
   {
     "code": "yeboxy1",
-    "name": "Yellow-browed Oxylabes",
+    "name": "Madagascar Yellowbrow",
+    "family": "Malagasy Warblers"
+  },
+  {
+    "code": "dustet1",
+    "name": "Dusky Tetraka",
     "family": "Malagasy Warblers"
   },
   {
@@ -37882,11 +38232,6 @@
   {
     "code": "apptet1",
     "name": "Appert's Tetraka",
-    "family": "Malagasy Warblers"
-  },
-  {
-    "code": "dustet1",
-    "name": "Dusky Tetraka",
     "family": "Malagasy Warblers"
   },
   {
@@ -38160,8 +38505,18 @@
     "family": "Swallows"
   },
   {
-    "code": "rocmar2",
-    "name": "Rock Martin",
+    "code": "rocmar1",
+    "name": "Pale Crag-Martin",
+    "family": "Swallows"
+  },
+  {
+    "code": "rocmar4",
+    "name": "Red-throated Crag-Martin",
+    "family": "Swallows"
+  },
+  {
+    "code": "rocmar5",
+    "name": "Southern Crag-Martin",
     "family": "Swallows"
   },
   {
@@ -38192,6 +38547,11 @@
   {
     "code": "pacswa1",
     "name": "Pacific Swallow",
+    "family": "Swallows"
+  },
+  {
+    "code": "pacswa5",
+    "name": "Tahiti Swallow",
     "family": "Swallows"
   },
   {
@@ -38275,8 +38635,18 @@
     "family": "Swallows"
   },
   {
-    "code": "rerswa1",
-    "name": "Red-rumped Swallow",
+    "code": "rerswa8",
+    "name": "European Red-rumped Swallow",
+    "family": "Swallows"
+  },
+  {
+    "code": "rerswa12",
+    "name": "African Red-rumped Swallow",
+    "family": "Swallows"
+  },
+  {
+    "code": "y00621",
+    "name": "Eastern Red-rumped Swallow",
     "family": "Swallows"
   },
   {
@@ -38285,8 +38655,8 @@
     "family": "Swallows"
   },
   {
-    "code": "strswa2",
-    "name": "Striated Swallow",
+    "code": "rubswa1",
+    "name": "Rufous-bellied Swallow",
     "family": "Swallows"
   },
   {
@@ -38302,11 +38672,6 @@
   {
     "code": "mosswa2",
     "name": "Mosque Swallow",
-    "family": "Swallows"
-  },
-  {
-    "code": "rubswa1",
-    "name": "Rufous-bellied Swallow",
     "family": "Swallows"
   },
   {
@@ -38390,8 +38755,13 @@
     "family": "Bulbuls"
   },
   {
-    "code": "lesbri2",
-    "name": "Lesser Bristlebill",
+    "code": "lesbri1",
+    "name": "Yellow-lored Bristlebill",
+    "family": "Bulbuls"
+  },
+  {
+    "code": "lesbri3",
+    "name": "Yellow-eyed Bristlebill",
     "family": "Bulbuls"
   },
   {
@@ -38400,8 +38770,13 @@
     "family": "Bulbuls"
   },
   {
-    "code": "yetgre1",
-    "name": "Yellow-throated Greenbul",
+    "code": "yetgre2",
+    "name": "Yellow-gorgeted Greenbul",
+    "family": "Bulbuls"
+  },
+  {
+    "code": "patgre1",
+    "name": "Pale-throated Greenbul",
     "family": "Bulbuls"
   },
   {
@@ -38465,8 +38840,13 @@
     "family": "Bulbuls"
   },
   {
-    "code": "easmog1",
-    "name": "Eastern Mountain Greenbul",
+    "code": "easmog5",
+    "name": "Kikuyu Mountain Greenbul",
+    "family": "Bulbuls"
+  },
+  {
+    "code": "easmog2",
+    "name": "Black-headed Mountain Greenbul",
     "family": "Bulbuls"
   },
   {
@@ -38477,6 +38857,11 @@
   {
     "code": "easmog4",
     "name": "Black-browed Mountain Greenbul",
+    "family": "Bulbuls"
+  },
+  {
+    "code": "stfgre1",
+    "name": "Olive-headed Greenbul",
     "family": "Bulbuls"
   },
   {
@@ -38550,8 +38935,13 @@
     "family": "Bulbuls"
   },
   {
-    "code": "whtgre2",
+    "code": "whtgre1",
     "name": "White-throated Greenbul",
+    "family": "Bulbuls"
+  },
+  {
+    "code": "whtgre4",
+    "name": "Angola Greenbul",
     "family": "Bulbuls"
   },
   {
@@ -39552,17 +39942,17 @@
   {
     "code": "chcfly1",
     "name": "Chestnut-capped Flycatcher",
-    "family": "Bush Warblers and Allies"
+    "family": "Yellow Flycatchers"
   },
   {
     "code": "yelfly2",
     "name": "Yellow Flycatcher",
-    "family": "Bush Warblers and Allies"
+    "family": "Yellow Flycatchers"
   },
   {
     "code": "livfly1",
     "name": "Livingstone's Flycatcher",
-    "family": "Bush Warblers and Allies"
+    "family": "Yellow Flycatchers"
   },
   {
     "code": "stswar1",
@@ -40251,7 +40641,7 @@
   },
   {
     "code": "trweye1",
-    "name": "Truk White-eye",
+    "name": "Teardrop White-eye",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
@@ -40266,52 +40656,52 @@
   },
   {
     "code": "jgtwhe1",
-    "name": "Javan Gray-throated White-eye",
+    "name": "Javan Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "gyhwhe1",
-    "name": "Gray-hooded White-eye",
+    "name": "Gray-hooded Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "pyweye1",
-    "name": "Pygmy White-eye",
+    "name": "Pygmy Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "minwhe1",
-    "name": "Mindanao White-eye",
+    "name": "Mindanao Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "sthwhe1",
-    "name": "Streak-headed White-eye",
+    "name": "Sulawesi Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "whbwhe1",
-    "name": "White-browed White-eye",
+    "name": "Eyebrowed Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "dacwhe1",
-    "name": "Dark-crowned White-eye",
+    "name": "Dark-crowned Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "timwhe1",
-    "name": "Timor White-eye",
+    "name": "Timor Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "flowhe1",
-    "name": "Flores White-eye",
+    "name": "Flores Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "ysweye1",
-    "name": "Yellow-spectacled White-eye",
+    "name": "Yellow-spectacled Heleia",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
@@ -40446,7 +40836,12 @@
   },
   {
     "code": "heuwhe2",
-    "name": "Heuglin's White-eye",
+    "name": "Ethiopian White-eye",
+    "family": "White-eyes, Yuhinas, and Allies"
+  },
+  {
+    "code": "kafwhe1",
+    "name": "Kafa White-eye",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
@@ -40487,6 +40882,11 @@
   {
     "code": "afywhe2",
     "name": "Northern Yellow White-eye",
+    "family": "White-eyes, Yuhinas, and Allies"
+  },
+  {
+    "code": "noywhe2",
+    "name": "Angola White-eye",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
@@ -40641,7 +41041,7 @@
   },
   {
     "code": "wawwhe1",
-    "name": "Wangi-Wangi White-eye",
+    "name": "Wangi-wangi White-eye",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
@@ -40696,7 +41096,7 @@
   },
   {
     "code": "laweye1",
-    "name": "Layard's White-eye",
+    "name": "Fiji White-eye",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
@@ -40721,7 +41121,7 @@
   },
   {
     "code": "gytwhe5",
-    "name": "Gray-throated White-eye",
+    "name": "Makira White-eye",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
@@ -40771,7 +41171,7 @@
   },
   {
     "code": "grkwhe1",
-    "name": "Great Kai White-eye",
+    "name": "Kai Besar White-eye",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
@@ -40781,12 +41181,12 @@
   },
   {
     "code": "likwhe1",
-    "name": "Little Kai White-eye",
+    "name": "Kai Kecil White-eye",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
     "code": "gaweye1",
-    "name": "Ganongga White-eye",
+    "name": "Ranongga White-eye",
     "family": "White-eyes, Yuhinas, and Allies"
   },
   {
@@ -40940,7 +41340,7 @@
     "family": "Tree-Babblers, Scimitar-Babblers, and Allies"
   },
   {
-    "code": "rufbab2",
+    "code": "rufbab10",
     "name": "Rufous-fronted Babbler",
     "family": "Tree-Babblers, Scimitar-Babblers, and Allies"
   },
@@ -40952,11 +41352,6 @@
   {
     "code": "rucbab1",
     "name": "Rufous-capped Babbler",
-    "family": "Tree-Babblers, Scimitar-Babblers, and Allies"
-  },
-  {
-    "code": "bucbab1",
-    "name": "Buff-chested Babbler",
     "family": "Tree-Babblers, Scimitar-Babblers, and Allies"
   },
   {
@@ -41072,6 +41467,11 @@
   {
     "code": "rcsbab1",
     "name": "Rusty-cheeked Scimitar-Babbler",
+    "family": "Tree-Babblers, Scimitar-Babblers, and Allies"
+  },
+  {
+    "code": "reescb1",
+    "name": "Red-eyed Scimitar-Babbler",
     "family": "Tree-Babblers, Scimitar-Babblers, and Allies"
   },
   {
@@ -41781,12 +42181,12 @@
   },
   {
     "code": "gyflio1",
-    "name": "Gray-faced Liocichla",
+    "name": "Emei Shan Liocichla",
     "family": "Laughingthrushes and Allies"
   },
   {
     "code": "stelio1",
-    "name": "Steere's Liocichla",
+    "name": "Taiwan Liocichla",
     "family": "Laughingthrushes and Allies"
   },
   {
@@ -42380,6 +42780,16 @@
     "family": "Nuthatches"
   },
   {
+    "code": "spocre2",
+    "name": "African Spotted Creeper",
+    "family": "Spotted Creepers"
+  },
+  {
+    "code": "spocre3",
+    "name": "Indian Spotted Creeper",
+    "family": "Spotted Creepers"
+  },
+  {
     "code": "eurtre1",
     "name": "Eurasian Treecreeper",
     "family": "Treecreepers"
@@ -42422,16 +42832,6 @@
   {
     "code": "bnttre2",
     "name": "Hume's Treecreeper",
-    "family": "Treecreepers"
-  },
-  {
-    "code": "spocre2",
-    "name": "African Spotted Creeper",
-    "family": "Treecreepers"
-  },
-  {
-    "code": "spocre3",
-    "name": "Indian Spotted Creeper",
     "family": "Treecreepers"
   },
   {
@@ -42502,6 +42902,11 @@
   {
     "code": "trogna1",
     "name": "Tropical Gnatcatcher",
+    "family": "Gnatcatchers"
+  },
+  {
+    "code": "trogna3",
+    "name": "Marañon Gnatcatcher",
     "family": "Gnatcatchers"
   },
   {
@@ -42596,7 +43001,37 @@
   },
   {
     "code": "houwre",
-    "name": "House Wren",
+    "name": "Northern House Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "houwre3",
+    "name": "Cozumel Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "cinwre1",
+    "name": "Kalinago Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "houwre8",
+    "name": "St. Lucia Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "houwre10",
+    "name": "St. Vincent Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "houwre11",
+    "name": "Grenada Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "houwre4",
+    "name": "Southern House Wren",
     "family": "Wrens"
   },
   {
@@ -42715,8 +43150,18 @@
     "family": "Wrens"
   },
   {
-    "code": "runwre1",
-    "name": "Rufous-naped Wren",
+    "code": "runwre3",
+    "name": "Russet-naped Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "runwre2",
+    "name": "Veracruz Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "runwre4",
+    "name": "Rufous-backed Wren",
     "family": "Wrens"
   },
   {
@@ -42772,6 +43217,11 @@
   {
     "code": "pltwre1",
     "name": "Plain-tailed Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "pltwre3",
+    "name": "Gray-browed Wren",
     "family": "Wrens"
   },
   {
@@ -42955,8 +43405,13 @@
     "family": "Wrens"
   },
   {
-    "code": "chbwre1",
-    "name": "Chestnut-breasted Wren",
+    "code": "chbwre2",
+    "name": "Northern Chestnut-breasted Wren",
+    "family": "Wrens"
+  },
+  {
+    "code": "chbwre3",
+    "name": "Southern Chestnut-breasted Wren",
     "family": "Wrens"
   },
   {
@@ -43156,7 +43611,7 @@
   },
   {
     "code": "norsta1",
-    "name": "Norfolk Starling",
+    "name": "Tasman Starling",
     "family": "Starlings"
   },
   {
@@ -43655,8 +44110,13 @@
     "family": "Mockingbirds and Thrashers"
   },
   {
-    "code": "whbthr1",
-    "name": "White-breasted Thrasher",
+    "code": "whbthr3",
+    "name": "Martinique Thrasher",
+    "family": "Mockingbirds and Thrashers"
+  },
+  {
+    "code": "whbthr4",
+    "name": "St. Lucia Thrasher",
     "family": "Mockingbirds and Thrashers"
   },
   {
@@ -43803,6 +44263,11 @@
     "code": "normoc",
     "name": "Northern Mockingbird",
     "family": "Mockingbirds and Thrashers"
+  },
+  {
+    "code": "boucha1",
+    "name": "Boulder Chat",
+    "family": "Thrushes and Allies"
   },
   {
     "code": "granda1",
@@ -44017,11 +44482,6 @@
   {
     "code": "fabthr1",
     "name": "Fawn-breasted Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "sulthr1",
-    "name": "Sulawesi Thrush",
     "family": "Thrushes and Allies"
   },
   {
@@ -44275,6 +44735,61 @@
     "family": "Thrushes and Allies"
   },
   {
+    "code": "abethr1",
+    "name": "African Bare-eyed Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "somthr1",
+    "name": "Somali Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "chibla1",
+    "name": "Chinese Blackbird",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "kurthr1",
+    "name": "Kurrichane Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "comthr1",
+    "name": "Comoro Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "karthr1",
+    "name": "Karoo Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "yemthr1",
+    "name": "Yemen Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "olithr2",
+    "name": "Olive Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "redwin",
+    "name": "Redwing",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "mourob1",
+    "name": "Mountain Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "forthr1",
+    "name": "Forest Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
     "code": "abythr1",
     "name": "Abyssinian Thrush",
     "family": "Thrushes and Allies"
@@ -44290,18 +44805,18 @@
     "family": "Thrushes and Allies"
   },
   {
-    "code": "redwin",
-    "name": "Redwing",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "mourob1",
-    "name": "Mountain Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
     "code": "eurbla",
     "name": "Eurasian Blackbird",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "yelthr1",
+    "name": "Yellow-legged Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "lawthr1",
+    "name": "Lawrence's Thrush",
     "family": "Thrushes and Allies"
   },
   {
@@ -44320,16 +44835,6 @@
     "family": "Thrushes and Allies"
   },
   {
-    "code": "yelthr1",
-    "name": "Yellow-legged Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "pavthr1",
-    "name": "Pale-vented Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
     "code": "whtrob1",
     "name": "White-throated Thrush",
     "family": "Thrushes and Allies"
@@ -44340,13 +44845,13 @@
     "family": "Thrushes and Allies"
   },
   {
-    "code": "rubthr1",
-    "name": "Rufous-bellied Thrush",
+    "code": "pavthr1",
+    "name": "Pale-vented Thrush",
     "family": "Thrushes and Allies"
   },
   {
-    "code": "clcrob",
-    "name": "Clay-colored Thrush",
+    "code": "rubthr1",
+    "name": "Rufous-bellied Thrush",
     "family": "Thrushes and Allies"
   },
   {
@@ -44365,68 +44870,18 @@
     "family": "Thrushes and Allies"
   },
   {
+    "code": "clcrob",
+    "name": "Clay-colored Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
     "code": "unithr1",
     "name": "Unicolored Thrush",
     "family": "Thrushes and Allies"
   },
   {
-    "code": "somthr1",
-    "name": "Somali Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "chibla1",
-    "name": "Chinese Blackbird",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "abethr1",
-    "name": "African Bare-eyed Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "kurthr1",
-    "name": "Kurrichane Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "comthr1",
-    "name": "Comoro Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "yemthr1",
-    "name": "Yemen Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "olithr2",
-    "name": "Olive Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "karthr1",
-    "name": "Karoo Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "forthr1",
-    "name": "Forest Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "paethr1",
-    "name": "Pale-eyed Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "whethr1",
-    "name": "White-eyed Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "lasthr1",
-    "name": "La Selle Thrush",
+    "code": "sulthr1",
+    "name": "Sulawesi Thrush",
     "family": "Thrushes and Allies"
   },
   {
@@ -44455,6 +44910,56 @@
     "family": "Thrushes and Allies"
   },
   {
+    "code": "afrthr1",
+    "name": "African Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "grcthr1",
+    "name": "Grand Cayman Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "whcthr1",
+    "name": "White-chinned Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "relthr1",
+    "name": "Red-legged Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "prithr1",
+    "name": "Principe Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "satthr1",
+    "name": "Sao Tome Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "islthr24",
+    "name": "Taiwan Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "lasthr1",
+    "name": "La Selle Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "whethr1",
+    "name": "White-eyed Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "paethr1",
+    "name": "Pale-eyed Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
     "code": "austhr1",
     "name": "Austral Thrush",
     "family": "Thrushes and Allies"
@@ -44467,11 +44972,6 @@
   {
     "code": "slathr3",
     "name": "Blacksmith Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "lawthr1",
-    "name": "Lawrence's Thrush",
     "family": "Thrushes and Allies"
   },
   {
@@ -44515,18 +45015,13 @@
     "family": "Thrushes and Allies"
   },
   {
-    "code": "grethr1",
-    "name": "Great Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "chithr1",
-    "name": "Chiguanco Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
     "code": "slathr2",
     "name": "Andean Slaty Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "grethr1",
+    "name": "Great Thrush",
     "family": "Thrushes and Allies"
   },
   {
@@ -44535,38 +45030,8 @@
     "family": "Thrushes and Allies"
   },
   {
-    "code": "prithr1",
-    "name": "Principe Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "satthr1",
-    "name": "Sao Tome Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "whcthr1",
-    "name": "White-chinned Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "grcthr1",
-    "name": "Grand Cayman Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "relthr1",
-    "name": "Red-legged Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "afrthr1",
-    "name": "African Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "islthr24",
-    "name": "Taiwan Thrush",
+    "code": "chithr1",
+    "name": "Chiguanco Thrush",
     "family": "Thrushes and Allies"
   },
   {
@@ -44580,6 +45045,16 @@
     "family": "Thrushes and Allies"
   },
   {
+    "code": "ticthr1",
+    "name": "Tickell's Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "blbthr2",
+    "name": "Black-breasted Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
     "code": "japthr1",
     "name": "Japanese Thrush",
     "family": "Thrushes and Allies"
@@ -44590,13 +45065,8 @@
     "family": "Thrushes and Allies"
   },
   {
-    "code": "ticthr1",
-    "name": "Tickell's Thrush",
-    "family": "Thrushes and Allies"
-  },
-  {
-    "code": "blbthr2",
-    "name": "Black-breasted Thrush",
+    "code": "palthr1",
+    "name": "Pale Thrush",
     "family": "Thrushes and Allies"
   },
   {
@@ -44620,23 +45090,98 @@
     "family": "Thrushes and Allies"
   },
   {
-    "code": "palthr1",
-    "name": "Pale Thrush",
+    "code": "islthr22",
+    "name": "Mindoro Island-Thrush",
     "family": "Thrushes and Allies"
   },
   {
-    "code": "islthr1",
-    "name": "Island Thrush",
+    "code": "islthr36",
+    "name": "Luzon Island-Thrush",
     "family": "Thrushes and Allies"
   },
   {
-    "code": "whbthr2",
-    "name": "White-backed Thrush",
+    "code": "minist1",
+    "name": "Mindanao Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "islthr9",
+    "name": "Christmas Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "walist1",
+    "name": "Wallacean Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "sunist1",
+    "name": "Sundaic Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "molist1",
+    "name": "Moluccan Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "papist1",
+    "name": "Papuan Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "bisist1",
+    "name": "Bismarck Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "islthr48",
+    "name": "Bougainville Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "solist1",
+    "name": "Solomons Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "vanist1",
+    "name": "Vanikoro Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "islthr28",
+    "name": "White-headed Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "islthr40",
+    "name": "New Caledonian Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "norist1",
+    "name": "Tasman Sea Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "islthr30",
+    "name": "Samoan Island-Thrush",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "fijist1",
+    "name": "Fiji Island-Thrush",
     "family": "Thrushes and Allies"
   },
   {
     "code": "tibbla1",
     "name": "Tibetan Blackbird",
+    "family": "Thrushes and Allies"
+  },
+  {
+    "code": "whbthr2",
+    "name": "White-backed Thrush",
     "family": "Thrushes and Allies"
   },
   {
@@ -44951,7 +45496,7 @@
   },
   {
     "code": "rbsrob1",
-    "name": "Red-backed Scrub-Robin",
+    "name": "White-browed Scrub-Robin",
     "family": "Old World Flycatchers"
   },
   {
@@ -44990,13 +45535,33 @@
     "family": "Old World Flycatchers"
   },
   {
-    "code": "whrsha2",
+    "code": "whrsha5",
+    "name": "Sri Lankan Shama",
+    "family": "Old World Flycatchers"
+  },
+  {
+    "code": "whrsha16",
     "name": "White-crowned Shama",
+    "family": "Old World Flycatchers"
+  },
+  {
+    "code": "whrsha17",
+    "name": "Maratua Shama",
+    "family": "Old World Flycatchers"
+  },
+  {
+    "code": "whrsha11",
+    "name": "Kangean Shama",
     "family": "Old World Flycatchers"
   },
   {
     "code": "andsha1",
     "name": "Andaman Shama",
+    "family": "Old World Flycatchers"
+  },
+  {
+    "code": "larsha1",
+    "name": "Larwo Shama",
     "family": "Old World Flycatchers"
   },
   {
@@ -45280,8 +45845,18 @@
     "family": "Old World Flycatchers"
   },
   {
-    "code": "chtjuf1",
-    "name": "Chestnut-tailed Jungle Flycatcher",
+    "code": "chtjuf2",
+    "name": "Philippine Jungle Flycatcher",
+    "family": "Old World Flycatchers"
+  },
+  {
+    "code": "chtjuf3",
+    "name": "Sulu Jungle Flycatcher",
+    "family": "Old World Flycatchers"
+  },
+  {
+    "code": "chtjuf4",
+    "name": "Crocker Jungle Flycatcher",
     "family": "Old World Flycatchers"
   },
   {
@@ -45411,7 +45986,7 @@
   },
   {
     "code": "choale1",
-    "name": "Cholo Alethe",
+    "name": "Thyolo Alethe",
     "family": "Old World Flycatchers"
   },
   {
@@ -45755,8 +46330,13 @@
     "family": "Old World Flycatchers"
   },
   {
-    "code": "sunrob1",
-    "name": "Sunda Robin",
+    "code": "sunrob2",
+    "name": "Sumatran Robin",
+    "family": "Old World Flycatchers"
+  },
+  {
+    "code": "sunrob3",
+    "name": "Javan Robin",
     "family": "Old World Flycatchers"
   },
   {
@@ -45765,8 +46345,13 @@
     "family": "Old World Flycatchers"
   },
   {
-    "code": "refblu",
+    "code": "refblu1",
     "name": "Red-flanked Bluetail",
+    "family": "Old World Flycatchers"
+  },
+  {
+    "code": "refblu2",
+    "name": "Qilian Bluetail",
     "family": "Old World Flycatchers"
   },
   {
@@ -45782,6 +46367,11 @@
   {
     "code": "wbbrob1",
     "name": "White-browed Bush-Robin",
+    "family": "Old World Flycatchers"
+  },
+  {
+    "code": "whbbur3",
+    "name": "Taiwan Bush-Robin",
     "family": "Old World Flycatchers"
   },
   {
@@ -46231,7 +46821,7 @@
   },
   {
     "code": "mouwhe1",
-    "name": "Mountain Wheatear",
+    "name": "Mountain Chat",
     "family": "Old World Flycatchers"
   },
   {
@@ -46400,11 +46990,6 @@
     "family": "Old World Flycatchers"
   },
   {
-    "code": "boucha1",
-    "name": "Boulder Chat",
-    "family": "Old World Flycatchers"
-  },
-  {
     "code": "bohwax",
     "name": "Bohemian Waxwing",
     "family": "Waxwings"
@@ -46505,11 +47090,6 @@
     "family": "Dapple-throat and Allies"
   },
   {
-    "code": "olbflo1",
-    "name": "Olive-backed Flowerpecker",
-    "family": "Flowerpeckers"
-  },
-  {
     "code": "yebflo2",
     "name": "Yellow-breasted Flowerpecker",
     "family": "Flowerpeckers"
@@ -46535,13 +47115,8 @@
     "family": "Flowerpeckers"
   },
   {
-    "code": "speflo1",
-    "name": "Spectacled Flowerpecker",
-    "family": "Flowerpeckers"
-  },
-  {
-    "code": "gorflo1",
-    "name": "Golden-rumped Flowerpecker",
+    "code": "olbflo1",
+    "name": "Olive-backed Flowerpecker",
     "family": "Flowerpeckers"
   },
   {
@@ -46572,6 +47147,16 @@
   {
     "code": "whtflo1",
     "name": "White-throated Flowerpecker",
+    "family": "Flowerpeckers"
+  },
+  {
+    "code": "speflo1",
+    "name": "Spectacled Flowerpecker",
+    "family": "Flowerpeckers"
+  },
+  {
+    "code": "gorflo1",
+    "name": "Golden-rumped Flowerpecker",
     "family": "Flowerpeckers"
   },
   {
@@ -46626,7 +47211,7 @@
   },
   {
     "code": "whbflo1",
-    "name": "White-bellied Flowerpecker",
+    "name": "Buzzing Flowerpecker",
     "family": "Flowerpeckers"
   },
   {
@@ -46745,8 +47330,23 @@
     "family": "Flowerpeckers"
   },
   {
-    "code": "blbflo1",
-    "name": "Blood-breasted Flowerpecker",
+    "code": "blbflo5",
+    "name": "Javan Flowerpecker",
+    "family": "Flowerpeckers"
+  },
+  {
+    "code": "blbflo6",
+    "name": "Flores Flowerpecker",
+    "family": "Flowerpeckers"
+  },
+  {
+    "code": "blbflo3",
+    "name": "Sumba Flowerpecker",
+    "family": "Flowerpeckers"
+  },
+  {
+    "code": "blbflo4",
+    "name": "Timor Flowerpecker",
     "family": "Flowerpeckers"
   },
   {
@@ -46845,8 +47445,13 @@
     "family": "Sunbirds and Spiderhunters"
   },
   {
-    "code": "gresun1",
-    "name": "Green Sunbird",
+    "code": "grnsun1",
+    "name": "Yellow-chinned Sunbird",
+    "family": "Sunbirds and Spiderhunters"
+  },
+  {
+    "code": "grnsun2",
+    "name": "Gray-chinned Sunbird",
     "family": "Sunbirds and Spiderhunters"
   },
   {
@@ -47130,6 +47735,11 @@
     "family": "Sunbirds and Spiderhunters"
   },
   {
+    "code": "beasun3",
+    "name": "Gorgeous Sunbird",
+    "family": "Sunbirds and Spiderhunters"
+  },
+  {
     "code": "marsun2",
     "name": "Marico Sunbird",
     "family": "Sunbirds and Spiderhunters"
@@ -47186,7 +47796,12 @@
   },
   {
     "code": "shisun3",
-    "name": "Shining Sunbird",
+    "name": "Abyssinian Sunbird",
+    "family": "Sunbirds and Spiderhunters"
+  },
+  {
+    "code": "shisun4",
+    "name": "Arabian Sunbird",
     "family": "Sunbirds and Spiderhunters"
   },
   {
@@ -47216,7 +47831,7 @@
   },
   {
     "code": "whbsun2",
-    "name": "White-breasted Sunbird",
+    "name": "White-bellied Sunbird",
     "family": "Sunbirds and Spiderhunters"
   },
   {
@@ -47646,7 +48261,7 @@
   },
   {
     "code": "gyhsow1",
-    "name": "Gray-headed Social-Weaver",
+    "name": "Gray-capped Social-Weaver",
     "family": "Weavers and Allies"
   },
   {
@@ -47671,7 +48286,7 @@
   },
   {
     "code": "balmal2",
-    "name": "Ballman's Malimbe",
+    "name": "Gola Malimbe",
     "family": "Weavers and Allies"
   },
   {
@@ -47931,12 +48546,12 @@
   },
   {
     "code": "clawea1",
-    "name": "Clarke's Weaver",
+    "name": "Kilifi Weaver",
     "family": "Weavers and Allies"
   },
   {
     "code": "salwea1",
-    "name": "Salvadori's Weaver",
+    "name": "Juba Weaver",
     "family": "Weavers and Allies"
   },
   {
@@ -47976,7 +48591,7 @@
   },
   {
     "code": "forwea1",
-    "name": "Forest Weaver",
+    "name": "Dark-backed Weaver",
     "family": "Weavers and Allies"
   },
   {
@@ -48836,7 +49451,7 @@
   },
   {
     "code": "pettwi1",
-    "name": "Peters's Twinspot",
+    "name": "Red-throated Twinspot",
     "family": "Waxbills and Allies"
   },
   {
@@ -48876,7 +49491,7 @@
   },
   {
     "code": "reifir1",
-    "name": "Reichenow's Firefinch",
+    "name": "Chad Firefinch",
     "family": "Waxbills and Allies"
   },
   {
@@ -48971,7 +49586,7 @@
   },
   {
     "code": "bakind1",
-    "name": "Baka Indigobird",
+    "name": "Barka Indigobird",
     "family": "Indigobirds"
   },
   {
@@ -48981,7 +49596,7 @@
   },
   {
     "code": "varind1",
-    "name": "Variable Indigobird",
+    "name": "Dusky Indigobird",
     "family": "Indigobirds"
   },
   {
@@ -49492,6 +50107,11 @@
   {
     "code": "rocpip1",
     "name": "Rock Pipit",
+    "family": "Wagtails and Pipits"
+  },
+  {
+    "code": "sibpip1",
+    "name": "Siberian Pipit",
     "family": "Wagtails and Pipits"
   },
   {
@@ -50426,7 +51046,7 @@
   },
   {
     "code": "olrser1",
-    "name": "Olive-rumped Serin",
+    "name": "Arabian Serin",
     "family": "Finches, Euphonias, and Allies"
   },
   {
@@ -50506,7 +51126,7 @@
   },
   {
     "code": "tansee1",
-    "name": "Tanzania Seedeater",
+    "name": "Kipengere Seedeater",
     "family": "Finches, Euphonias, and Allies"
   },
   {
@@ -50540,7 +51160,12 @@
     "family": "Finches, Euphonias, and Allies"
   },
   {
-    "code": "reisee1",
+    "code": "reisee3",
+    "name": "Stripe-breasted Seedeater",
+    "family": "Finches, Euphonias, and Allies"
+  },
+  {
+    "code": "reisee4",
     "name": "Reichard's Seedeater",
     "family": "Finches, Euphonias, and Allies"
   },
@@ -50590,18 +51215,8 @@
     "family": "Finches, Euphonias, and Allies"
   },
   {
-    "code": "comred",
-    "name": "Common Redpoll",
-    "family": "Finches, Euphonias, and Allies"
-  },
-  {
-    "code": "lesred1",
-    "name": "Lesser Redpoll",
-    "family": "Finches, Euphonias, and Allies"
-  },
-  {
-    "code": "hoared",
-    "name": "Hoary Redpoll",
+    "code": "redpol1",
+    "name": "Redpoll",
     "family": "Finches, Euphonias, and Allies"
   },
   {
@@ -50635,13 +51250,23 @@
     "family": "Finches, Euphonias, and Allies"
   },
   {
-    "code": "mouser1",
-    "name": "Mountain Serin",
+    "code": "mouser2",
+    "name": "Indonesian Serin",
+    "family": "Finches, Euphonias, and Allies"
+  },
+  {
+    "code": "mouser3",
+    "name": "Mindanao Serin",
     "family": "Finches, Euphonias, and Allies"
   },
   {
     "code": "eurgol",
     "name": "European Goldfinch",
+    "family": "Finches, Euphonias, and Allies"
+  },
+  {
+    "code": "eurgol2",
+    "name": "Gray-crowned Goldfinch",
     "family": "Finches, Euphonias, and Allies"
   },
   {
@@ -51280,8 +51905,13 @@
     "family": "New World Sparrows"
   },
   {
-    "code": "blcspa2",
+    "code": "bkcspa1",
     "name": "Black-capped Sparrow",
+    "family": "New World Sparrows"
+  },
+  {
+    "code": "bkcspa2",
+    "name": "Marañon Sparrow",
     "family": "New World Sparrows"
   },
   {
@@ -51625,13 +52255,23 @@
     "family": "New World Sparrows"
   },
   {
-    "code": "trbfin1",
-    "name": "Tricolored Brushfinch",
+    "code": "tribrf1",
+    "name": "Choco Brushfinch",
     "family": "New World Sparrows"
   },
   {
-    "code": "slbfin2",
-    "name": "Slaty Brushfinch",
+    "code": "tribrf2",
+    "name": "Golden-crowned Brushfinch",
+    "family": "New World Sparrows"
+  },
+  {
+    "code": "slabru1",
+    "name": "Northern Slaty Brushfinch",
+    "family": "New World Sparrows"
+  },
+  {
+    "code": "slabru2",
+    "name": "Peruvian Slaty Brushfinch",
     "family": "New World Sparrows"
   },
   {
