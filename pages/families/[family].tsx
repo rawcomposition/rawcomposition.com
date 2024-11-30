@@ -91,7 +91,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slug = params?.family as string;
   const family = families.find((item) => item.slug === slug)?.name || "";
-  const familySpeciesItems = familySpecies.find((item) => item.family === family)?.species || [];
+  const familySpeciesItems = familySpecies.find((item) => item.family === family)?.species ?? [];
   const filtered = taxonomy.filter((item) => item.family === family);
   const formatted = filtered.map(({ code, name }) => {
     const lifelistEntry = familySpeciesItems.find((it) => it.name === name);
