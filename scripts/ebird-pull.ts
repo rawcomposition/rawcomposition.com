@@ -45,9 +45,11 @@ const endYear = new Date().getFullYear();
   console.log("Fetching photos from eBird...");
   const photos = await getEbirdPhotos();
 
+  const filteredPhotos = photos.filter((photo) => photo.exoticCategory !== "escapee");
+
   const mlSpeciesNames: any = {};
 
-  photos.forEach((row) => {
+  filteredPhotos.forEach((row) => {
     mlSpeciesNames[row.catalogId] = row.commonName;
   });
 
@@ -65,7 +67,7 @@ const endYear = new Date().getFullYear();
   };
 
   let species: Species = {};
-  photos.forEach((row) => {
+  filteredPhotos.forEach((row) => {
     if (!row?.commonName) return;
     if (row.commonName.includes("/") || row.commonName.includes("hybrid") || row.commonName.includes("sp.")) {
       return;
