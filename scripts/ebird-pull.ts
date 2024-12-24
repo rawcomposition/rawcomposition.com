@@ -69,7 +69,12 @@ const endYear = new Date().getFullYear();
   let species: Species = {};
   filteredPhotos.forEach((row) => {
     if (!row?.commonName) return;
-    if (row.commonName.includes("/") || row.commonName.includes("hybrid") || row.commonName.includes("sp.")) {
+    if (
+      !row?.reportAs ||
+      row.commonName.includes("/") ||
+      row.commonName.includes("hybrid") ||
+      row.commonName.includes("sp.")
+    ) {
       return;
     }
 
