@@ -69,6 +69,8 @@ const endYear = new Date().getFullYear();
   let species: Species = {};
   filteredPhotos.forEach((row) => {
     if (!row?.commonName) return;
+    const taxon = Taxonomy.find((it) => it.code === row.reportAs);
+    if (!taxon) return;
     if (
       !row?.reportAs ||
       row.commonName.includes("/") ||
@@ -88,7 +90,7 @@ const endYear = new Date().getFullYear();
       height: row.height,
       name: row.commonName,
       code: row.reportAs,
-      family: Taxonomy.find((it) => it.code === row.reportAs)?.family || "Unknown",
+      family: taxon.family || "Unknown",
       date:
         row.obsDttm !== "Unknown"
           ? dayjs(row.obsDttm).format()
