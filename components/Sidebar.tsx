@@ -26,24 +26,14 @@ export default function Sidebar({ countryData }: Props) {
       </div>
       <h4 className="text-[#636467] uppercase font-bold font-heading mb-4">Birding Life List</h4>
 
-      <details className="text-zinc-600">
-        <summary className="relative marker-none">
-          <ol className="bg-zebra">
-            <CountryRow country="World" count={totalCount} link={`/lifelist/${overview.years[0]}`} />
-            {countryData.slice(0, 5).map(({ code, count }) => (
-              <CountryRow key={code} country={getCountryName(code)} count={count} />
-            ))}
-          </ol>
-          <div className="text-center text-orange cursor-pointer absolute left-0 right-0 bottom-0 p-2 bg-gradient-to-t from-white to-transparent hide-on-open">
-            View More
-          </div>
-        </summary>
+      <div className="text-zinc-600">
         <ol className="bg-zebra">
-          {countryData.slice(5).map(({ code, count }) => (
+          <CountryRow country="World" count={totalCount} link={`/lifelist/${overview.years[0]}`} />
+          {countryData.map(({ code, count }) => (
             <CountryRow key={code} country={getCountryName(code)} count={count} />
           ))}
         </ol>
-      </details>
+      </div>
 
       <h4 className="text-[#636467] uppercase font-bold font-heading mb-4 mt-12">Lists</h4>
       <ul className="space-y-2">
