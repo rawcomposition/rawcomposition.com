@@ -21,6 +21,7 @@ const sensitiveDates = [
   { code: "mexpar1", date: dayjs("2023-10-08").format() },
   { code: "milmac", date: dayjs("2023-06-08").format() },
   { code: "grpchi", date: dayjs("2024-03-31").format() },
+  { code: "lbsfin1", date: dayjs("2025-10-17").format() },
 ];
 
 const beginYear = 2000;
