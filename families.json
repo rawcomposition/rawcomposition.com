@@ -340,10 +340,6 @@
     "slug": "woodhoopoes-and-scimitarbills"
   },
   {
-    "name": "Ground-Hornbills",
-    "slug": "ground-hornbills"
-  },
-  {
     "name": "Hornbills",
     "slug": "hornbills"
   },
@@ -932,8 +928,8 @@
     "slug": "waxbills-and-allies"
   },
   {
-    "name": "Indigobirds",
-    "slug": "indigobirds"
+    "name": "Whydahs and Indigobirds",
+    "slug": "whydahs-and-indigobirds"
   },
   {
     "name": "Accentors",
@@ -972,16 +968,8 @@
     "slug": "chat-tanagers"
   },
   {
-    "name": "Hispaniolan Tanagers",
-    "slug": "hispaniolan-tanagers"
-  },
-  {
-    "name": "Puerto Rican Tanager",
-    "slug": "puerto-rican-tanager"
-  },
-  {
-    "name": "Spindalises",
-    "slug": "spindalises"
+    "name": "Greater Antillean Tanagers",
+    "slug": "greater-antillean-tanagers"
   },
   {
     "name": "Wrenthrush",
