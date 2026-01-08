@@ -1,0 +1,37 @@
+export default [
+  {
+    name: "Puerto Rico",
+    regionCode: "PR",
+    species: [
+      { code: "yesbla1" },
+      { code: "elwwar1" },
+      { code: "adewar1" },
+      { code: "greman1" },
+      { code: "anteup3" },
+      { code: "purnig1" },
+      { code: "antman3" },
+      { code: "purbul1" },
+      { code: "purvir1" },
+      { code: "purpar1" },
+      { code: "purtan1" },
+      { code: "purtod1" },
+      { code: "purlic1" },
+      { code: "purfly1", isNear: true, notes: "Found in low numbers in Virgin Islands" },
+      { code: "graori4" },
+      { code: "purwoo1" },
+      { code: "prsowl" },
+      { code: "purspi" },
+      { code: "pureme1" },
+    ],
+  },
+  {
+    name: "Grenada",
+    regionCode: "GD",
+    species: [{ code: "gredov1" }, { code: "houwre11" }],
+  },
+  {
+    name: "Saint Vincent",
+    regionCode: "VC",
+    species: [{ code: "stvpar1" }, { code: "houwre10" }, { code: "whiwar1" }],
+  },
+];
