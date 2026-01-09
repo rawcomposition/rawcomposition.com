@@ -1,0 +1,61 @@
+---
+import overview from '../../lifelist/overview.json';
+import { getCountryName } from '../helpers/ebird';
+import CountryRow from './CountryRow.astro';
+
+type Props = {
+	countryData: Array<{ code: string; count: number }>;
+};
+
+const { countryData } = Astro.props;
+const totalCount = overview.total;
+---
+
+<div class="bg-white p-10 w-full md:w-[33%] text-sm mb-8">
+	<div class="text-center mb-12">
+		<img class="w-[150px] rounded-full inline-block" src="/avatar.jpg" alt="" />
+		<div>
+			<h4 class="text-[#636467] uppercase font-bold font-heading mb-2 mt-6">Adam Jackson</h4>
+			<p class="text-[0.85rem] text-zinc-500/80 leading-normal">
+				I'm a software developer that loves chasing rare birds around world. I'm on a quest to photograph{" "}
+				<strong>5,000 species</strong> in my lifetime, about 1/2 of the world's species.
+			</p>
+		</div>
+	</div>
+	<h4 class="text-[#636467] uppercase font-bold font-heading mb-4">Birding Life List</h4>
+
+	<div class="text-zinc-600">
+		<ol class="bg-zebra">
+			<CountryRow country="World" count={totalCount} link={`/lifelist/${overview.years[0]}`} />
+			{countryData && countryData.length > 0 ? (
+				countryData.map(({ code, count }) => (
+					<CountryRow key={code} country={getCountryName(code)} count={count} />
+				))
+			) : null}
+		</ol>
+	</div>
+
+	<h4 class="text-[#636467] uppercase font-bold font-heading mb-4 mt-12">Lists</h4>
+	<ul class="space-y-2">
+		<li>
+			<a href={`/lifelist/${overview.years[0]}`} class="text-orange">
+				World Life List
+			</a>
+		</li>
+		<li>
+			<a href="/families" class="text-orange">
+				Taxonomic Families
+			</a>
+		</li>
+	</ul>
+
+	<h4 class="text-[#636467] uppercase font-bold font-heading mb-4 mt-12">Stuff I've Built</h4>
+	<p class="text-zinc-600">
+		Use{" "}
+		<a href="https://birdplan.app" class="text-orange font-bold" target="_blank">
+			BirdPlan.app
+		</a>{" "}
+		to plan your next birding adventure!
+	</p>
+</div>
+
