@@ -1,9 +1,15 @@
 ---
 import { SITE_TITLE } from '../consts';
 import overview from '../../lifelist/overview.json';
+
+type Props = {
+	noMargin?: boolean;
+};
+
+const { noMargin = false } = Astro.props;
 ---
 
-<header class="bg-neutral-800/95 text-gray-200 py-4 mb-12">
+<header class={`bg-neutral-800/95 text-gray-200 py-4 ${noMargin ? '' : 'mb-12'}`}>
 	<div class="mx-auto max-w-[1200px] px-4 sm:flex">
 		<a href="/" class="flex text-[33px] font-bold items-center font-heading">
 			<img src="/logo.png" alt="" width="40" height="40" class="mr-2" />

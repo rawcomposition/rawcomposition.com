@@ -1,0 +1,48 @@
+---
+import { getEbirdImgUrl } from '../helpers/ebird';
+import SpeciesNames from '../../lifelist/species-names.json';
+
+type Props = {
+	id: string | number;
+	text?: string;
+	lifer?: boolean;
+};
+
+const { id, text, lifer = false } = Astro.props;
+const rawId = String(id || '');
+const url = rawId ? getEbirdImgUrl(rawId, 1200) : '';
+const formattedId = rawId.toLowerCase().replace('ml', '');
+const speciesName = (SpeciesNames as Record<string, string>)[formattedId] || '';
+---
+
+<figure class="bg-gray-200">
+	<img src={url} alt="" loading="lazy" class="w-full object-contain max-h-[600px]" />
+	<figcaption class="text-sm text-gray-900 mt-0 px-4 py-3 relative">
+		<strong>{speciesName}</strong>
+		{lifer && (
+			<span class="text-[12px] font-medium rounded bg-lime-700/10 px-1 text-lime-700 inline-flex items-center gap-1 align-bottom ml-2">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon">
+					<path fill="currentColor" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+				</svg>
+				Lifer
+			</span>
+		)}
+		<a
+			href={`https://macaulaylibrary.org/asset/${rawId}`}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="absolute top-3 right-4 no-underline !text-slate-600 inline-flex gap-1 items-center"
+		>
+			View on eBird
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon">
+				<path fill="currentColor" d="M264.6 70.63l176 168c4.75 4.531 7.438 10.81 7.438 17.38s-2.688 12.84-7.438 17.38l-176 168c-9.594 9.125-24.78 8.781-33.94-.8125c-9.156-9.5-8.812-24.75 .8125-33.94l132.7-126.6H24.01c-13.25 0-24.01-10.76-24.01-24.01s10.76-23.99 24.01-23.99h340.1l-132.7-126.6C221.8 96.23 221.5 80.98 230.6 71.45C239.8 61.85 254.1 61.51 264.6 70.63z" />
+			</svg>
+		</a>
+		{text && (
+			<>
+				<br />
+				<span class="inline-block mt-1">{text}</span>
+			</>
+		)}
+	</figcaption>
+</figure>
