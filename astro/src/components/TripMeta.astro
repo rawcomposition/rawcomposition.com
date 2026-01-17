@@ -1,12 +1,12 @@
 ---
-type Props = {
+interface Props {
 	length?: string;
 	species?: number;
 	lifers?: number;
 	isUS?: boolean;
 	subtitle?: string;
 	ebirdLink?: string;
-};
+}
 
 const { length, species, lifers, isUS, subtitle, ebirdLink } = Astro.props;
 ---

@@ -1,7 +1,7 @@
-export const getEbirdImgUrl = (id: string | number, size: 160 | 320 | 480 | 640 | 900 | 1200 | 1800 | 2400 = 480) => {
-	if (!id) return "";
-	return `https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${id.toString().replace("ML", "")}/${size}`;
-};
+export function getEbirdImgUrl(id: string | number, size: 160 | 320 | 480 | 640 | 900 | 1200 | 1800 | 2400 = 480) {
+	if (!id) return '';
+	return `https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${String(id).replace('ML', '')}/${size}`;
+}
 
 type Country = {
 	code: string;
@@ -263,29 +263,22 @@ export function getCountryName(code: string): string {
 }
 
 export async function getCountryData(): Promise<Country[]> {
-	// Check for Astro's PUBLIC_ prefix first, then fallback to NEXT_PUBLIC_ for compatibility
-	const profileId =
-		import.meta.env.PUBLIC_EBIRD_PROFILE_ID ||
-		import.meta.env.NEXT_PUBLIC_EBIRD_PROFILE_ID ||
-		import.meta.env.EBIRD_PROFILE_ID;
+	const profileId = import.meta.env.PUBLIC_EBIRD_PROFILE_ID;
 	if (!profileId) {
 		return [];
 	}
 	try {
-		const url = `https://ebird.org/prof/count/species?username=${profileId}&r=world`;
-		const request = await fetch(url);
-		if (!request.ok) {
+		const response = await fetch(`https://ebird.org/prof/count/species?username=${profileId}&r=world`);
+		if (!response.ok) {
 			return [];
 		}
-		const json: any[] = await request.json();
-		if (!Array.isArray(json) || json.length === 0) {
+		const data: [string, string][] = await response.json();
+		if (!Array.isArray(data) || data.length === 0) {
 			return [];
 		}
-		const countries = json.map((country) => ({
-			code: country[0],
-			count: parseInt(country[1]),
-		}));
-		return countries.sort((a, b) => b.count - a.count);
+		return data
+			.map(([code, count]) => ({ code, count: parseInt(count) }))
+			.sort((a, b) => b.count - a.count);
 	} catch {
 		return [];
 	}

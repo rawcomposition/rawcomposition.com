@@ -2,9 +2,9 @@
 import { SITE_TITLE } from '../consts';
 import overview from '../../lifelist/overview.json';
 
-type Props = {
+interface Props {
 	noMargin?: boolean;
-};
+}
 
 const { noMargin = false } = Astro.props;
 ---

@@ -1,0 +1,67 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import TripItem from '../components/TripItem.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { getCountryData } from '../helpers/ebird';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+export const getStaticPaths = (async ({ paginate }) => {
+	const trips = await getCollection('trips');
+	const sorted = trips
+		.map((trip) => ({ ...trip.data, slug: trip.id }))
+		.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
+
+	const countryData = await getCountryData();
+
+	return paginate(sorted, {
+		pageSize: 20,
+		props: { countryData },
+	});
+}) satisfies GetStaticPaths;
+
+const { page, countryData } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={page.currentPage === 1 ? `${SITE_TITLE} | Photography by Adam Jackson` : `${SITE_TITLE} | Page ${page.currentPage}`}
+			description={SITE_DESCRIPTION}
+		/>
+	</head>
+	<body>
+		<Header />
+		<div class="mx-auto max-w-[1050px] px-4 flex flex-col sm:flex-row gap-8">
+			<div class="flex-1 sm:min-w-[380px]">
+				<h1 class="text-3xl font-heading font-bold text-neutral-600 mb-8 -mt-2">Trip Reports</h1>
+				{page.data.map((trip) => <TripItem {...trip} />)}
+				{(page.url.prev || page.url.next) && (
+					<nav class="flex justify-between items-center mb-8">
+						{page.url.prev ? (
+							<a href={page.url.prev} class="bg-[#f4793d] text-white py-2 px-6">
+								← Previous
+							</a>
+						) : (
+							<span />
+						)}
+						<span class="text-gray-500 text-sm">
+							Page {page.currentPage} of {page.lastPage}
+						</span>
+						{page.url.next ? (
+							<a href={page.url.next} class="bg-[#f4793d] text-white py-2 px-6">
+								Next →
+							</a>
+						) : (
+							<span />
+						)}
+					</nav>
+				)}
+			</div>
+			<Sidebar countryData={countryData} />
+		</div>
+	</body>
+</html>

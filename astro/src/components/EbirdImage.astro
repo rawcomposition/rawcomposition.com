@@ -2,17 +2,17 @@
 import { getEbirdImgUrl } from '../helpers/ebird';
 import SpeciesNames from '../../lifelist/species-names.json';
 
-type Props = {
+interface Props {
 	id: string | number;
 	text?: string;
 	lifer?: boolean;
-};
+}
 
 const { id, text, lifer = false } = Astro.props;
-const rawId = String(id || '');
-const url = rawId ? getEbirdImgUrl(rawId, 1200) : '';
+const rawId = String(id);
+const url = getEbirdImgUrl(rawId, 1200);
 const formattedId = rawId.toLowerCase().replace('ml', '');
-const speciesName = (SpeciesNames as Record<string, string>)[formattedId] || '';
+const speciesName = (SpeciesNames as Record<string, string>)[formattedId] ?? '';
 ---
 
 <figure class="bg-gray-200">

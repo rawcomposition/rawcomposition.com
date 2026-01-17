@@ -9,20 +9,18 @@ import { SITE_DESCRIPTION } from '../../consts';
 
 export async function getStaticPaths() {
 	const trips = await getCollection('trips');
-	return trips.map((trip) => ({
-		params: { slug: trip.id },
-	}));
+	return trips.map((trip) => ({ params: { slug: trip.id } }));
 }
 
 const { slug } = Astro.params;
-const trip = await getEntry('trips', slug);
+const trip = await getEntry('trips', slug!);
 if (!trip) {
 	throw new Error(`Trip not found: ${slug}`);
 }
 const { Content } = await render(trip);
 const { title, month, length, species, lifers, isUS, featuredImg, ebirdLink, subtitle } = trip.data;
 const heroImg = featuredImg ? getEbirdImgUrl(featuredImg, 2400) : '';
-const description = subtitle || SITE_DESCRIPTION;
+const description = subtitle ?? SITE_DESCRIPTION;
 ---
 
 <!doctype html>
