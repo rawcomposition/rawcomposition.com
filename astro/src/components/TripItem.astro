@@ -1,0 +1,48 @@
+---
+import { getEbirdImgUrl } from '@/helpers/ebird';
+import TripMeta from './TripMeta.astro';
+
+type Props = {
+	title: string;
+	slug: string;
+	length: string;
+	month: string;
+	species: number;
+	lifers: number;
+	isUS?: boolean;
+	subtitle?: string;
+	featuredImg: string;
+}
+
+const { title, slug, length, month, species, lifers, isUS, subtitle, featuredImg } = Astro.props;
+const imgUrl = getEbirdImgUrl(featuredImg, 480);
+const imgUrl900 = getEbirdImgUrl(featuredImg, 900);
+---
+
+<article class="mb-8 flex-col lg:flex-row flex">
+	<a href={`/trips/${slug}`}>
+		<picture>
+			<source media="(max-width: 1024px)" srcset={imgUrl900} />
+			<img
+				class="w-full lg:w-[220px] aspect-[1.6] lg:aspect-auto lg:h-[220px] object-cover"
+				src={imgUrl}
+				alt=""
+				loading="lazy"
+			/>
+		</picture>
+	</a>
+	<div class="bg-white px-10 pb-8 pt-6 flex-1">
+		{month && (
+			<span class="text-xs font-medium px-1.5 py-[3px] rounded bg-blue-100 text-blue-800 opacity-70">
+				{month}
+			</span>
+		)}
+		<a href={`/trips/${slug}`}>
+			<h2 class="text-2xl font-bold mb-4 mt-2.5 font-heading text-gray-700">{title}</h2>
+		</a>
+		<a href={`/trips/${slug}`} class="flex gap-6 gap-y-3 flex-wrap">
+			<TripMeta {length} {species} {lifers} {isUS} {subtitle} />
+		</a>
+	</div>
+</article>
+

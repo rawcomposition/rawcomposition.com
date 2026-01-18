@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@layer base {
+	body {
+		overflow-anchor: none;
+		@apply antialiased mb-12 bg-[#eee];
+		font-family: "Lato", ui-sans-serif, system-ui, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: optimizeLegibility;
+	}
+
+	.font-heading {
+		font-family: "Roboto Slab", ui-serif, Georgia, serif;
+	}
+
+	svg.icon {
+		width: 1em;
+		height: 1em;
+		@apply fill-current inline;
+	}
+
+	.text-orange {
+		color: #f4793d;
+	}
+
+	.bg-zebra li:nth-child(odd) {
+		background-color: #f9f9f9;
+	}
+
+	.marker-none::marker {
+		display: none;
+		content: "";
+	}
+
+	details[open] .hide-on-open {
+		@apply hidden;
+	}
+}

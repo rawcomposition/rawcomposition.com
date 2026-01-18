@@ -1,0 +1,46 @@
+---
+import { getEbirdImgUrl } from '@/helpers/ebird';
+import SpeciesNames from '../../lifelist/species-names.json';
+import CheckCircle from '@/icons/CheckCircle.astro';
+import ArrowRight from '@/icons/ArrowRight.astro';
+
+type Props = {
+	id: string | number;
+	text?: string;
+	lifer?: boolean;
+}
+
+const { id, text, lifer = false } = Astro.props;
+const rawId = String(id);
+const url = getEbirdImgUrl(rawId, 1200);
+const formattedId = rawId.toLowerCase().replace('ml', '');
+const speciesName = (SpeciesNames as Record<string, string>)[formattedId] ?? '';
+---
+
+<figure class="bg-gray-200">
+	<img src={url} alt="" loading="lazy" class="w-full object-contain max-h-[600px]" />
+	<figcaption class="text-sm text-gray-900 mt-0 px-4 py-3 relative">
+		<strong>{speciesName}</strong>
+		{lifer && (
+			<span class="text-[12px] font-medium rounded bg-lime-700/10 px-1 text-lime-700 inline-flex items-center gap-1 align-bottom ml-2">
+				<CheckCircle />
+				Lifer
+			</span>
+		)}
+		<a
+			href={`https://macaulaylibrary.org/asset/${rawId}`}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="absolute top-3 right-4 no-underline !text-slate-600 inline-flex gap-1 items-center"
+		>
+			View on eBird
+			<ArrowRight />
+		</a>
+		{text && (
+			<>
+				<br />
+				<span class="inline-block mt-1">{text}</span>
+			</>
+		)}
+	</figcaption>
+</figure>

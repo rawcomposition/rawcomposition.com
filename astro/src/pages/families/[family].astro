@@ -1,0 +1,117 @@
+---
+import BaseHead from '@/components/BaseHead.astro';
+import Header from '@/components/Header.astro';
+import CaretRight from '@/icons/CaretRight.astro';
+import Hummingbird from '@/icons/Hummingbird.astro';
+import Dove from '@/icons/Dove.astro';
+import families from '../../../families.json';
+import byFamily from '../../../lifelist/by-family.json';
+import taxonomy from '../../../taxonomy.json';
+
+type Species = {
+	name: string;
+	code: string;
+	count: number;
+	date: string;
+	year: string;
+	family: string;
+	img: number;
+	w: number;
+	h: number;
+};
+
+type FamilyData = {
+	family: string;
+	species: Species[];
+};
+
+type TaxonomyItem = {
+	code: string;
+	name: string;
+	family: string;
+};
+
+const familyData = byFamily as FamilyData[];
+const taxonomyData = taxonomy as TaxonomyItem[];
+const slugToName = new Map(families.map((f) => [f.slug, f.name]));
+
+export async function getStaticPaths() {
+	return families.map((family) => ({
+		params: { family: family.slug },
+	}));
+}
+
+const { family: familySlug } = Astro.params;
+const familyName = slugToName.get(familySlug!) ?? '';
+const familySpeciesData = familyData.find((item) => item.family === familyName)?.species ?? [];
+const filtered = taxonomyData.filter((item) => item.family === familyName);
+
+const items = filtered.map(({ code, name }) => {
+	const lifelistEntry = familySpeciesData.find((it) => it.name === name);
+	return {
+		code,
+		name,
+		img: lifelistEntry?.img || null,
+	};
+});
+
+const withPhotos = items.filter((item) => !!item.img);
+const isHummingbirds = familyName === 'Hummingbirds';
+const ebirdUserId = import.meta.env.PUBLIC_EBIRD_USER_ID;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`${familyName} | RawComposition.com`} description={`${withPhotos.length} of ${items.length} species from the ${familyName} family`} />
+	</head>
+	<body>
+		<Header noMargin />
+		<div class="bg-neutral-800/90 p-2 mb-12">
+			<div class="mx-auto max-w-[1200px] px-4 text-gray-400 text-xs sm:text-sm">
+				<a href="/families" class="text-gray-200">Families</a>
+				<CaretRight class="mx-2" />
+				{familyName}
+			</div>
+		</div>
+		<div class="mx-auto max-w-[1200px] px-4">
+			<div class="p-12 bg-white mb-4">
+				<h1 class="text-4xl font-bold mb-4">{familyName}</h1>
+				<p class="text-lg text-gray-500 mb-8">
+					Photographed {withPhotos.length} of {items.length} species
+				</p>
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+					{items.map(({ code, name, img }) => (
+						<a
+							href={img
+								? `https://media.ebird.org/catalog?taxonCode=${code}&sort=rating_rank_desc&mediaType=photo&userId=${ebirdUserId}`
+								: `https://ebird.org/species/${code}`
+							}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="flex flex-col items-center justify-center rounded-md p-4"
+						>
+							{img ? (
+								<img
+									src={`https://cdn.download.ams.birds.cornell.edu/api/v1/asset/${img}/640`}
+									loading="lazy"
+									alt={name}
+									class="object-cover w-full h-[160px] rounded-lg mb-2"
+								/>
+							) : isHummingbirds ? (
+								<div class="w-full h-[160px] rounded-lg mb-2 bg-gray-200 p-4 flex items-center justify-center">
+									<Hummingbird class="w-20 h-20 text-gray-300" />
+								</div>
+							) : (
+								<div class="w-full h-[160px] rounded-lg mb-2 bg-gray-200 p-8 flex items-center justify-center">
+									<Dove class="w-16 h-16 text-gray-300" />
+								</div>
+							)}
+							<span class="text-sm text-gray-500">{name}</span>
+						</a>
+					))}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

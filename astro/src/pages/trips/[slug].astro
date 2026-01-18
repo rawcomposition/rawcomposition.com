@@ -1,0 +1,60 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseHead from '@/components/BaseHead.astro';
+import Header from '@/components/Header.astro';
+import TripMeta from '@/components/TripMeta.astro';
+import EbirdImage from '@/components/EbirdImage.astro';
+import CaretRight from '@/icons/CaretRight.astro';
+import ArrowLeft from '@/icons/ArrowLeft.astro';
+import { getEbirdImgUrl } from '@/helpers/ebird';
+import { SITE_DESCRIPTION } from '@/consts';
+
+export async function getStaticPaths() {
+	const trips = await getCollection('trips');
+	return trips.map((trip) => ({ params: { slug: trip.id } }));
+}
+
+const { slug } = Astro.params;
+const trip = await getEntry('trips', slug!);
+if (!trip) {
+	throw new Error(`Trip not found: ${slug}`);
+}
+const { Content } = await render(trip);
+const { title, month, length, species, lifers, isUS, featuredImg, ebirdLink, subtitle } = trip.data;
+const heroImg = featuredImg ? getEbirdImgUrl(featuredImg, 2400) : '';
+const description = subtitle ?? SITE_DESCRIPTION;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`${title} | RawComposition.com`} description={description} />
+	</head>
+	<body>
+		<Header noMargin />
+		<div class="bg-neutral-800/90 p-2">
+			<div class="mx-auto max-w-[1200px] px-4 text-gray-400 text-xs sm:text-sm">
+				<a href="/" class="text-gray-200">Trip Reports</a>
+				<CaretRight class="mx-1.5" />
+				{title}
+			</div>
+		</div>
+		{featuredImg && <img src={heroImg} alt="" class="w-full object-cover aspect-[2]" />}
+		<div class={`mx-auto max-w-4xl px-4 flex flex-col ${featuredImg ? '-mt-16' : ''}`}>
+			<div class="flex-1 p-4 sm:p-12 pt-3 sm:pt-10 bg-white mb-4 prose prose-headings:font-heading prose-headings:text-neutral-600 prose-a:text-orange prose-img:mt-0 prose-hr:my-8 max-w-full">
+				<span class="text-xs font-medium px-1.5 py-[3px] rounded bg-blue-100 text-blue-800 opacity-70">
+					{month}
+				</span>
+				<h1 class="font-heading text-neutral-600 text-4xl mb-4 mt-1">{title}</h1>
+				<div class="flex gap-6 flex-wrap gap-y-3 mb-10">
+					<TripMeta {...{ length, species, lifers, isUS, ebirdLink, subtitle }} />
+				</div>
+				<Content components={{ EbirdImage }} />
+			</div>
+			<a href="/" class="text-lg text-gray-600 inline-flex items-center gap-1">
+				<ArrowLeft />
+				Back to trips
+			</a>
+		</div>
+	</body>
+</html>

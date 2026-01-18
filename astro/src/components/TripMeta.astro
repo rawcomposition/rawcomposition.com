@@ -1,0 +1,46 @@
+---
+import Clock from '@/icons/Clock.astro';
+import Feather from '@/icons/Feather.astro';
+import CheckCircle from '@/icons/CheckCircle.astro';
+
+type Props = {
+	length?: string;
+	species?: number;
+	lifers?: number;
+	isUS?: boolean;
+	subtitle?: string;
+	ebirdLink?: string;
+}
+
+const { length, species, lifers, isUS, subtitle, ebirdLink } = Astro.props;
+---
+
+{subtitle && <p class="text-gray-500 w-full -mt-3 mb-0">{subtitle}</p>}
+{length && (
+	<span class="flex items-center gap-2 text-sm text-gray-600 whitespace-nowrap">
+		<Clock class="text-sm text-gray-500" />{" "}
+		{length}
+	</span>
+)}
+{species && (
+	<span class="flex items-center gap-2 text-sm text-gray-600 whitespace-nowrap">
+		<Feather class="text-sm text-gray-500" />{" "}
+		{species} species
+	</span>
+)}
+{lifers && (
+	<span class="flex items-center gap-2 text-sm text-gray-600 whitespace-nowrap">
+		<CheckCircle class="text-sm text-gray-500" />{" "}
+		{lifers}{" "}{isUS ? "US lifers" : "lifers"}
+	</span>
+)}
+{ebirdLink && (
+	<a
+		href={ebirdLink}
+		target="_blank"
+		rel="noreferrer"
+		class="flex items-center !text-gray-500 whitespace-nowrap no-underline bg-gray-100 text-[13px] leading-3 px-2.5 py-[2px] rounded"
+	>
+		View on <img src="/ebird.png" class="h-[18px] -mt-[1px] -mr-1.5 inline-block mb-0" alt="eBird" />
+	</a>
+)}

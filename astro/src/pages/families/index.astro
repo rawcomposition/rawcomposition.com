@@ -1,0 +1,137 @@
+---
+import BaseHead from '@/components/BaseHead.astro';
+import Header from '@/components/Header.astro';
+import families from '../../../families.json';
+import byFamily from '../../../lifelist/by-family.json';
+import taxonomy from '../../../taxonomy.json';
+
+type FamilyData = {
+	family: string;
+	species: { name: string; code: string; img: number }[];
+};
+
+type TaxonomyItem = {
+	code: string;
+	name: string;
+	family: string;
+};
+
+const familyData = byFamily as FamilyData[];
+const taxonomyData = taxonomy as TaxonomyItem[];
+
+const familyTotals = families.map(({ name, slug }) => {
+	const photos = familyData.find((it) => it.family === name);
+	const total = taxonomyData.filter((it) => it.family === name).length;
+	const photoCount = photos?.species?.length ?? 0;
+	return {
+		name,
+		slug,
+		total: photoCount,
+		percent: total > 0 ? Math.round((photoCount / total) * 100) : 0,
+	};
+});
+
+const sorted = familyTotals.sort((a, b) => b.total - a.total);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Bird Families | RawComposition.com" description="Bird species organized by taxonomic family" />
+	</head>
+	<body>
+		<Header />
+		<div class="mx-auto max-w-5xl px-4">
+			<div class="p-12 bg-white mb-4">
+				<h1 class="text-4xl font-bold mb-8">Taxonomic Families</h1>
+				<p class="text-lg text-gray-600 mb-4">View life list by family</p>
+
+				<table class="w-full divide-y divide-gray-200" id="families-table">
+					<thead>
+						<tr>
+							<th scope="col" class="bg-gray-50 px-6 py-3 text-left text-xs font-semibold text-gray-600">
+								Name
+							</th>
+							<th
+								scope="col"
+								class="bg-gray-50 px-6 py-3 text-right text-xs font-semibold text-gray-600 cursor-pointer"
+								data-sort="total"
+							>
+								<span class="flex items-center gap-1 justify-end">
+									Total
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-2.5 h-2.5 sort-icon" data-col="total">
+										<path fill="currentColor" d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+									</svg>
+								</span>
+							</th>
+							<th
+								scope="col"
+								class="bg-gray-50 px-6 py-3 text-right text-xs font-semibold text-gray-600 cursor-pointer"
+								data-sort="percent"
+							>
+								<span class="flex items-center gap-1 justify-end">
+									Percent
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-2.5 h-2.5 sort-icon hidden" data-col="percent">
+										<path fill="currentColor" d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+									</svg>
+								</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody class="divide-y divide-gray-200 bg-white">
+						{sorted.map(({ slug, name, total, percent }) => (
+							<tr data-total={total} data-percent={percent}>
+								<td class="px-6 py-3">
+									<a href={`/families/${slug}`} class="text-lg text-orange mb-8">
+										{name}
+									</a>
+								</td>
+								<td class="px-6 py-3 text-right">{total}</td>
+								<td class="px-6 py-3 text-right">{percent}%</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<script>
+			const table = document.getElementById('families-table');
+			const headers = table?.querySelectorAll('th[data-sort]');
+			const tbody = table?.querySelector('tbody');
+			const icons = table?.querySelectorAll('.sort-icon');
+
+			let currentSort = 'total';
+
+			headers?.forEach((header) => {
+				header.addEventListener('click', () => {
+					const sortBy = header.getAttribute('data-sort');
+					if (!sortBy || !tbody) return;
+
+					currentSort = sortBy;
+
+					// Update icons visibility
+					icons?.forEach((icon) => {
+						const col = icon.getAttribute('data-col');
+						if (col === sortBy) {
+							icon.classList.remove('hidden');
+						} else {
+							icon.classList.add('hidden');
+						}
+					});
+
+					// Sort rows
+					const rows = Array.from(tbody.querySelectorAll('tr'));
+					rows.sort((a, b) => {
+						const aVal = parseInt(a.getAttribute(`data-${sortBy}`) || '0');
+						const bVal = parseInt(b.getAttribute(`data-${sortBy}`) || '0');
+						return bVal - aVal;
+					});
+
+					// Re-append sorted rows
+					rows.forEach((row) => tbody.appendChild(row));
+				});
+			});
+		</script>
+	</body>
+</html>
