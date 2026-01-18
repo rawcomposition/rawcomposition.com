@@ -1,12 +1,12 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import TripItem from '../components/TripItem.astro';
-import Sidebar from '../components/Sidebar.astro';
-import { getCountryData } from '../helpers/ebird';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import BaseHead from '@/components/BaseHead.astro';
+import Header from '@/components/Header.astro';
+import TripItem from '@/components/TripItem.astro';
+import Sidebar from '@/components/Sidebar.astro';
+import { getCountryData } from '@/helpers/ebird';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 
 export const getStaticPaths = (async ({ paginate }) => {
 	const trips = await getCollection('trips');

@@ -1,13 +1,13 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import TripMeta from '../../components/TripMeta.astro';
-import EbirdImage from '../../components/EbirdImage.astro';
-import CaretRight from '../../icons/CaretRight.astro';
-import ArrowLeft from '../../icons/ArrowLeft.astro';
-import { getEbirdImgUrl } from '../../helpers/ebird';
-import { SITE_DESCRIPTION } from '../../consts';
+import BaseHead from '@/components/BaseHead.astro';
+import Header from '@/components/Header.astro';
+import TripMeta from '@/components/TripMeta.astro';
+import EbirdImage from '@/components/EbirdImage.astro';
+import CaretRight from '@/icons/CaretRight.astro';
+import ArrowLeft from '@/icons/ArrowLeft.astro';
+import { getEbirdImgUrl } from '@/helpers/ebird';
+import { SITE_DESCRIPTION } from '@/consts';
 
 export async function getStaticPaths() {
 	const trips = await getCollection('trips');
