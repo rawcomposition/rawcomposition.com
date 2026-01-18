@@ -4,6 +4,8 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import TripMeta from '../../components/TripMeta.astro';
 import EbirdImage from '../../components/EbirdImage.astro';
+import CaretRight from '../../icons/CaretRight.astro';
+import ArrowLeft from '../../icons/ArrowLeft.astro';
 import { getEbirdImgUrl } from '../../helpers/ebird';
 import { SITE_DESCRIPTION } from '../../consts';
 
@@ -33,9 +35,7 @@ const description = subtitle ?? SITE_DESCRIPTION;
 		<div class="bg-neutral-800/90 p-2">
 			<div class="mx-auto max-w-[1200px] px-4 text-gray-400 text-xs sm:text-sm">
 				<a href="/" class="text-gray-200">Trip Reports</a>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="icon mx-1.5">
-					<path fill="currentColor" d="M224 256c0 1.1-.7344 3.969-2.219 5.531l-144 151.1c-3.047 3.187-8.125 3.312-11.31 .25c-3.188-3.094-3.281-8.156-.25-11.31l138.7-146.5L66.21 109.5C63.18 106.3 63.27 101.3 66.46 98.22c3.188-3.062 8.266-2.937 11.31 .25l144 151.1C223.3 252 224 254 224 256z" />
-				</svg>
+				<CaretRight class="mx-1.5" />
 				{title}
 			</div>
 		</div>
@@ -52,9 +52,7 @@ const description = subtitle ?? SITE_DESCRIPTION;
 				<Content components={{ EbirdImage }} />
 			</div>
 			<a href="/" class="text-lg text-gray-600 inline-flex items-center gap-1">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon">
-					<path fill="currentColor" d="M447.1 256c0 13.25-10.76 24.01-24.01 24.01H83.9l132.7 126.6c9.625 9.156 9.969 24.41 .8125 33.94c-9.156 9.594-24.34 9.938-33.94 .8125l-176-168C2.695 268.9 .0078 262.6 .0078 256S2.695 243.2 7.445 238.6l176-168C193 61.51 208.2 61.85 217.4 71.45c9.156 9.5 8.812 24.75-.8125 33.94l-132.7 126.6h340.1C437.2 232 447.1 242.8 447.1 256z" />
-				</svg>
+				<ArrowLeft />
 				Back to trips
 			</a>
 		</div>
