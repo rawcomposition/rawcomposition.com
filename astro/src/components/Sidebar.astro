@@ -3,7 +3,7 @@ import overview from '../../lifelist/overview.json';
 import { getCountryName } from '../helpers/ebird';
 import CountryRow from './CountryRow.astro';
 
-interface Props {
+type Props = {
 	countryData: { code: string; count: number }[];
 }
 
