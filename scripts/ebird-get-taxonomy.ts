@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 import fs from "fs";
 import dotenv from "dotenv";
 dotenv.config();
@@ -6,7 +5,7 @@ dotenv.config();
 (async () => {
   console.log("Fetching taxonomy from eBird...");
   const response = await fetch(
-    `https://api.ebird.org/v2/ref/taxonomy/ebird?fmt=json&locale=en&cat=species&key=${process.env.NEXT_PUBLIC_EBIRD_API}`
+    `https://api.ebird.org/v2/ref/taxonomy/ebird?fmt=json&locale=en&cat=species&key=${process.env.EBIRD_API_KEY}`
   );
   const json: any = await response.json();
   if (!json) {
