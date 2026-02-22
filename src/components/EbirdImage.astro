@@ -1,15 +1,15 @@
 ---
 import { getEbirdImgUrl } from '@/helpers/ebird';
 import SpeciesNames from '../../lifelist/species-names.json';
-import CheckCircle from '@/icons/CheckCircle.astro';
 import ArrowRight from '@/icons/ArrowRight.astro';
 
 type Props = {
 	id: string | number;
 	text?: string;
+	title?: string;
 }
 
-const { id, text = false } = Astro.props;
+const { id, text = false, title } = Astro.props;
 const rawId = String(id);
 const url = getEbirdImgUrl(rawId, 1200);
 const formattedId = rawId.toLowerCase().replace('ml', '');
@@ -19,7 +19,7 @@ const speciesName = (SpeciesNames as Record<string, string>)[formattedId] ?? '';
 <figure class="bg-gray-200">
 	<img src={url} alt="" loading="lazy" class="w-full object-contain max-h-[600px]" />
 	<figcaption class="text-sm text-gray-900 mt-0 px-4 py-3 relative">
-		<strong>{speciesName}</strong>
+		<strong>{title ?? speciesName}</strong>
 		<a
 			href={`https://macaulaylibrary.org/asset/${rawId}`}
 			target="_blank"
