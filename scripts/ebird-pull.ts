@@ -29,7 +29,7 @@ const endYear = new Date().getFullYear();
 (async () => {
   const getEbirdPhotos = async (cursor?: string, results = []): Promise<any[]> => {
     const response = await fetch(
-      `https://search.macaulaylibrary.org/api/v1/search?count=100&includeUnconfirmed=T&sort=rating_rank_desc&mediaType=p&regionCode=&userId=${process.env.NEXT_PUBLIC_EBIRD_USER_ID}&taxaLocale=en&initialCursorMark=${cursor}&beginYear=${beginYear}&endYear=${endYear}`
+      `https://search.macaulaylibrary.org/api/v1/search?count=100&includeUnconfirmed=T&sort=rating_rank_desc&mediaType=p&regionCode=&userId=${process.env.EBIRD_USER_ID}&taxaLocale=en&initialCursorMark=${cursor}&beginYear=${beginYear}&endYear=${endYear}`
     );
     const json: any = await response.json();
     if (!json.results) {
