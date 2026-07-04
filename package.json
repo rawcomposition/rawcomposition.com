@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "ebird": "tsx ./scripts/ebird-pull.ts",
+    "ebird-stats": "tsx ./scripts/ebird-stats.ts",
     "ebird-taxonomy": "tsx ./scripts/ebird-get-taxonomy.ts"
   },
   "dependencies": {

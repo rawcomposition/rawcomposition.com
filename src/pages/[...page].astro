@@ -5,6 +5,7 @@ import BaseHead from '@/components/BaseHead.astro';
 import Header from '@/components/Header.astro';
 import TripItem from '@/components/TripItem.astro';
 import Sidebar from '@/components/Sidebar.astro';
+import QuestBanner from '@/components/QuestBanner.astro';
 import { getCountryData } from '@/helpers/ebird';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 
@@ -35,6 +36,9 @@ const { page, countryData } = Astro.props;
 	</head>
 	<body>
 		<Header />
+		<div class="mx-auto max-w-[1200px] px-4">
+			{page.currentPage === 1 && <QuestBanner />}
+		</div>
 		<div class="mx-auto max-w-[1200px] px-4 flex flex-col md:flex-row gap-8">
 			<div class="flex-1 sm:min-w-[380px]">
 				<h1 class="text-3xl font-heading font-bold text-neutral-600 mb-8 -mt-2">Trip Reports</h1>
