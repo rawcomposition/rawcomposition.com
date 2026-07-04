@@ -1,13 +1,15 @@
 ---
 import BaseHead from '@/components/BaseHead.astro';
 import Header from '@/components/Header.astro';
+import Dove from '@/icons/Dove.astro';
+import { getEbirdImgUrl } from '@/helpers/ebird';
 import families from '../../../families.json';
 import byFamily from '../../../lifelist/by-family.json';
 import taxonomy from '../../../taxonomy.json';
 
 type FamilyData = {
 	family: string;
-	species: { name: string; code: string; img: number }[];
+	species: { name: string; code: string; img: number; date: string }[];
 };
 
 type TaxonomyItem = {
@@ -22,16 +24,21 @@ const taxonomyData = taxonomy as TaxonomyItem[];
 const familyTotals = families.map(({ name, slug }) => {
 	const photos = familyData.find((it) => it.family === name);
 	const total = taxonomyData.filter((it) => it.family === name).length;
-	const photoCount = photos?.species?.length ?? 0;
+	const species = photos?.species ?? [];
+	const photoCount = species.length;
+	const latest = [...species].sort((a, b) => a.date.localeCompare(b.date)).pop();
 	return {
 		name,
 		slug,
-		total: photoCount,
+		photoCount,
+		totalSpecies: total,
+		thumb: latest?.img ?? null,
 		percent: total > 0 ? Math.round((photoCount / total) * 100) : 0,
 	};
 });
 
-const sorted = familyTotals.sort((a, b) => b.total - a.total);
+const sorted = familyTotals.sort((a, b) => b.photoCount - a.photoCount);
+const photographedFamilies = familyTotals.filter((it) => it.photoCount > 0).length;
 ---
 
 <!doctype html>
@@ -42,23 +49,25 @@ const sorted = familyTotals.sort((a, b) => b.total - a.total);
 	<body>
 		<Header />
 		<div class="mx-auto max-w-5xl px-4">
-			<div class="p-12 bg-white mb-4">
-				<h1 class="text-4xl font-bold mb-8">Taxonomic Families</h1>
-				<p class="text-lg text-gray-600 mb-4">View life list by family</p>
+			<div class="p-6 sm:p-12 bg-white mb-4">
+				<h1 class="font-heading text-neutral-600 text-4xl mb-2">Taxonomic Families</h1>
+				<p class="text-lg text-gray-500 mb-8">
+					Photographed species in <strong class="text-neutral-600">{photographedFamilies}</strong> of {familyTotals.length} bird families
+				</p>
 
 				<table class="w-full divide-y divide-gray-200" id="families-table">
 					<thead>
 						<tr>
-							<th scope="col" class="bg-gray-50 px-6 py-3 text-left text-xs font-semibold text-gray-600">
-								Name
+							<th scope="col" class="bg-gray-50 px-4 py-3 text-left text-xs font-semibold text-gray-600">
+								Family
 							</th>
 							<th
 								scope="col"
-								class="bg-gray-50 px-6 py-3 text-right text-xs font-semibold text-gray-600 cursor-pointer"
+								class="bg-gray-50 px-4 py-3 text-right text-xs font-semibold text-gray-600 cursor-pointer"
 								data-sort="total"
 							>
 								<span class="flex items-center gap-1 justify-end">
-									Total
+									Photographed
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-2.5 h-2.5 sort-icon" data-col="total">
 										<path fill="currentColor" d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
 									</svg>
@@ -66,7 +75,7 @@ const sorted = familyTotals.sort((a, b) => b.total - a.total);
 							</th>
 							<th
 								scope="col"
-								class="bg-gray-50 px-6 py-3 text-right text-xs font-semibold text-gray-600 cursor-pointer"
+								class="bg-gray-50 px-4 py-3 text-right text-xs font-semibold text-gray-600 cursor-pointer"
 								data-sort="percent"
 							>
 								<span class="flex items-center gap-1 justify-end">
@@ -79,15 +88,37 @@ const sorted = familyTotals.sort((a, b) => b.total - a.total);
 						</tr>
 					</thead>
 					<tbody class="divide-y divide-gray-200 bg-white">
-						{sorted.map(({ slug, name, total, percent }) => (
-							<tr data-total={total} data-percent={percent}>
-								<td class="px-6 py-3">
-									<a href={`/families/${slug}`} class="text-lg text-orange mb-8">
-										{name}
+						{sorted.map(({ slug, name, photoCount, totalSpecies, thumb, percent }) => (
+							<tr data-total={photoCount} data-percent={percent}>
+								<td class="px-4 py-2">
+									<a href={`/families/${slug}`} class="flex items-center gap-3 group">
+										{thumb ? (
+											<img
+												src={getEbirdImgUrl(thumb, 160)}
+												alt=""
+												loading="lazy"
+												class="w-12 h-12 rounded object-cover shrink-0"
+											/>
+										) : (
+											<div class="w-12 h-12 rounded bg-gray-100 flex items-center justify-center shrink-0">
+												<Dove class="w-6 h-6 text-gray-300" />
+											</div>
+										)}
+										<span class="text-orange group-hover:underline">{name}</span>
 									</a>
 								</td>
-								<td class="px-6 py-3 text-right">{total}</td>
-								<td class="px-6 py-3 text-right">{percent}%</td>
+								<td class="px-4 py-2 text-right whitespace-nowrap">
+									<strong class="text-neutral-600">{photoCount}</strong>
+									<span class="text-gray-400 text-sm"> / {totalSpecies}</span>
+								</td>
+								<td class="px-4 py-2">
+									<div class="flex items-center gap-2.5 justify-end">
+										<div class="relative h-2 w-16 sm:w-24 rounded-full bg-gray-200 overflow-hidden">
+											<div class="absolute inset-y-0 left-0 rounded-full bg-[#f4793d]" style={`width: ${percent}%`}></div>
+										</div>
+										<span class="text-sm text-gray-500 w-9 text-right">{percent}%</span>
+									</div>
+								</td>
 							</tr>
 						))}
 					</tbody>
@@ -101,14 +132,10 @@ const sorted = familyTotals.sort((a, b) => b.total - a.total);
 			const tbody = table?.querySelector('tbody');
 			const icons = table?.querySelectorAll('.sort-icon');
 
-			let currentSort = 'total';
-
 			headers?.forEach((header) => {
 				header.addEventListener('click', () => {
 					const sortBy = header.getAttribute('data-sort');
 					if (!sortBy || !tbody) return;
-
-					currentSort = sortBy;
 
 					// Update icons visibility
 					icons?.forEach((icon) => {

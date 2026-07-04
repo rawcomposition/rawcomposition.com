@@ -164,6 +164,12 @@ const endemicIslands = islandEndemics.map((island) => {
 					Plus a few heard-only and seen-only birds: <strong class="text-neutral-600">{stats.total.toLocaleString()}</strong> species reported on
 					{' '}<a href="https://ebird.org/profile/NzMwMzI1/world" target="_blank" rel="noopener noreferrer" class="text-orange">eBird</a>.
 				</p>
+				<a
+					href={`/lifelist/${overview.years[0]}`}
+					class="inline-block bg-[#f4793d] hover:bg-[#e2632a] text-white font-bold text-sm py-2.5 px-6 mt-6"
+				>
+					Browse My Life List &rarr;
+				</a>
 			</div>
 
 			<!-- This year + chart -->
@@ -209,7 +215,17 @@ const endemicIslands = islandEndemics.map((island) => {
 								stroke-width="1.5"
 								stroke-dasharray="5 4"
 							/>
-							<text x={chart.width - chart.right} y={yScale(YEARLY_GOAL) - 5} text-anchor="end" font-size="10" font-weight="bold" fill="#737373">
+							<text
+								x={chart.left + 6}
+								y={yScale(YEARLY_GOAL) - 5}
+								text-anchor="start"
+								font-size="10"
+								font-weight="bold"
+								fill="#737373"
+								stroke="#ffffff"
+								stroke-width="3.5"
+								paint-order="stroke"
+							>
 								Goal: {YEARLY_GOAL}
 							</text>
 							{chartYears.map(({ year, count }, i) => {
@@ -226,7 +242,19 @@ const endemicIslands = islandEndemics.map((island) => {
 											data-count={count}
 										/>
 										{showLabel && (
-											<text x={x} y={y - 6} text-anchor="middle" font-size="11" font-weight="bold" fill="#525252">{count}</text>
+											<text
+												x={x}
+												y={y - 6}
+												text-anchor="middle"
+												font-size="11"
+												font-weight="bold"
+												fill="#525252"
+												stroke="#ffffff"
+												stroke-width="3.5"
+												paint-order="stroke"
+											>
+												{count}
+											</text>
 										)}
 										<text x={x} y={chart.height - 8} text-anchor="middle" font-size="10" fill="#9ca3af">&rsquo;{year.slice(2)}</text>
 										<rect
@@ -261,29 +289,37 @@ const endemicIslands = islandEndemics.map((island) => {
 				</p>
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 					{favoriteFamilies.map(({ name, slug, count, total, recent }) => (
-						<a href={`/families/${slug}`} class="group block border border-gray-100 hover:border-gray-200 p-6">
-							<div class="grid grid-cols-3 gap-2 mb-5">
-								{recent.map((sp) => (
-									<img
-										src={getEbirdImgUrl(sp.img, 320)}
-										alt={sp.name}
-										loading="lazy"
-										class="w-full h-28 object-cover rounded"
-									/>
+						<a href={`/families/${slug}`} class="group block border border-gray-100 hover:border-gray-200 overflow-hidden">
+							<div class="grid grid-cols-3 gap-0.5">
+								{recent.map((sp, i) => (
+									<div class="relative">
+										<img
+											src={getEbirdImgUrl(sp.img, 480)}
+											alt={sp.name}
+											loading="lazy"
+											class="w-full h-44 sm:h-56 object-cover"
+										/>
+										<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent pt-8 pb-1.5 px-2">
+											<p class="text-[0.7rem] leading-tight text-white [text-shadow:0_1px_3px_rgba(0,0,0,0.9)]">
+												{i === 0 && <span class="block uppercase text-[0.6rem] font-bold text-gray-300">Latest</span>}
+												{sp.name}
+											</p>
+										</div>
+									</div>
 								))}
 							</div>
-							<div class="flex items-baseline mb-2">
-								<h3 class="font-heading text-xl font-bold text-neutral-600 group-hover:text-orange">{name}</h3>
-								<span class="ml-auto text-sm text-gray-500">
-									<strong class="text-neutral-600 text-lg">{count}</strong> of {total} photographed
-								</span>
+							<div class="p-5">
+								<div class="flex items-baseline mb-2">
+									<h3 class="font-heading text-xl font-bold text-neutral-600 group-hover:text-orange">{name}</h3>
+									<span class="ml-auto text-sm text-gray-500">
+										<strong class="text-neutral-600 text-lg">{count}</strong> of {total} photographed
+									</span>
+								</div>
+								<div class="relative h-3 rounded-full bg-gray-200 overflow-hidden">
+									<div class="absolute inset-y-0 left-0 rounded-full bg-[#f4793d]" style={`width: ${(count / total) * 100}%`}></div>
+								</div>
+								<p class="text-xs text-gray-400 mt-1.5">{Math.round((count / total) * 100)}% complete</p>
 							</div>
-							<div class="relative h-3 rounded-full bg-gray-200 overflow-hidden">
-								<div class="absolute inset-y-0 left-0 rounded-full bg-[#f4793d]" style={`width: ${(count / total) * 100}%`}></div>
-							</div>
-							<p class="text-xs text-gray-400 mt-1.5">
-								{Math.round((count / total) * 100)}% complete &middot; latest: {recent[0]?.name}
-							</p>
 						</a>
 					))}
 				</div>
