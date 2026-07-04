@@ -1,7 +1,7 @@
 export default [
   {
     name: "Puerto Rico",
-    regionCode: "PR",
+    regionCodes: ["PR"],
     species: [
       { code: "yesbla1" },
       { code: "elwwar1" },
@@ -26,12 +26,37 @@ export default [
   },
   {
     name: "Grenada",
-    regionCode: "GD",
+    regionCodes: ["GD"],
     species: [{ code: "gredov1" }, { code: "houwre11" }],
   },
   {
     name: "Saint Vincent",
-    regionCode: "VC",
+    regionCodes: ["VC"],
     species: [{ code: "stvpar1" }, { code: "houwre10" }, { code: "whiwar1" }],
+  },
+  {
+    name: "Guadeloupe",
+    regionCodes: ["GP"],
+    species: [{ code: "guawoo1" }],
+  },
+  {
+    name: "Dominica",
+    regionCodes: ["DM"],
+    species: [{ code: "imppar1" }, { code: "renpar1" }],
+  },
+  {
+    name: "Martinique",
+    regionCodes: ["MQ"],
+    species: [{ code: "whbthr3" }, { code: "marori1" }],
+  },
+  {
+    name: "Saint Lucia",
+    regionCodes: ["LC"],
+    species: [{ code: "stlwar" }, { code: "slbfin1" }, { code: "stlori1" }, { code: "stlpar1" }, { code: "houwre8" }, { code: "whbthr4" }],
+  },
+  {
+    name: "Barbados",
+    regionCodes: ["BB"],
+    species: [{ code: "barbul1" }],
   },
 ];
