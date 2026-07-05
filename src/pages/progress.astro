@@ -1,9 +1,10 @@
 ---
 import BaseHead from '@/components/BaseHead.astro';
 import Header from '@/components/Header.astro';
+import WorldMap from '@/components/WorldMap.astro';
 import CaretRight from '@/icons/CaretRight.astro';
 import { getEbirdImgUrl, getCountryName } from '@/helpers/ebird';
-import { SHOW_ENDEMICS } from '@/consts';
+import { SHOW_ENDEMICS, HERO_IMG_OVERRIDE } from '@/consts';
 import overview from '../../lifelist/overview.json';
 import byFamily from '../../lifelist/by-family.json';
 import stats from '../../lifelist/reported-stats.json';
@@ -38,8 +39,10 @@ const speciesNames = new Map(taxonomyData.map((it) => [it.code, it.name]));
 // Lifetime quest
 const photographedTotal = overview.total;
 const lifetimePercent = Math.round((photographedTotal / LIFETIME_GOAL) * 100);
-const latestLifer = [...allSpecies].sort((a, b) => a.date.localeCompare(b.date)).pop()!;
-const latestLiferDate = new Date(latestLifer.date).toLocaleDateString('en-US', {
+const recentLifers = [...allSpecies].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
+const heroOverride = HERO_IMG_OVERRIDE ? allSpecies.find((sp) => sp.img === HERO_IMG_OVERRIDE) : undefined;
+const heroLifer = heroOverride ?? recentLifers[0];
+const heroLiferDate = new Date(heroLifer.date).toLocaleDateString('en-US', {
 	month: 'long',
 	day: 'numeric',
 	year: 'numeric',
@@ -124,14 +127,14 @@ const endemicIslands = islandEndemics.map((island) => {
 		</div>
 
 		<div class="relative">
-			<img src={getEbirdImgUrl(latestLifer.img, 2400)} alt={latestLifer.name} class="w-full object-cover aspect-[2] sm:aspect-[2.5]" />
+			<img src={getEbirdImgUrl(heroLifer.img, 2400)} alt={heroLifer.name} class="w-full object-cover aspect-[2] sm:aspect-[2.5]" />
 			<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent pt-24 pb-6">
 				<div class="mx-auto max-w-[1200px] px-4 text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.9)]">
 					<p class="uppercase text-[0.7rem] font-bold tracking-wider text-gray-200 mb-1">
-						Latest addition &middot; Lifer #{photographedTotal.toLocaleString()}
+						{heroOverride ? 'Recent addition' : `Latest addition · Lifer #${photographedTotal.toLocaleString()}`}
 					</p>
-					<p class="font-heading text-2xl sm:text-3xl font-bold">{latestLifer.name}</p>
-					<p class="text-sm text-gray-200">{latestLiferDate}</p>
+					<p class="font-heading text-2xl sm:text-3xl font-bold">{heroLifer.name}</p>
+					<p class="text-sm text-gray-200">{heroLiferDate}</p>
 				</div>
 			</div>
 		</div>
@@ -160,16 +163,45 @@ const endemicIslands = islandEndemics.map((island) => {
 						<span class="absolute -translate-x-1/2" style={`left: ${(tick / LIFETIME_GOAL) * 100}%`}>{tick.toLocaleString()}</span>
 					))}
 				</div>
-				<p class="text-sm text-gray-500 mt-2">
-					Plus a few heard-only and seen-only birds: <strong class="text-neutral-600">{stats.total.toLocaleString()}</strong> species reported on
-					{' '}<a href="https://ebird.org/profile/NzMwMzI1/world" target="_blank" rel="noopener noreferrer" class="text-orange">eBird</a>.
-				</p>
 				<a
 					href={`/lifelist/${overview.years[0]}`}
-					class="inline-block bg-[#f4793d] hover:bg-[#e2632a] text-white font-bold text-sm py-2.5 px-6 mt-6"
+					class="inline-block bg-sky-800 hover:bg-sky-900 text-white font-bold text-sm py-2.5 px-6 mt-6"
 				>
 					Browse My Life List &rarr;
 				</a>
+			</div>
+
+			<!-- Recent additions -->
+			<div class="p-6 sm:p-12 bg-white mb-4">
+				<div class="flex flex-wrap items-baseline gap-x-4 mb-8">
+					<h2 class="font-heading text-neutral-600 text-3xl">Recent Additions</h2>
+					<a href={`/lifelist/${overview.years[0]}`} class="text-orange text-sm font-bold ml-auto">View full life list &rarr;</a>
+				</div>
+				<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+					{recentLifers.map((sp) => (
+						<a
+							href={`https://media.ebird.org/catalog?taxonCode=${sp.code}&sort=rating_rank_desc&mediaType=photo&userId=${ebirdUserId}`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="group relative block overflow-hidden"
+						>
+							<img
+								src={getEbirdImgUrl(sp.img, 480)}
+								alt={sp.name}
+								loading="lazy"
+								class="w-full h-40 sm:h-44 object-cover transition-transform duration-500 group-hover:scale-105"
+							/>
+							<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent pt-8 pb-1.5 px-2">
+								<p class="text-[0.7rem] leading-tight text-white [text-shadow:0_1px_3px_rgba(0,0,0,0.9)]">
+									{sp.name}
+									<span class="block text-[0.65rem] text-gray-300">
+										{new Date(sp.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+									</span>
+								</p>
+							</div>
+						</a>
+					))}
+				</div>
 			</div>
 
 			<!-- This year + chart -->
@@ -329,18 +361,27 @@ const endemicIslands = islandEndemics.map((island) => {
 			<div class="p-6 sm:p-12 bg-white mb-4">
 				<h2 class="font-heading text-neutral-600 text-3xl mb-1">Around the World</h2>
 				<p class="text-gray-500 mb-8">Species reported in each of the {countries.length} countries I've birded</p>
+				<div class="mb-10">
+					<WorldMap counts={stats.countries} ebirdUserId={ebirdUserId} />
+				</div>
 				<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-					{countries.map(({ name, flag, count }) => (
-						<div class="border border-gray-100 p-4">
+					{countries.map(({ code, name, flag, count }) => (
+						<a
+							href={`https://media.ebird.org/catalog?regionCode=${code}&sort=rating_rank_desc&mediaType=photo&userId=${ebirdUserId}`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="group block border border-gray-100 hover:border-gray-200 p-4"
+							title={`View my photos from ${name} on eBird`}
+						>
 							<div class="flex items-center gap-2 mb-2">
 								<span class="text-xl leading-none">{flag}</span>
-								<span class="text-sm text-gray-600 truncate" title={name}>{name}</span>
+								<span class="text-sm text-gray-600 group-hover:text-orange truncate" title={name}>{name}</span>
 							</div>
 							<div class="font-heading text-2xl font-bold text-neutral-700 mb-1.5">{count.toLocaleString()}</div>
 							<div class="relative h-1.5 rounded-full bg-gray-100 overflow-hidden">
 								<div class="absolute inset-y-0 left-0 rounded-full bg-[#f4793d]" style={`width: ${(count / maxCountryCount) * 100}%`}></div>
 							</div>
-						</div>
+						</a>
 					))}
 				</div>
 			</div>

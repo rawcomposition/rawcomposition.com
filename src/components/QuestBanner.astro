@@ -1,5 +1,6 @@
 ---
 import { getEbirdImgUrl } from '@/helpers/ebird';
+import { HERO_IMG_OVERRIDE } from '@/consts';
 import overview from '../../lifelist/overview.json';
 import byFamily from '../../lifelist/by-family.json';
 import stats from '../../lifelist/reported-stats.json';
@@ -11,6 +12,8 @@ const allSpecies = (byFamily as { family: string; species: { name: string; img: 
 	(it) => it.species
 );
 const latestLifer = [...allSpecies].sort((a, b) => a.date.localeCompare(b.date)).pop()!;
+const heroOverride = HERO_IMG_OVERRIDE ? allSpecies.find((sp) => sp.img === HERO_IMG_OVERRIDE) : undefined;
+const heroLifer = heroOverride ?? latestLifer;
 const lifetimePercent = Math.round((overview.total / LIFETIME_GOAL) * 100);
 const currentYear = String(new Date().getFullYear());
 const yearLifers = stats.yearLifers.find((it) => it.year === currentYear)?.count ?? 0;
@@ -18,8 +21,8 @@ const yearLifers = stats.yearLifers.find((it) => it.year === currentYear)?.count
 
 <a href="/progress/" class="group relative block overflow-hidden mb-10">
 	<img
-		src={getEbirdImgUrl(latestLifer.img, 1200)}
-		alt={latestLifer.name}
+		src={getEbirdImgUrl(heroLifer.img, 1200)}
+		alt={heroLifer.name}
 		class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-r from-neutral-900/95 via-neutral-900/80 to-neutral-900/30"></div>
@@ -42,7 +45,7 @@ const yearLifers = stats.yearLifers.find((it) => it.year === currentYear)?.count
 				<strong class="text-white">{yearLifers}</strong> of {YEARLY_GOAL} lifers in {currentYear}
 			</span>
 			<span class="hidden sm:inline">
-				Latest: <strong class="text-white">{latestLifer.name}</strong>
+				{heroOverride ? 'Recent' : 'Latest'}: <strong class="text-white">{heroLifer.name}</strong>
 			</span>
 			<span class="inline-flex items-center gap-1 bg-[#f4793d] group-hover:bg-[#e2632a] text-white font-bold text-xs uppercase tracking-wide py-1.5 px-4">
 				View my progress &rarr;
