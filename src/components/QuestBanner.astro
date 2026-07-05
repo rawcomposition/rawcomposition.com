@@ -3,20 +3,19 @@ import { getEbirdImgUrl } from '@/helpers/ebird';
 import { HERO_IMG_OVERRIDE } from '@/consts';
 import overview from '../../lifelist/overview.json';
 import byFamily from '../../lifelist/by-family.json';
-import stats from '../../lifelist/reported-stats.json';
 
 const LIFETIME_GOAL = 5000;
 const YEARLY_GOAL = 100;
 
-const allSpecies = (byFamily as { family: string; species: { name: string; img: number; date: string }[] }[]).flatMap(
-	(it) => it.species
-);
+const allSpecies = (
+	byFamily as { family: string; species: { name: string; img: number; date: string; year: string }[] }[]
+).flatMap((it) => it.species);
 const latestLifer = [...allSpecies].sort((a, b) => a.date.localeCompare(b.date)).pop()!;
 const heroOverride = HERO_IMG_OVERRIDE ? allSpecies.find((sp) => sp.img === HERO_IMG_OVERRIDE) : undefined;
 const heroLifer = heroOverride ?? latestLifer;
 const lifetimePercent = Math.round((overview.total / LIFETIME_GOAL) * 100);
 const currentYear = String(new Date().getFullYear());
-const yearLifers = stats.yearLifers.find((it) => it.year === currentYear)?.count ?? 0;
+const yearLifers = allSpecies.filter((sp) => sp.year === currentYear).length;
 ---
 
 <a href="/progress/" class="group relative block overflow-hidden mb-10">
