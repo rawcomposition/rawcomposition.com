@@ -19,6 +19,16 @@ const { countryData } = Astro.props;
 				I'm a software developer that loves chasing rare birds around world. I'm on a quest to photograph
 				{' '}<strong>5,000 species</strong> in my lifetime, about 1/2 of the world's species.
 			</p>
+			<div class="mt-5 text-left">
+				<div class="flex items-baseline text-xs text-zinc-500 mb-1.5">
+					<span><strong class="text-zinc-600 text-sm">{overview.total.toLocaleString()}</strong> photographed</span>
+					<span class="ml-auto">{Math.round((overview.total / 5000) * 100)}% of 5,000</span>
+				</div>
+				<div class="relative h-2.5 rounded-full bg-gray-200 overflow-hidden">
+					<div class="absolute inset-y-0 left-0 rounded-full bg-[#f4793d]" style={`width: ${(overview.total / 5000) * 100}%`}></div>
+				</div>
+				<a href="/progress/" class="text-orange text-xs font-bold inline-block mt-2">View my progress &rarr;</a>
+			</div>
 		</div>
 	</div>
 	<h4 class="text-[#636467] uppercase font-bold font-heading mb-4">Birding Life List</h4>

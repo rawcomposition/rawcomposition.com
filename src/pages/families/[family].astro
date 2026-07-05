@@ -52,6 +52,7 @@ const items = filtered.map(({ code, name }) => {
 		code,
 		name,
 		img: lifelistEntry?.img || null,
+		date: lifelistEntry?.date || '',
 	};
 });
 
@@ -77,12 +78,34 @@ const ebirdUserId = import.meta.env.PUBLIC_EBIRD_USER_ID;
 		<div class="mx-auto max-w-[1200px] px-4">
 			<div class="p-12 bg-white mb-4">
 				<h1 class="text-4xl font-bold mb-4">{familyName}</h1>
-				<p class="text-lg text-gray-500 mb-8">
-					Photographed {withPhotos.length} of {items.length} species
-				</p>
-				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-					{items.map(({ code, name, img }) => (
+				<div class="flex flex-wrap items-center gap-4 mb-8">
+					<p class="text-lg text-gray-500">
+						Photographed {withPhotos.length} of {items.length} species
+					</p>
+					{withPhotos.length > 1 && (
+						<div class="ml-auto flex text-xs font-bold uppercase tracking-wide" id="sort-toggle">
+							<button
+								type="button"
+								data-mode="taxonomic"
+								class="py-1.5 px-4 border border-gray-300 bg-[#f4793d] border-[#f4793d] text-white"
+							>
+								Taxonomic
+							</button>
+							<button
+								type="button"
+								data-mode="recent"
+								class="py-1.5 px-4 border border-l-0 border-gray-300 text-gray-500"
+							>
+								Recently added
+							</button>
+						</div>
+					)}
+				</div>
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="species-grid">
+					{items.map(({ code, name, img, date }, index) => (
 						<a
+							data-index={index}
+							data-date={date}
 							href={img
 								? `https://media.ebird.org/catalog?taxonCode=${code}&sort=rating_rank_desc&mediaType=photo&userId=${ebirdUserId}`
 								: `https://ebird.org/species/${code}`
@@ -113,5 +136,37 @@ const ebirdUserId = import.meta.env.PUBLIC_EBIRD_USER_ID;
 				</div>
 			</div>
 		</div>
+
+		<script>
+			const grid = document.getElementById('species-grid');
+			const toggle = document.getElementById('sort-toggle');
+			toggle?.querySelectorAll('button').forEach((button) => {
+				button.addEventListener('click', () => {
+					if (!grid) return;
+					const mode = button.getAttribute('data-mode');
+					toggle.querySelectorAll('button').forEach((b) => {
+						const active = b === button;
+						b.classList.toggle('bg-[#f4793d]', active);
+						b.classList.toggle('border-[#f4793d]', active);
+						b.classList.toggle('text-white', active);
+						b.classList.toggle('text-gray-500', !active);
+					});
+					const cards = Array.from(grid.children) as HTMLElement[];
+					cards.sort((a, b) => {
+						const aIndex = Number(a.dataset.index);
+						const bIndex = Number(b.dataset.index);
+						if (mode === 'taxonomic') return aIndex - bIndex;
+						// Recently added: newest photos first, un-photographed last in taxonomic order
+						const aDate = a.dataset.date || '';
+						const bDate = b.dataset.date || '';
+						if (aDate && bDate) return bDate.localeCompare(aDate);
+						if (aDate) return -1;
+						if (bDate) return 1;
+						return aIndex - bIndex;
+					});
+					cards.forEach((card) => grid.appendChild(card));
+				});
+			});
+		</script>
 	</body>
 </html>

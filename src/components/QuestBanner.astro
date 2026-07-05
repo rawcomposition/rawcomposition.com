@@ -1,0 +1,54 @@
+---
+import { getEbirdImgUrl } from '@/helpers/ebird';
+import { HERO_IMG_OVERRIDE } from '@/consts';
+import overview from '../../lifelist/overview.json';
+import byFamily from '../../lifelist/by-family.json';
+
+const LIFETIME_GOAL = 5000;
+const YEARLY_GOAL = 100;
+
+const allSpecies = (
+	byFamily as { family: string; species: { name: string; img: number; date: string; year: string }[] }[]
+).flatMap((it) => it.species);
+const latestLifer = [...allSpecies].sort((a, b) => a.date.localeCompare(b.date)).pop()!;
+const heroOverride = HERO_IMG_OVERRIDE ? allSpecies.find((sp) => sp.img === HERO_IMG_OVERRIDE) : undefined;
+const heroLifer = heroOverride ?? latestLifer;
+const lifetimePercent = Math.round((overview.total / LIFETIME_GOAL) * 100);
+const currentYear = String(new Date().getFullYear());
+const yearLifers = allSpecies.filter((sp) => sp.year === currentYear).length;
+---
+
+<a href="/progress/" class="group relative block overflow-hidden mb-10">
+	<img
+		src={getEbirdImgUrl(heroLifer.img, 1200)}
+		alt={heroLifer.name}
+		class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+	/>
+	<div class="absolute inset-0 bg-gradient-to-r from-neutral-900/95 via-neutral-900/80 to-neutral-900/30"></div>
+	<div class="relative p-8 sm:p-10 text-white sm:max-w-[62%]">
+		<p class="uppercase text-[0.7rem] font-bold tracking-wider text-orange-300 mb-1.5">The quest</p>
+		<h2 class="font-heading text-2xl sm:text-3xl font-bold mb-4">Photographing 5,000 Species</h2>
+		<div class="flex items-baseline gap-2 mb-2">
+			<span class="font-heading text-4xl sm:text-5xl font-bold">{overview.total.toLocaleString()}</span>
+			<span class="text-gray-300">/ {LIFETIME_GOAL.toLocaleString()}</span>
+			<span class="ml-auto font-heading text-xl font-bold text-white">{lifetimePercent}%</span>
+		</div>
+		<div class="relative h-3 rounded-full bg-white/20 overflow-hidden mb-5">
+			<div class="absolute inset-y-0 left-0 rounded-full bg-[#f4793d]" style={`width: ${(overview.total / LIFETIME_GOAL) * 100}%`}></div>
+			{[1000, 2000, 3000, 4000].map((tick) => (
+				<div class="absolute inset-y-0 w-0.5 bg-white/40" style={`left: ${(tick / LIFETIME_GOAL) * 100}%`}></div>
+			))}
+		</div>
+		<div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-200">
+			<span>
+				<strong class="text-white">{yearLifers}</strong> of {YEARLY_GOAL} lifers in {currentYear}
+			</span>
+			<span class="hidden sm:inline">
+				{heroOverride ? 'Recent' : 'Latest'}: <strong class="text-white">{heroLifer.name}</strong>
+			</span>
+			<span class="inline-flex items-center gap-1 bg-[#f4793d] group-hover:bg-[#e2632a] text-white font-bold text-xs uppercase tracking-wide py-1.5 px-4">
+				View my progress &rarr;
+			</span>
+		</div>
+	</div>
+</a>
