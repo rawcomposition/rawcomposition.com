@@ -23,23 +23,28 @@ const sensitiveDates = [
   { code: "lbsfin1", date: dayjs("2025-10-17").format() },
 ];
 
-const beginYear = 2000;
-const endYear = new Date().getFullYear();
+const COUNT = 1000;
+const USER_AGENT = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
 
 (async () => {
-  const getEbirdPhotos = async (cursor?: string, results = []): Promise<any[]> => {
+  const getEbirdPhotos = async (cursor = "", results: any[] = []): Promise<any[]> => {
     const response = await fetch(
-      `https://search.macaulaylibrary.org/api/v1/search?count=100&includeUnconfirmed=T&sort=rating_rank_desc&mediaType=p&regionCode=&userId=${process.env.EBIRD_USER_ID}&taxaLocale=en&initialCursorMark=${cursor}&beginYear=${beginYear}&endYear=${endYear}`
+      `https://ebird.org/ml-search-api/v2/search?count=${COUNT}&unconfirmed=incl&sort=rating_rank_desc&mediaType=photo&birdOnly=true&userId=${process.env.EBIRD_USER_ID}&taxaLocale=en&initialCursorMark=${cursor}`,
+      { headers: { "User-Agent": USER_AGENT } }
     );
+    if (!response.ok) {
+      throw `Error fetching eBird photos: HTTP ${response.status}`;
+    }
     const json: any = await response.json();
-    if (!json.results) {
+    if (!Array.isArray(json)) {
       throw "Error fetching eBird photos";
     }
-    const items: any = [...results, ...json.results.content];
-    if (!json.results.nextCursorMark) {
+    const items = [...results, ...json];
+    const nextCursor = json.length ? json[json.length - 1].cursorMark : null;
+    if (json.length < COUNT || !nextCursor) {
       return items;
     }
-    return await getEbirdPhotos(json.results.nextCursorMark, items);
+    return await getEbirdPhotos(nextCursor, items);
   };
 
   console.log("Fetching photos from eBird...");
@@ -50,7 +55,7 @@ const endYear = new Date().getFullYear();
   const mlSpeciesNames: any = {};
 
   filteredPhotos.forEach((row) => {
-    mlSpeciesNames[row.catalogId] = row.commonName;
+    mlSpeciesNames[row.assetId] = row.taxonomy?.comName;
   });
 
   type Species = {
@@ -68,34 +73,30 @@ const endYear = new Date().getFullYear();
 
   let species: Species = {};
   filteredPhotos.forEach((row) => {
-    if (!row?.commonName) return;
-    const taxon = Taxonomy.find((it) => it.code === row.reportAs);
+    const commonName = row.taxonomy?.comName;
+    const reportAs = row.taxonomy?.reportAs;
+    if (!commonName) return;
+    const taxon = Taxonomy.find((it) => it.code === reportAs);
     if (!taxon) return;
-    if (
-      !row?.reportAs ||
-      row.commonName.includes("/") ||
-      row.commonName.includes("hybrid") ||
-      row.commonName.includes("sp.")
-    ) {
+    if (!reportAs || commonName.includes("/") || commonName.includes("hybrid") || commonName.includes("sp.")) {
       return;
     }
 
-    if (!species[row.reportAs]) {
-      species[row.reportAs] = [];
+    if (!species[reportAs]) {
+      species[reportAs] = [];
     }
 
-    species[row.reportAs].push({
-      id: parseInt(row.catalogId),
+    species[reportAs].push({
+      id: row.assetId,
       width: row.width,
       height: row.height,
-      name: row.commonName,
-      code: row.reportAs,
+      name: commonName,
+      code: reportAs,
       family: taxon.family || "Unknown",
-      date:
-        row.obsDttm !== "Unknown"
-          ? dayjs(row.obsDttm).format()
-          : sensitiveDates.find((it) => it.code === row.reportAs)?.date || dayjs("1/1/2000").format(),
-      checklist_id: row.eBirdChecklistId,
+      date: row.obsDt
+        ? dayjs(row.obsDt).format()
+        : sensitiveDates.find((it) => it.code === reportAs)?.date || dayjs("1/1/2000").format(),
+      checklist_id: row.ebirdChecklistId,
     });
   });
 

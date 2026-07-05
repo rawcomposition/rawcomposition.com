@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "ebird": "tsx ./scripts/ebird-pull.ts",
+    "ebird": "npm run ebird-taxonomy && tsx ./scripts/ebird-pull.ts",
     "ebird-taxonomy": "tsx ./scripts/ebird-get-taxonomy.ts"
   },
   "dependencies": {
