@@ -1,6 +1,7 @@
 ---
 import overview from '../../lifelist/overview.json';
-import { getCountryName } from '@/helpers/ebird';
+import { getCountryName, getEbirdImgUrl } from '@/helpers/ebird';
+import { speciesByDateDesc } from '@/helpers/lifelist';
 import CountryRow from './CountryRow.astro';
 
 type Props = {
@@ -8,6 +9,10 @@ type Props = {
 }
 
 const { countryData } = Astro.props;
+
+const [featuredLifer, ...recentLifers] = speciesByDateDesc.slice(0, 5);
+const formatLiferDate = (date: string) =>
+	new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 ---
 
 <div class="bg-white p-10 w-full md:w-[33%] text-sm mb-8">
@@ -31,7 +36,46 @@ const { countryData } = Astro.props;
 			</div>
 		</div>
 	</div>
-	<h4 class="text-[#636467] uppercase font-bold font-heading mb-4">Birding Life List</h4>
+	<h4 class="text-[#636467] uppercase font-bold font-heading mb-4">Latest Lifers</h4>
+
+	<div class="space-y-2">
+		<a href={`/lifelist/${overview.years[0]}`} class="relative block overflow-hidden rounded">
+			<img
+				src={getEbirdImgUrl(featuredLifer.img, 640)}
+				width={featuredLifer.w}
+				height={featuredLifer.h}
+				alt={featuredLifer.name}
+				loading="lazy"
+				class="w-full aspect-[3/2] object-cover"
+			/>
+			<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-3 pb-2.5 pt-8">
+				<span class="block font-heading font-bold text-white leading-tight">{featuredLifer.name}</span>
+				<span class="block text-[0.7rem] text-white/70">{formatLiferDate(featuredLifer.date)}</span>
+			</div>
+		</a>
+		<div class="grid grid-cols-2 gap-2">
+			{recentLifers.map((sp) => (
+				<a href={`/lifelist/${overview.years[0]}`} class="relative block overflow-hidden rounded">
+					<img
+						src={getEbirdImgUrl(sp.img, 320)}
+						width={sp.w}
+						height={sp.h}
+						alt={sp.name}
+						loading="lazy"
+						class="w-full aspect-square object-cover"
+					/>
+					<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-1.5 pt-6">
+						<span class="block text-[0.7rem] font-heading font-bold text-white leading-tight">{sp.name}</span>
+					</div>
+				</a>
+			))}
+		</div>
+	</div>
+	<a href={`/lifelist/${overview.years[0]}`} class="text-orange text-xs font-bold inline-block mt-3">
+		View all {overview.total.toLocaleString()} lifers &rarr;
+	</a>
+
+	<h4 class="text-[#636467] uppercase font-bold font-heading mb-4 mt-12">Birding Life List</h4>
 
 	<div class="text-zinc-600">
 		<ol class="bg-zebra">
