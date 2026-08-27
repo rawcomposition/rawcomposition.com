@@ -4,23 +4,11 @@ import Header from '@/components/Header.astro';
 import WorldMap from '@/components/WorldMap.astro';
 import CaretRight from '@/icons/CaretRight.astro';
 import { getEbirdImgUrl, getCountryName, getCountryData } from '@/helpers/ebird';
-import { SHOW_ENDEMICS, HERO_IMG_OVERRIDE } from '@/consts';
+import { allSpecies, familyData, speciesByDateDesc, getHeroLifer, type Species } from '@/helpers/lifelist';
+import { SHOW_ENDEMICS } from '@/consts';
 import overview from '../../lifelist/overview.json';
-import byFamily from '../../lifelist/by-family.json';
 import taxonomy from '../../taxonomy.json';
 import islandEndemics from '../../island-endemics';
-
-type Species = {
-	name: string;
-	code: string;
-	count: number;
-	date: string;
-	year: string;
-	family: string;
-	img: number;
-	w: number;
-	h: number;
-};
 
 const LIFETIME_GOAL = 5000;
 const YEARLY_GOAL = 100;
@@ -28,8 +16,6 @@ const FAVORITE_FAMILIES = ['Hummingbirds', 'Owls'];
 
 const ebirdUserId = import.meta.env.PUBLIC_EBIRD_USER_ID;
 
-const familyData = byFamily as { family: string; species: Species[] }[];
-const allSpecies = familyData.flatMap((it) => it.species);
 const photographedCodes = new Set(allSpecies.map((it) => it.code));
 const taxonomyData = taxonomy as { code: string; name: string; family: string }[];
 const speciesNames = new Map(taxonomyData.map((it) => [it.code, it.name]));
@@ -37,9 +23,8 @@ const speciesNames = new Map(taxonomyData.map((it) => [it.code, it.name]));
 // Lifetime quest
 const photographedTotal = overview.total;
 const lifetimePercent = Math.round((photographedTotal / LIFETIME_GOAL) * 100);
-const recentLifers = [...allSpecies].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
-const heroOverride = HERO_IMG_OVERRIDE ? allSpecies.find((sp) => sp.img === HERO_IMG_OVERRIDE) : undefined;
-const heroLifer = heroOverride ?? recentLifers[0];
+const recentLifers = speciesByDateDesc.slice(0, 6);
+const { heroLifer, isOverride } = getHeroLifer();
 const heroLiferDate = new Date(heroLifer.date).toLocaleDateString('en-US', {
 	month: 'long',
 	day: 'numeric',
@@ -134,7 +119,7 @@ const endemicIslands = islandEndemics.map((island) => {
 			<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent pt-24 pb-6">
 				<div class="mx-auto max-w-[1200px] px-4 text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.9)]">
 					<p class="uppercase text-[0.7rem] font-bold tracking-wider text-gray-200 mb-1">
-						{heroOverride ? 'Recent addition' : `Latest addition · Lifer #${photographedTotal.toLocaleString()}`}
+						{isOverride ? 'Recent addition' : `Latest addition · Lifer #${photographedTotal.toLocaleString()}`}
 					</p>
 					<p class="font-heading text-2xl sm:text-3xl font-bold">{heroLifer.name}</p>
 					<p class="text-sm text-gray-200">{heroLiferDate}</p>
