@@ -24,7 +24,7 @@ const speciesNames = new Map(taxonomyData.map((it) => [it.code, it.name]));
 const photographedTotal = overview.total;
 const lifetimePercent = Math.round((photographedTotal / LIFETIME_GOAL) * 100);
 const recentLifers = speciesByDateDesc.slice(0, 6);
-const { heroLifer, isOverride } = getHeroLifer();
+const { heroLifer, isOverride, heroPosition } = getHeroLifer();
 const heroLiferDate = new Date(heroLifer.date).toLocaleDateString('en-US', {
 	month: 'long',
 	day: 'numeric',
@@ -115,7 +115,7 @@ const endemicIslands = islandEndemics.map((island) => {
 		</div>
 
 		<div class="relative">
-			<img src={getEbirdImgUrl(heroLifer.img, 2400)} alt={heroLifer.name} class="w-full object-cover aspect-[2] sm:aspect-[2.5]" />
+			<img src={getEbirdImgUrl(heroLifer.img, 2400)} alt={heroLifer.name} style={heroPosition ? { objectPosition: heroPosition } : undefined} class="w-full object-cover aspect-[2] sm:aspect-[2.5]" />
 			<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent pt-24 pb-6">
 				<div class="mx-auto max-w-[1200px] px-4 text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.9)]">
 					<p class="uppercase text-[0.7rem] font-bold tracking-wider text-gray-200 mb-1">

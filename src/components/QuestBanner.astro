@@ -6,7 +6,7 @@ import overview from '../../lifelist/overview.json';
 const LIFETIME_GOAL = 5000;
 const YEARLY_GOAL = 100;
 
-const { heroLifer, isOverride } = getHeroLifer();
+const { heroLifer, isOverride, heroPosition } = getHeroLifer();
 const lifetimePercent = Math.round((overview.total / LIFETIME_GOAL) * 100);
 const currentYear = String(new Date().getFullYear());
 const yearLifers = allSpecies.filter((sp) => sp.year === currentYear).length;
@@ -16,6 +16,7 @@ const yearLifers = allSpecies.filter((sp) => sp.year === currentYear).length;
 	<img
 		src={getEbirdImgUrl(heroLifer.img, 1200)}
 		alt={heroLifer.name}
+		style={heroPosition ? { objectPosition: heroPosition } : undefined}
 		class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-r from-neutral-900/95 via-neutral-900/80 to-neutral-900/30"></div>

@@ -1,4 +1,4 @@
-import { HERO_IMG_OVERRIDE } from '@/consts';
+import { HERO_OVERRIDE } from '@/consts';
 import byFamily from '../../lifelist/by-family.json';
 
 export type Species = {
@@ -21,11 +21,22 @@ export const speciesByDateDesc = [...allSpecies].sort(
 	(a, b) => b.date.localeCompare(a.date) || b.img - a.img
 );
 
+const toDay = (date: string) => date.slice(0, 10);
+
 /**
- * The species featured in the hero/banner. Uses HERO_IMG_OVERRIDE when it
- * matches a photographed species, otherwise the most recent lifer.
+ * The species featured in the hero/banner. Uses HERO_OVERRIDE when it matches a
+ * photographed species and its latestDate is still the most recent lifer date,
+ * otherwise the most recent lifer.
  */
 export function getHeroLifer() {
-	const override = HERO_IMG_OVERRIDE ? allSpecies.find((sp) => sp.img === HERO_IMG_OVERRIDE) : undefined;
-	return { heroLifer: override ?? speciesByDateDesc[0], isOverride: !!override };
+	const latestDay = toDay(speciesByDateDesc[0].date);
+	const overrideImg = HERO_OVERRIDE?.latestDate === latestDay ? HERO_OVERRIDE.img : undefined;
+	const override = overrideImg ? allSpecies.find((sp) => sp.img === overrideImg) : undefined;
+	const heroLifer = override ?? speciesByDateDesc[0];
+	return {
+		heroLifer,
+		// A same-day override is still a "latest" lifer
+		isOverride: toDay(heroLifer.date) !== latestDay,
+		heroPosition: override ? HERO_OVERRIDE?.position : undefined,
+	};
 }
