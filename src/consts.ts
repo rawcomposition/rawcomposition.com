@@ -11,5 +11,5 @@ export const SHOW_ENDEMICS = false;
 export const HERO_OVERRIDE: { img: number; latestDate: string; position?: string } | null = {
   img: 667689009, // Paradise Jacamar
   latestDate: "2026-10-26",
-  position: "center 40%",
+  position: "center 60%",
 };
