@@ -24,6 +24,12 @@ const sensitiveDates = [
 ];
 
 const COUNT = 1000;
+
+// e.g. "Pará, Brazil". Null when eBird hides the location (sensitive species).
+const formatRegion = (location: any): string | null => {
+  if (!location?.countryName) return null;
+  return [location.subnational1Name, location.countryName].filter(Boolean).join(", ");
+};
 const USER_AGENT = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
 
 (async () => {
@@ -68,6 +74,7 @@ const USER_AGENT = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.c
       family: string;
       date: string;
       checklist_id: string;
+      region: string | null;
     }[];
   };
 
@@ -97,6 +104,7 @@ const USER_AGENT = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.c
         ? dayjs(row.obsDt).format()
         : sensitiveDates.find((it) => it.code === reportAs)?.date || dayjs("1/1/2000").format(),
       checklist_id: row.ebirdChecklistId,
+      region: formatRegion(row.location),
     });
   });
 
@@ -104,6 +112,7 @@ const USER_AGENT = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.c
     const bestPhoto = group[0];
     const date_sorted_group = group.slice().sort((a, b) => a.date.localeCompare(b.date));
     const first_date = date_sorted_group[0].date;
+    const region = date_sorted_group[0].region;
     return {
       name: bestPhoto.name.replace(/ *\([^)]*\) */g, ""),
       code: bestPhoto.code,
@@ -114,12 +123,14 @@ const USER_AGENT = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.c
       img: bestPhoto.id,
       w: bestPhoto.width,
       h: bestPhoto.height,
+      region,
     };
   });
 
   type DateGroupedLiferPhotos = {
     date: string;
     year: string;
+    regions: string[];
     species: {
       name: string;
       code: string;
@@ -131,14 +142,19 @@ const USER_AGENT = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.c
   }[];
 
   const dateGroupedLiferPhotos: DateGroupedLiferPhotos = [];
-  liferPhotos.forEach(({ family, date, year, ...item }) => {
+  // Chronological so species within a day appear in the order they were seen
+  const chronologicalLiferPhotos = [...liferPhotos].sort((a, b) => a.date.localeCompare(b.date));
+  chronologicalLiferPhotos.forEach(({ family, date: timestamp, year, region, ...item }) => {
+    const date = dayjs(timestamp).format("YYYY-MM-DD");
     const existingGroup = dateGroupedLiferPhotos.find((it) => it.date === date);
     if (existingGroup) {
       existingGroup.species.push(item);
+      if (region && !existingGroup.regions.includes(region)) existingGroup.regions.push(region);
     } else {
       dateGroupedLiferPhotos.push({
         date,
         year,
+        regions: region ? [region] : [],
         species: [item],
       });
     }

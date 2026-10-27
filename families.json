@@ -540,12 +540,12 @@
     "slug": "thornbills-and-allies"
   },
   {
-    "name": "Pseudo-Babblers",
-    "slug": "pseudo-babblers"
+    "name": "Australasian Babblers",
+    "slug": "australasian-babblers"
   },
   {
-    "name": "Logrunners",
-    "slug": "logrunners"
+    "name": "Logrunners and Chowchilla",
+    "slug": "logrunners-and-chowchilla"
   },
   {
     "name": "Quail-thrushes and Jewel-babblers",
@@ -640,8 +640,8 @@
     "slug": "birds-of-paradise"
   },
   {
-    "name": "Ifrita",
-    "slug": "ifrita"
+    "name": "Ifrit",
+    "slug": "ifrit"
   },
   {
     "name": "Monarch Flycatchers",
@@ -672,8 +672,8 @@
     "slug": "satinbirds"
   },
   {
-    "name": "Berrypeckers and Longbills",
-    "slug": "berrypeckers-and-longbills"
+    "name": "New Guinea Longbills and Berrypeckers",
+    "slug": "new-guinea-longbills-and-berrypeckers"
   },
   {
     "name": "Wattlebirds",
@@ -728,8 +728,8 @@
     "slug": "nicators"
   },
   {
-    "name": "African Warblers",
-    "slug": "african-warblers"
+    "name": "African Longbills, Crombecs, and Allies",
+    "slug": "african-longbills-crombecs-and-allies"
   },
   {
     "name": "Cisticolas and Allies",
@@ -978,10 +978,6 @@
   {
     "name": "Cuban Warblers",
     "slug": "cuban-warblers"
-  },
-  {
-    "name": "Yellow-breasted Chat",
-    "slug": "yellow-breasted-chat"
   },
   {
     "name": "Troupials and Allies",
